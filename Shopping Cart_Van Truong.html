@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- ============ link Bootstrap ============== -->
+     <link href="./js/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" rel="stylesheet">
+	<link href="./js/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css" rel="stylesheet">
+     <link href="./css/bootstrap-4.3.1.css" rel="stylesheet">
+     <!-- /* ========== link FontAwesome  =========== */ -->
+     <link href="./css/fontawesome/css/all.min.css" rel="stylesheet">
+     <!-- JavaScript --> 
+	<script src="./js/jquery-3.3.1.min.js"></script>
+	<script src="./js/popper.min.js"></script> 
+	<script src="./js/bootstrap-4.3.1.js"></script>
+	<script src="./js/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+     <!-- /* ========== link CSS  =========== */ -->
+     <link rel="stylesheet" href="./css/cart.css">
+     <title>Your cart</title>
+     <script>
+          $(document).ready(function(){
+			$("#bgmobilenavi").hide();
+			$("#bgmobilesearch").hide();
+			$("#blacksreen").hide();
+								
+		    $("#icon3line").click(function(){
+				$("#bgmobilenavi").slideToggle();
+				$("#blacksreen").fadeToggle();
+			});
+			
+		    $("#searchmobile").click(function(){
+				$("#bgmobilesearch").slideToggle();
+				$("#blacksreen").fadeToggle();
+			});
+		});
+     </script>
+</head>
+
+<body>
+     <!------------Header--------->
+  	<div class="container-fluid d-none d-md-block" id="bgheader">
+		<div class="container" id="header">
+			<div class="row">
+				<div class="col-xl-3
+							col-lg-5
+							col-md-7
+							d-none d-md-block" id="searchbox">
+					<form action="" method="post">
+						<input id="searchfill" placeholder="Search...">
+						<button id="searchbtn"><i class="fas fa-search"></i></button>
+					</form>
+				</div>
+				<div class="col-xl-2 offset-xl-7
+							col-lg-7
+							col-md-5" id="signinup">
+					 <ul class="nav justify-content-end">
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fas fa-user"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="Shopping Cart_Quang Thuan.html"><i class="fas fa-shopping-cart"></i></a>
+						</li>
+					</ul>
+				 </div>
+			</div>
+		</div><!---------container------------>
+	</div><!---------container-fluid------------>
+	  <!---------Navi------------>
+	  <div class="container-fluid" id="bgnavi">
+		<div class="container">
+			<div class="row">
+				<div class="d-md-none 
+							col-sm-2 
+							col-2" id="icon3line"><i class="fas fa-bars"></i></div>
+				<div class="d-md-none
+							col-md-4 offset-md-2
+							col-sm-4 offset-sm-2
+							col-4 offset-1" id ="logomobile">
+					<a href="Home_Van Ninh.html"><img class="logo" src="imgs/logo.png"></a></div> 
+				<div class="col-xl-2 
+							col-lg-2
+							col-md-2
+							d-none d-md-block menu">
+					<a href="Home_Van Ninh.html"><img class="logo" src="imgs/logo.png"></a>
+			    </div><!---menu-->
+				<div class="col-xl-10 
+							col-lg-10
+							col-md-10
+							d-none d-md-block menu"	>
+					<ul class="nav justify-content-end">
+						<li class="nav-item">
+							<a class="nav-link" href="Home_Van Ninh.html">HOME</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="About us_Nhat Thanh.html">ABOUT US</a>
+						</li>
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropbtn" href="Products_My Hanh.html">PRODUCT
+							<i class="fa fa-caret-down"></i>
+						  </a>
+						<div class="dropdown-content">
+							<a href="Products_My Hanh.html">MEN</a>
+							<a href="#">WOMEN</a>
+							<a href="#">KID</a>
+						</div>
+					  </li>
+						<li class="nav-item dropdown">
+                        <a class="nav-link dropbtn" data-toggle="dropdown" href="Promotion_Quang Thuan.html">NEWS<i class="fa fa-caret-down"></i></a>
+                       <div class="dropdown-content">
+                         <a href="#">RECRUITMENT</a>
+                         <a href="Blog_My Hanh.html">BLOGS</a>
+                       </div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="Contact Us_Nhat Thanh.html">CONTACT</a>
+						</li>
+					</ul>
+			    </div><!---menu-->
+				
+				<div class="d-md-none
+							col-sm-3 offset-sm-1
+							col-5  " id="signinupmobile">
+					 <ul class="nav justify-content-end">
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fas fa-user"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="Shopping Cart_Quang Thuan.html"><i class="fas fa-shopping-cart"></i></a>
+						</li>
+					</ul>
+				</div><!------searchmobile--->
+	    </div><!---row--->
+		</div><!---contianer--->
+	</div><!---container-fluid--->
+	    <!----------------MOBILE NAVI---------------->
+	<div class="container-fluid d-md-none" id="bgmobilenavi">
+		<div class="row">
+			<div class="col-sm-12
+						col-12" id="mobilenavi">
+				<ul class="flex-column">
+					<li class="nav-item">
+							<a class="nav-link" href="Home_Van Ninh.html">HOME</a>
+						</li>
+					<li class="nav-item">
+							<a class="nav-link" href="About us_Nhat Thanh.html">ABOUT US</a>
+						</li>
+						 <li class="nav-item dropdown" >
+                        	<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="Products_My Hanh.html">PRODUCTS<span class="caret"></span></a>
+                       <ul class="dropdown-menu">
+                         <li><a href="#">MEN</a></li>
+                         <li><a href="#">WOMEN</a></li>
+                         <li><a href="#">KID</a></li>
+                       </ul>
+                       </li>
+					<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="Promotion_Quang Thuan.html">NEWS<span class="caret"></span></a>
+                       <ul class="dropdown-menu">
+                         <li><a href="#">RECRUITMENT</a></li>
+                         <li><a href="Blog_My Hanh.html">BLOGS</a></li>
+                       </ul>
+					</li>
+					<li class="nav-item">
+							<a class="nav-link" href="Contact Us_Nhat Thanh.html">CONTACT</a>
+				    </li>
+					</ul>
+			</div><!------mobilenavi------>
+		</div><!-------row----------->
+	</div><!-----------container-fluid------------->
+	  <!---------MOBILE SEARCH---------->
+	  <div class="container-fluid" id="bgmobilesearch">
+		  <div class="row">
+			  <div class="col-sm-12
+						  col-12" id="mobilesearch">
+				  <form action="" method="post">
+						<input id="searchfillmobile" placeholder="Search...">
+						<button id="searchbtnmobile"><i class="fas fa-search"></i></button>
+				  </form>
+			  </div>
+		  </div><!-----------row------------->
+	  </div><!-----------container-fluid------------->
+     <!-- /* ========== end header =========== */
+
+
+
+      /* ========== banner  =========== */ -->
+     <div class="banner-heading">
+          <div class="banner-content">
+               <h2>your cart</h2>
+               <p> <a href="Home_Van Ninh.html" class="headingHome">HOME</a> /
+                    <span>Your Shopping cart</span>
+               </p>
+          </div>
+     </div>
+     <section class="section-cart">
+          <div class="cart">
+               <div class="cart-list">
+                    <!-- product 1 -->
+                    <p>There is 3 products in your cart</p>
+                    <div class="cart-item">
+                         <div class="cart-item_top">
+                              <div class="cart-item_img">
+                                   <img src="./imgs/171860C-650x650.jpg" alt="">
+                              </div>
+                              <div class="cart-item_des">
+                                   <h3 class="cart-item_name">Converse Chuck Taylor<br>All Start Keith Haring
+                                   </h3>
+                                   <p>#171860C</p>
+                                   <p>Size 85</p>
+                              </div>
+                         </div>
+                         <div class="cart-item_quantity">
+                              <button>-</button>
+                              <button>1</button>
+                              <button>+</button>
+                         </div>
+                         <div class="cart-item_icons">
+                              <div class="edit-remove-favo">
+                                   <p><i class="fas fa-pen"></i>Edit size</p>
+                                   <p><i class="fas fa-ban"></i>Remove</p>
+								  <p><i class="fas fa-heart"></i>Move to Favorites</p>
+                              </div>
+                              <div class="cart-item_amount">
+                                   Amount: 1.900.000VND
+                              </div>
+                         </div>
+                    </div>
+                    <!-- product 2 -->
+                    <div class="cart-item">
+                         <div class="cart-item_top">
+                              <div class="cart-item_img">
+                                   <img src="./imgs/77082-008-M-650x650.jpg" alt="">
+                              </div>
+                              <div class="cart-item_des">
+                                   <h3 class="cart-item_name">Palladium Pampa Hi</h3>
+                                   <p>#92352-116-M</p>
+                                   <p>Size 85</p>
+                              </div>
+                         </div>
+                         <div class="cart-item_quantity">
+                              <button>-</button>
+                              <button>1</button>
+                              <button>+</button>
+                         </div>
+                         <div class="cart-item_icons">
+                              <div class="edit-remove-favo">
+                                   <p><i class="fas fa-pen"></i>Edit size</p>
+                                   <p><i class="fas fa-ban"></i>Remove</p>
+                                   <p><i class="fas fa-heart"></i>Move to Favorites</p>
+                              </div>
+                              <div class="cart-item_amount">
+                                   Amount: 2.200.000VND
+                              </div>
+                         </div>
+                    </div>
+                    <!-- product 3 -->
+                    <div class="cart-item">
+                         <div class="cart-item_top">
+                              <div class="cart-item_img">
+                                   <img src="./imgs/VN0A3WKT4FV-drake-02-650x650.jpg" alt="">
+                              </div>
+                              <div class="cart-item_des">
+                                   <h3 class="cart-item_name">Vans MN Skate Old Skool</h3>
+                                   <p>VN0A5FCBY28</p>
+                                   <p>Size 85</p>
+                              </div>
+                         </div>
+                         <div class="cart-item_quantity">
+                              <button>-</button>
+                              <button>1</button>
+                              <button>+</button>
+                         </div>
+                         <div class="cart-item_icons">
+                              <div class="edit-remove-favo">
+                                   <p><i class="fas fa-pen"></i>Edit size</p>
+                                   <p><i class="fas fa-ban"></i>Remove</p>
+                                   <p><i class="fas fa-heart"></i>Move to Favorites</p>
+                              </div>
+                              <div class="cart-item_amount">
+                                   Amount: 2.200.000VND
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <!-- /* ========== end section cart  =========== */
+
+
+      /* ========== order note  =========== */ -->
+     <section class="note">
+          <form action="">
+               <h3>Order Notes</h3>
+               <textarea name="" id="" rows="5" placeholder="Note.." resize="none"></textarea>
+               <button class="btn">Send</button>
+          </form>
+          <div class="checkout">
+               <h3>Infomation line</h3>
+               <h4 class="checkout-total">
+                    <p>Total amount:</p>
+                    <p>7.500.000VND</p>
+               </h4>
+               <p>Shipping fee will be calculated at the checkout page.<br>
+                    You can also enter the discount code
+                    at the checkout page
+               </p>
+               <div class="checkout-btn">
+                    <button class="btn">
+                         Check Out: 7.500.000 VND
+                    </button>
+                    <p>Continue Shopping</p>
+               </div>
+          </div>
+     </section>
+     <!-- /* ========== end order note  =========== */ -->
+     
+     
+     <!---------FOOTER----->
+	  <div class="container-fluid d-none d-md-block" id="footer">
+          <div class="container">
+               <div class="row">
+                    <div class="col-xl-3
+                                   col-lg-4
+                                   col-md-3
+                                   d-none d-md-block add">
+                         <a href="Home_Van Ninh.html"><img class="logofooter" src="imgs/logo (yelow.png"></a>
+                         <br><br>
+                         <p><strong>Address:</strong> No.1 Nguyen Hue, District 1, Ho Chi Minh City</p>
+                         <p><strong>Hotline:</strong> 1900 8080</p>
+                         <p><strong>Email:</strong> thefactory@gmail.com</p>
+                    </div>
+                    <div class="col-xl-3 
+                                   col-lg-3 offset-xl-1
+                                   col-md-3
+                                   d-none d-md-block info">
+                        <h3>INFORMATION</h3>
+                         <ul class="column ">
+                           <li class="nav-item">
+                                 <a class="nav-link" href="About us_Nhat Thanh.html">ABOUT US</a>
+                            </li>
+                            <li class="nav-item">
+                                 <a class="nav-link" href="Promotion_Quang Thuan.html">PROMOTION</a>
+                            </li>
+                            <li class="nav-item">
+                                 <a class="nav-link" href="Blog_My Hanh.html">BLOGS</a>
+                            </li>
+                         </ul>
+                    </div><!--------INFO------------->
+                    <div class="col-xl-2 
+                                   col-lg-2
+                                   col-md-3
+                                   d-none d-md-block info">
+                          <h3>SUPPORT</h3>
+                         <ul class="column ">
+                           <li class="nav-item">
+                                 <a class="nav-link" href="Contact Us_Nhat Thanh.html">CONTACT</a>
+                            </li>
+                            <li class="nav-item">
+                                 <a class="nav-link" href="#">RECRUITMENT</a>
+                            </li>
+                            <li class="nav-item">
+                                 <a class="nav-link" href="FAQ_My Hanh.html">FAQ</a>
+                            </li>
+                         </ul>
+                  </div><!--------SUPORT------------->
+                    <div class="col-xl-3
+                                   col-lg-3
+                                   col-md-3
+                                   d-none d-md-block follow">
+                         <h3>FOLLOW US</h3>
+                         <ul class="nav justify-content-start">
+                           <li class="nav-item">
+                                 <a class="nav-link" href="#"><i class="fab fa-twitter-square"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                 <a class="nav-link" href="#"><i class="fab fa-facebook-square"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                 <a class="nav-link" href="#"><i class="fab fa-instagram-square"></i></a>
+                            </li>
+                         </ul>
+                         <h3 id="connect">CONNECT US</h3>
+                     <form action="" method="post" id="sub">
+                            <input id="subfill" placeholder="Your email...">
+                            <button id="subbtn"><i class="fas fa-paper-plane"></i></button>
+                     </form>
+                       <div class="pay">
+                            <br>
+                         <ul class="nav justify-content-start">
+                              <li class="nav-item"><i class="fab fa-cc-paypal"></i></li>
+                            
+                              <li class="nav-item"><i class="fab fa-cc-visa"></i></li>
+                              
+                              <li class="nav-item"><i class="fab fa-cc-jcb"></i></li>
+                              
+                              <li class="nav-item"><i class="fab fa-cc-mastercard"></i></li>
+                         </ul>
+                    </div>
+                    </div>
+               </div><!-----------row------------->
+          </div><!-----------container------------->
+     </div><!-----------container-fluid------------->
+     <!-----------------MOBINAVI----->
+     <div class="container-fluid d-md-none mobilefooter">
+          <div class="row">
+               <div class="col-sm-6 offset-sm-3
+                              col-6 offset-3 ">
+                    <a href="Home_Van Ninh.html" class="logofooter"><img class="logofooter" src="./imgs/logo (yelow.png"></a>
+                         <p><strong>Address:</strong> No.1 Nguyen Hue, District 1, Ho Chi Minh City</p>
+                         <p><strong>Hotline:</strong> 1900 8080</p>
+                         <p><strong>Email:</strong> thefactory@gmail.com</p>
+                    <div class="col-sm-12
+                                  col-12">
+                    <div class="nav-item dropdown infod " >
+                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">INFORMATION<span class="caret"></span></a>
+                     <ul class="dropdown-menu footerinfo">
+                       <li><a href="Contact Us_Nhat Thanh.html">CONTACT</a></li>
+                       <li><a href="#">RECRUITMENT</a></li>
+                       <li><a href="FAQ_My Hanh.html">FAQ</a></li>
+                     </ul>
+                </div>
+                    <div class="nav-item dropdown infod " >
+                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">SUPPORT<span class="caret"></span></a>
+                     <ul class="dropdown-menu footerinfo">
+                       <li><a href="About us_Nhat Thanh.html">ABOUT US</a></li>
+                       <li><a href="Promotion_Quang Thuan.html">PROMOTIONS</a></li>
+                       <li><a href="Blog_My Hanh.html">BLOGS</a></li>
+                     </ul>
+                     </div>   
+                  
+                    <h3>FOLLOW US</h3>
+                         <ul class="nav justify-content-center follow1">
+                           <li class="nav-item">
+                                 <a class="nav-link" href="#"><i class="fab fa-twitter-square"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                 <a class="nav-link" href="#"><i class="fab fa-facebook-square"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                 <a class="nav-link" href="#"><i class="fab fa-instagram-square"></i></a>
+                            </li>
+                         </ul>
+                         <h3 id="connect1">CONNECT US</h3>
+                     <form action="" method="post" id="justify-content-center sub1">
+                            <input id="subfill1" placeholder="Your email...">
+                            <button id="subbtn1"><i class="fas fa-paper-plane"></i></button>
+                     </form>
+                    </div>
+               </div>
+               </div>
+          </div>
+     <div class="container-fluid end">
+          <div class="container">
+               <div class="row justify-content-center">
+                    <div class="col-12 copy">
+                         <p>Copyright <i class="fas fa-copyright"></i> FootwearFactory</p>
+                    </div>
+               </div>	   
+          </div>
+     </div>
+     
+</body>
+<script src="./main.js"></script>
+
+</html>

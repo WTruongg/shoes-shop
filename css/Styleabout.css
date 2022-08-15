@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+.who h6{
+	font-size: 21px;
+	margin: 10px 0px;
+}
+.who img{
+	margin:10px 0px;
+}
+#sus{
+	background-color: #FBCC0A;
+	font-weight: bold;
+	font-size: 21px;
+	padding: 10px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.idbox{
+	text-align: center;
+	font-size: 16px;
+}
+.owl-carousel{
+	margin-top: 10px;
+}
+#name{
+	text-align: center;
+	margin:40px 0px 20px;
+}
+.store{
+	margin: 20px 0px;
+}
+.address{
+	padding: 80px 0px;
+	text-align: center;
+	font-size: 16px;
+}

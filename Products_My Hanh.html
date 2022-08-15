@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MEN</title>
+    <!-- CSS -->
+	<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+	<link href="js/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" rel="stylesheet">
+	<link href="js/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css" rel="stylesheet">
+	<link href="css/fontawesome/css/all.min.css" rel="stylesheet">
+	<link href="css/homestyle.css" rel="stylesheet">
+	<link href="css/products.css" rel="stylesheet">
+	<link href="css/faq.css" rel="stylesheet">
+	  
+	<!-- JavaScript --> 
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.3.1.js"></script>
+	<script src="js/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		  $(".sizemore").hide();
+		  $(".strapmore").hide();
+			$(".brandmore").hide();
+			
+			
+			$(".iconmore1").click(function(){
+			  $(".brandmore").slideToggle();
+			  $(this).toggleClass("fa-sort-up fa-chevron-up")
+			  })
+			 	  $(".iconmore2").click(function(){
+				  $(".sizemore").slideToggle();	
+				  $(this).toggleClass("fa-sort-up fa-chevron-up")
+			  })
+				$(".iconmore3").click(function(){
+				  $(".strapmore").slideToggle();	
+				  $(this).toggleClass("fa-sort-up fa-chevron-up")
+			  })
+			
+			
+			$("#bgmobilenavi").hide();
+			$("#bgmobilesearch").hide();
+			$("#blacksreen").hide();
+			
+		    $("#icon3line").click(function(){
+				$("#bgmobilenavi").slideToggle();
+				$("#blacksreen").fadeToggle();
+			});
+			
+		    $("#searchmobile").click(function(){
+				$("#bgmobilesearch").slideToggle();
+				$("#blacksreen").fadeToggle();
+			});
+		});
+		
+		
+		/***sort***/
+			function myFunction() {
+			  document.getElementById("myDropdown").classList.toggle("show");
+			}
+			window.onclick = function(event) {
+			  if (!event.target.matches('.dropbtn')) {
+				var dropdowns = document.getElementsByClassName("dropdown-content");
+				var i;
+				for (i = 0; i < dropdowns.length; i++) {
+				  var openDropdown = dropdowns[i];
+				  if (openDropdown.classList.contains('show')) {
+					openDropdown.classList.remove('show');
+				  }
+				}
+			  }
+			}
+	</script>
+  </head>
+  <body>
+	  <!------------Header--------->
+  	<div class="container-fluid d-none d-md-block" id="bgheader">
+		<div class="container" id="header">
+			<div class="row">
+				<div class="col-xl-3
+							col-lg-5
+							col-md-7
+							d-none d-md-block" id="searchbox">
+					<form action="" method="post">
+						<input id="searchfill" placeholder="Search...">
+						<button id="searchbtn"><i class="fas fa-search"></i></button>
+					</form>
+				</div>
+				<div class="col-xl-2 offset-xl-7
+							col-lg-7
+							col-md-5" id="signinup">
+					 <ul class="nav justify-content-end">
+						<li class="nav-item">
+							<a class="nav-link" href="#signsm" data-toggle="modal"><i class="fas fa-user"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="Shopping Cart_Quang Thuan.html"><i class="fas fa-shopping-cart"></i></a>
+						</li>
+					</ul>
+				 </div>
+			</div>
+		</div><!---------container------------>
+	</div><!---------container-fluid------------>
+	  
+	  <!---------Navi------------>
+	  <div class="container-fluid" id="bgnavi">
+		<div class="container">
+			<div class="row">
+				<div class="d-md-none 
+							col-sm-2 
+							col-2" id="icon3line"><i class="fas fa-bars"></i></div>
+				<div class="d-md-none
+							col-md-4 offset-md-2
+							col-sm-4 offset-sm-2
+							col-4 offset-1" id ="logomobile">
+					<a href="Home_Van Ninh.html"><img class="logo" src="imgs/logo.png"></a></div> 
+				<div class="col-xl-2 
+							col-lg-2
+							col-md-2
+							d-none d-md-block menu">
+					<a href="Home_Van Ninh.html"><img class="logo" src="imgs/logo.png"></a>
+			    </div><!---menu-->
+				<div class="col-xl-10 
+							col-lg-10
+							col-md-10
+							d-none d-md-block menu"	>
+					<ul class="nav justify-content-end">
+						<li class="nav-item">
+							<a class="nav-link" href="Home_Van Ninh.html">HOME</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="About us_Nhat Thanh.html">ABOUT US</a>
+						</li>
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropbtn" href="#">PRODUCTS
+							<i class="fa fa-caret-down"></i>
+						  </a>
+						<div class="dropdown-content">
+							<a href="Products_My Hanh.html">MEN</a>
+							<a href="#">WOMEN</a>
+							<a href="#">KIDS</a>
+						</div>
+					  </li>
+						<li class="nav-item dropdown">
+                        <a class="nav-link dropbtn" data-toggle="dropdown" href="Promotion_Quang Thuan.html">NEWS <i class="fa fa-caret-down"></i></a>
+                       <div class="dropdown-content">
+                         <a href="">RECRUITMENT</a>
+                         <a href="Blog_My Hanh.html">BLOGS</a>
+                       </div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="Contact Us_Nhat Thanh.html">CONTACT</a>
+						</li>
+					</ul>
+			    </div><!---menu-->
+				
+				<div class="d-md-none
+							col-sm-4 
+							col-5  " id="signinupmobile">
+					 <ul class="nav justify-content-end">
+						<li class="nav-item"  >
+							<a class="nav-link" href="#"><i id="searchmobile" class="fas fa-search"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+						</li>
+					</ul>
+				</div><!------searchmobile--->
+	    </div><!---row--->
+		</div><!---contianer--->
+	</div><!---container-fluid--->
+	    <!----------------MOBILE NAVI---------------->
+	<div class="container-fluid d-md-none" id="bgmobilenavi">
+		<div class="row">
+			<div class="col-sm-12
+						col-12" id="mobilenavi">
+				<ul class="flex-column">
+					<li class="nav-item">
+							<a class="nav-link" href="About us_Nhat Thanh.html">ABOUT US</a>
+						</li>
+						 <li class="nav-item dropdown" >
+                        	<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">PRODUCTS<span class="caret"></span></a>
+                       <ul class="dropdown-menu">
+                         <li><a href="Products_My Hanh.html">MEN</a></li>
+                         <li><a href="#">WOMEN</a></li>
+                         <li><a href="#">KIDS</a></li>
+                       </ul>
+                       </li>
+					<li class="nav-item">
+							<a class="nav-link" href="Contact Us_Nhat Thanh.html">CONTACT</a>
+				    </li>
+					<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="Promotion_Quang Thuan.html">NEWS<span class="caret"></span></a>
+                       <ul class="dropdown-menu">
+                         <li><a href="#">RECRUITMENT</a></li>
+                         <li><a href="Blog_My Hanh.html">BLOGS</a></li>
+                       </ul>
+					</li>
+					<li class="nav-item">
+							<a class="nav-link"  href="#signsm" data-toggle="modal">SIGN IN/SIGN UP</a>
+					</li>
+					</ul>
+			</div><!------mobilenavi------>
+		</div><!-------row----------->
+	</div><!-----------container-fluid------------->
+	  <!---------MOBILE SEARCH---------->
+	  <div class="container-fluid" id="bgmobilesearch">
+		  <div class="row">
+			  <div class="col-sm-12
+						  col-12" id="mobilesearch">
+				  <form action="" method="post">
+						<input id="searchfillmobile" placeholder="Search...">
+						<button id="searchbtnmobile"><i class="fas fa-search"></i></button>
+				  </form>
+			  </div>
+		  </div><!-----------row------------->
+	  </div><!-----------container-fluid------------->
+	    <!--SIGN IN SIGN UP-->
+	   <div class="modal fade" id="signsm">
+        <div class="modal-dialog modal-dialog-signin">
+            <div class="login-wrap modal-content">
+                <button type="button" data-dismiss="modal"><i class="fas fa-times"></i></button><!-- Close button -->
+				<div class="imgsignin"><img src="imgs/logo (yelow.png" width="35%"></div>
+                <div class="login-html">
+                    <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">SIGN IN</label>
+                    <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">SIGN UP</label>
+                    <div class="login-form">
+                        <!--------------------------------- Sign In --------------------------------->
+                        <form class="sign-in-htm">
+                            <div class="group">
+                                <label for="user" class="label">Email:</label>
+                                <input id="user" type="text" class="input" placeholder="Enter your email..." required oninvalid="this.setCustomValidity('Vui lòng nhập tên tài khoản')"
+                                    oninput="this.setCustomValidity('')">
+                            </div>
+                            <div class="group">
+                                <label for="pass" class="label">Password:</label>
+                                <input id="pass" type="password" class="input" data-type="password" placeholder="Your password..." required oninvalid="this.setCustomValidity('Your password...')"
+                                    oninput="this.setCustomValidity('')">
+                            </div>
+                            <div class="foot-lnk">
+                                <a href="#forgot">Forgot your password?</a>
+                            </div>
+                            <div class="group">
+                                <input type="submit" class="button" value="SIGN IN">
+                            </div><!-- Button -->
+                            <div class="hr">Or</div>
+                            <div class="sign_social_icons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                            </div><!-- Social -->
+                            <div class="foot-lnk">
+                                <label for="tab-2">Don't have an account?</label>
+                            </div>
+                        </form><!-- Sign in -->
+
+                        <!--------------------------------- Sign Up --------------------------------->
+                        <form class="sign-up-htm">
+                            <div class="group">
+                                <label for="username" class="label">Username:</label>
+                                <input id="username" type="text" class="input" placeholder="Enter your name..." required oninvalid="this.setCustomValidity('Vui lòng nhập tên tài khoản')"
+                                    oninput="this.setCustomValidity('')">
+                            </div>
+                            <div class="group">
+                                <label for="email_sm" class="label">Email:</label>
+                                <input id="email_sm" type="email" class="input" placeholder="Enter your email..." required oninvalid="this.setCustomValidity('Vui lòng nhập email')"
+                                    oninput="this.setCustomValidity('')">
+                            </div>
+                            <div class="group">
+                                <label for="pass01" class="label">Password</label>
+                                <input id="pass01" type="password" class="input" data-type="password" placeholder="Create a password..." required oninvalid="this.setCustomValidity('Vui lòng nhập mật khẩu')"
+                                    oninput="this.setCustomValidity('')">
+                            </div>
+                            <div class="group">
+                                <label for="pass02" class="label">Confirm password</label>
+                                <input id="pass02" type="password" class="input" data-type="password" placeholder="Confirm a password..." required
+                                    oninvalid="this.setCustomValidity('Vui lòng nhập lại mật khẩu')" oninput="this.setCustomValidity('')">
+                            </div>
+                            <div class="group">
+                                <input type="submit" class="button" value="SIGN UP" required>
+                            </div><!-- Button -->
+                            <div class="hr">Or</div>
+                            <div class="sign_social_icons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                            </div><!-- Social -->
+                            <div class="foot-lnk">
+                                <label for="tab-1">Already a member?</label>
+                            </div>
+                        </form><!-- Sign up -->
+                    </div>
+                </div>
+            </div><!-- Modal content -->
+        </div><!-- Modal dialog -->
+    </div>
+	  
+	<!---NỘI DUNG SẢN PHẨM--->
+	<div class="container-fluid" id="pagename">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-12
+							col-md-12
+							col-sm-12" id="namepage">
+					<h2>MEN</h2><br>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-12
+							col-md-12
+							col-sm-12" id="linkpage">
+					<p><a href="Home_Van Ninh.html"><b>Home</b></a>/<a href=""><b>Product</b></a>/<a href="Products_My Hanh.html">Men</a></p>
+				</div>
+			</div>
+		</div>
+	</div><!-------banner link page---->
+<!-------SORT BY--->
+	 <div class="container">
+		 <div class="row">
+			 <div class="col-xl-3 offset-xl-9
+						 col-md-6 offset-md-6
+						 col-sm-6 offset-sm-6" >
+				  <div class="dropdown sort01">
+					<button type="button" class="dropdown-toggle" data-toggle="dropdown">
+					  Sort <i class="fas fa-arrow-down-a-z"></i>
+					</button>
+					<div class="dropdown-menu" id="myDropdown">
+					  <a class="dropdown-item" href="#">New</a>
+					  <a class="dropdown-item" href="#">Low price - High price</a>
+					  <a class="dropdown-item" href="#">High price - Low price</a>
+					</div>
+				 </div>
+			  </div>
+			 </div>
+	 </div><!------sort by----->
+	<div class="container">
+	  	<div class="row">
+	<!---FILTER-->
+		  <div class="col-xl-3 
+					  col-lg-3
+					  col-md-12 
+					  col-sm-12
+					  col-12 filterbox">
+			  <div class="row filter">
+			
+			<div class="col-xl-12
+						col-lg-12
+						col-md-12
+						col-sm-12
+						col-12">
+			<p>Brands<i class="fas fa-angle-down iconmore1"></i></p>
+			<ul class="brandmore">
+				<li><input type="checkbox" name="brand" value="" id="tag" > <label for="tag">All</label></li>
+				<li><input type="checkbox" name="brand" value="" id="rox" > <label for="rox">Converse</label></li>
+				<li><input type="checkbox" name="brand" value="" id="brt" > <label for="brt">Vans</label></li>
+				<li><input type="checkbox" name="brand" value="" id="Tit" > <label for="Tit">K-Swiss</label></li>
+				<li><input type="checkbox" name="brand" value="" id="Cey" > <label for="Cey">Palladium</label></li>
+				<li><input type="checkbox" name="brand" value="" id="Supra" > <label for="Supra">Supra</label></li>
+			</ul>
+			</div><!-------- brand -------->
+				
+			<div class="col-xl-12
+						col-lg-12
+						col-md-12
+						col-sm-12
+						col-12">	
+			<p>Size<i class="fas fa-angle-down iconmore2"></i></p>
+			<ul class="sizemore">
+				<li><input type="checkbox" name="size" value="" id="allsize" > <label for="allsize">All</label></li>
+				<li><input type="checkbox" name="size" value="" id="7" > <label for="7">US 7</label></li>
+				<li><input type="checkbox" name="size" value="" id="75" > <label for="75">US 7.5</label></li>
+				<li><input type="checkbox" name="size" value="" id="8" > <label for="8">US 8</label></li>
+				<li><input type="checkbox" name="size" value="" id="85" > <label for="85">US 8.5</label></li>
+				<li><input type="checkbox" name="size" value="" id="9" > <label for="9">US 9</label></li>
+				<li><input type="checkbox" name="size" value="" id="95" > <label for="95">US 9.5</label></li>
+				<li><input type="checkbox" name="size" value="" id="10" > <label for="10">US 10</label></li>
+				<li><input type="checkbox" name="size" value="" id="105" > <label for="105">US 10.5</label></li>
+				<li><input type="checkbox" name="size" value="" id="11" > <label for="11">US 11</label></li>
+				<li><input type="checkbox" name="size" value="" id="115" > <label for="115">US 11.5</label></li>
+				<li><input type="checkbox" name="size" value="" id="12" > <label for="12">US 12</label></li>
+			</ul>
+			</div><!------ CASE SIZE --------->
+				
+			<div class="col-xl-12
+						col-lg-12
+						col-md-12
+						col-sm-12
+						col-12">	
+			<p>Price<i class="fas fa-angle-down iconmore3"></i></p>
+			<ul class="strapmore">
+				<li><input type="checkbox" name="strap" value="" id="Fac" > <label for="Fac">All</label></li>
+				<li><input type="checkbox" name="strap" value="" id="Ler" > <label for="Ler">Under 1.000.000vnd</label></li>
+				<li><input type="checkbox" name="strap" value="" id="Pote" > <label for="Pote">1.000.000vnd-3.000.000vnd</label></li>
+				<li><input type="checkbox" name="strap" value="" id="Rur" > <label for="Rur">3.000.000vnd-5.000.000vnd</label></li>
+				<li><input type="checkbox" name="strap" value="" id="Sts" > <label for="Sts">5.000.000vnd-7.000.000vnd</label></li>	
+				<li><input type="checkbox" name="strap" value="" id="over" > <label for="over">Over 7.000.000vnd</label></li>
+			</ul>
+			</div>
+			</div><!------phần tick chọn fillter--->
+			<div class="row">
+			<div class="col-xl-12 butonfilter">
+				<a href="" class="basicbtn resumebtn">RESUME</a>
+				<a href="" class="borderbtn cancelbtn">CANCEL</a>
+			</div></div><!-----nút cho fillter--->
+		</div><!---FILTER-->
+				
+	 <!--PRODUCT-->  
+	  <div class="col-xl-9
+				  col-lg-9
+				  col-md-12
+				  col-sm-12
+				  col-12 justify-content-center" id="probox">
+		  <div class="row">
+			 <div class="col-xl-4 offset-xl-0
+						  col-lg-6 offset-lg-0
+						  col-md-6 offset-md-0
+						  col-sm-10 offset-sm-1
+						  col-10 offset-1">
+				 <div class="row items">
+			
+					<a href="Detail_Quang Thuan.html"><img src="imgs/products/171860C-650x650(1).jpg" class="img-fluid"></a>
+					<p class="namepro w-100"><b>Converse Chuck Taylor All Star Keith Haring</b></p>
+					<p class="code">#171860C</p>
+					 <p class="pricepro w-100"><b>1.900.000VND</b></p>
+					 
+					<a href="Payment_Van Ninh.html" class="basicbtn">SHOP NOW</a>
+					<a href="Shopping Cart_Quang Thuan.html" class="borderbtn">ADD TO CART</a>
+					
+					 </div>
+			  </div><!----Sản phẩm 1--->
+			  <div class="col-xl-4 offset-xl-0
+						  col-lg-6 offset-lg-0
+						  col-md-6 offset-md-0
+						  col-sm-10 offset-sm-1
+						  col-10 offset-1">
+				<div class="row items">
+					<img src="imgs/products/170804C-650x650(1).jpg" class="img-fluid">
+					<p class="namepro w-100"><b>Converse Chuck Taylor All Star Archive Paint Splatte</b></p>
+					<p class="code">#170804C</p>
+					<p class="pricepro w-100"><b>1.900.000VND</b></p>
+					<a href="" class="basicbtn">SHOP NOW</a>
+					<a href="" class="borderbtn">ADD TO CART</a>
+				  </div>
+			  </div><!----Sản phẩm 2--->
+			  <div class="col-xl-4 offset-xl-0
+						  col-lg-6 offset-lg-0
+						  col-md-6 offset-md-0
+						  col-sm-10 offset-sm-1
+						  col-10 offset-1">
+				<div class="row items">
+					<img src="imgs/products/170282C - drake - 1-650x650(1).jpg" class="img-fluid">
+					<p class="namepro w-100"><b>Converse Chuck Taylor All Star 1970s My Story</b></p>
+					<p class="code">#170282C</p>
+					<p class="pricepro w-100"><b>2.000.000VND</b></p>
+					<a href="" class="basicbtn">SHOP NOW</a>
+					<a href="" class="borderbtn">ADD TO CART</a></div>
+			  </div><!----Sản phẩm 3--->
+			  <div class="col-xl-4 offset-xl-0
+						  col-lg-6 offset-lg-0
+						  col-md-6 offset-md-0
+						  col-sm-10 offset-sm-1
+						  col-10 offset-1">
+				<div class="row items">
+					<img src="imgs/products/167070C_1-650x650(1).jpg" class="img-fluid">
+					<p class="namepro w-100"><b>Converse Chuck Taylor All Star Cheerful </b></p>
+					<p class="code">#167070C</p>
+					<p class="pricepro w-100"><b>1.500.000VND</b></p>
+					<a href="" class="basicbtn">SHOP NOW</a>
+					<a href="" class="borderbtn">ADD TO CART</a></div>
+			  </div><!----Sản phẩm 4--->
+			  <div class="col-xl-4 offset-xl-0
+						  col-lg-6 offset-lg-0
+						  col-md-6 offset-md-0
+						  col-sm-10 offset-sm-1
+						  col-10 offset-1">
+				<div class="row items">
+					<img src="imgs/products/162063C-DRAKE-650x650(1).jpg" class="img-fluid">
+					<p class="namepro w-100"><b>Chuck Taylor All Star 1970s Sunflower </b></p>
+					<p class="code">#162063C</p>
+					<p class="pricepro w-100"><b>1.900.000VND</b></p>
+					<a href="" class="basicbtn">SHOP NOW</a>
+					<a href="" class="borderbtn">ADD TO CART</a></div>
+			  </div><!----Sản phẩm 5--->
+			  <div class="col-xl-4 offset-xl-0
+						  col-lg-6 offset-lg-0
+						  col-md-6 offset-md-0
+						  col-sm-10 offset-sm-1
+						  col-10 offset-1">
+				<div class="row items">
+					<img src="imgs/products/164214C-DRAKE-650x650(1).jpg" class="img-fluid">
+					<p class="namepro w-100"><b>Chuck Taylor All Star 1970s Psy-Kicks </b></p>
+					<p class="code">#164214C</p>
+					<p class="pricepro w-100"><b>1.800.000VND</b></p>
+					<a href="" class="basicbtn">SHOP NOW</a>
+					<a href="" class="borderbtn">ADD TO CART</a></div>
+			  </div><!----Sản phẩm 6--->
+			  <div class="col-xl-4 offset-xl-0
+						  col-lg-6 offset-lg-0
+						  col-md-6 offset-md-0
+						  col-sm-10 offset-sm-1
+						  col-10 offset-1">
+				<div class="row items">
+					<img src="imgs/products/570321C-650x650(1).jpg" class="img-fluid">
+					<p class="namepro w-100"><b>Converse Chuck Taylor All Star Double Stack Lift</b></p>
+					<p class="code">#570321C</p>
+					<p class="pricepro w-100"><b>1.800.000VND</b></p>
+					<a href="" class="basicbtn">SHOP NOW</a>
+					<a href="" class="borderbtn">ADD TO CART</a></div>
+			  </div><!----Sản phẩm 7--->
+			  <div class="col-xl-4 offset-xl-0
+						  col-lg-6 offset-lg-0
+						  col-md-6 offset-md-0
+						  col-sm-10 offset-sm-1
+						  col-10 offset-1">
+				<div class="row items">
+					<img src="imgs/products/170367C-650x650(1).jpg" class="img-fluid">
+					<p class="namepro w-100"><b>Converse Chuck Taylor All Star Renew Sock Knit</b></p>
+					<p class="code">#170367C</p>
+					<p class="pricepro w-100"><b>2.200.000VND</b></p>
+					<a href="" class="basicbtn">SHOP NOW</a>
+					<a href="" class="borderbtn">ADD TO CART</a></div>
+			  </div><!----Sản phẩm 8--->
+			  <div class="col-xl-4 offset-xl-0
+						  col-lg-6 offset-lg-0
+						  col-md-6 offset-md-0
+						  col-sm-10 offset-sm-1
+						  col-10 offset-1">
+				<div class="row items">
+					<img src="imgs/products/168697V-650x650(1).jpg" class="img-fluid">
+					<p class="namepro w-100"><b>Converse Chuck Taylor All Star 1970s Mi Gente</b></p>
+					<p class="code">#168697V</p>
+					<p class="pricepro w-100"><b>2.100.000VND</b></p>
+					<a href="" class="basicbtn">SHOP NOW</a>
+					<a href="" class="borderbtn">ADD TO CART</a></div>
+			  </div><!----Sản phẩm 9--->
+			  <div class="col-xl-4 offset-xl-0
+						  col-lg-6 offset-lg-0
+						  col-md-6 offset-md-0
+						  col-sm-10 offset-sm-1
+						  col-10 offset-1">
+				<div class="row items">
+					<img src="imgs/products/168698V-650x650(1).jpg" class="img-fluid">
+					<p class="namepro w-100"><b>Converse Chuck Taylor 1970s Mi Gente</b></p>
+					<p class="code">#168698V</p>
+					<p class="pricepro w-100"><b>2.000.000VND</b></p>
+					<a href="" class="basicbtn">SHOP NOW</a>
+					<a href="" class="borderbtn">ADD TO CART</a></div>
+			  </div><!----Sản phẩm 10--->
+			  <div class="col-xl-4 offset-xl-0
+						  col-lg-6 offset-lg-0
+						  col-md-6 offset-md-0
+						  col-sm-10 offset-sm-1
+						  col-10 offset-1">
+				<div class="row items">
+					<img src="imgs/products/567153C-650x650(1).jpg" class="img-fluid">
+					<p class="namepro w-100"><b>Converse Chuck Taylor All Star Love Fearlessly</b></p>
+					<p class="code">#567153C</p>
+					<p class="pricepro w-100"><b>2.200.000VND</b></p>
+					<a href="" class="basicbtn">SHOP NOW</a>
+					<a href="" class="borderbtn">ADD TO CART</a></div>
+			  </div><!----Sản phẩm 11--->
+			  <div class="col-xl-4 offset-xl-0
+						  col-lg-6 offset-lg-0
+						  col-md-6 offset-md-0
+						  col-sm-10 offset-sm-1
+						  col-10 offset-1">
+				<div class="row items">
+					<img src="imgs/products/165912C-1-1-650x650(1).jpg" class="img-fluid">
+					<p class="namepro w-100"><b>Converse Chuck Taylor All Star Camo Hoop Hunter</b></p>
+					<p class="code">#165912C</p>
+					<p class="pricepro w-100"><b>2.000.000VND</b></p>
+					<a href="" class="basicbtn">SHOP NOW</a>
+					<a href="" class="borderbtn">ADD TO CART</a></div>
+			  </div><!----Sản phẩm 12--->
+		  </div>
+	<!---SỐ TRANG--->		
+			<div class="row justify-content-center">
+					  <div class="col-xl-12
+								  col-lg-12
+								  col-md-12
+								  col-sm-12
+								  col-12 pagenumber">
+							<ul>
+								<li><a href=""><i class="fas fa-angle-left"></i></a></li>
+								<li><a href="" class="hold">1</a></li>
+								<li><a href="">2</a></li>
+								<li><a href="">3</a></li>
+								<li><a href="">4</a></li>
+								<li><a href="">...</a></li>
+								<li><a href=""><i class="fas fa-angle-right"></i></a></li>
+							</ul>
+					 </div>
+				</div><!--số trang-->
+	  		</div>
+	
+		</div>
+	</div><!----phần nội dung sản phẩm--->
+	  
+	
+	  <!---------FOOTER----->
+	  <div class="container-fluid d-none d-md-block" id="footer">
+		  <div class="container">
+			  <div class="row">
+				  <div class="col-xl-3
+							  col-lg-3
+							  col-md-3
+							  d-none d-md-block add">
+					  <a href="Home_Van Ninh.html"><img class="logofooter img-fluid" src="imgs/logo (yelow.png"></a>
+					  <br><br>
+					  <p><strong>Address:</strong> No.1 Nguyen Hue, District 1, Ho Chi Minh City</p>
+					  <p><strong>Hotline:</strong> 1900 8080</p>
+					  <p><strong>Email:</strong> thefactory@gmail.com</p>
+				  </div>
+				  <div class="col-xl-2 offset-xl-1
+							  col-lg-3 
+							  col-md-3
+							  d-none d-md-block info">
+					 <h3>INFORMATION</h3>
+					  <ul class="column ">
+					    <li class="nav-item">
+							<a class="nav-link" href="About us_Nhat Thanh.html">ABOUT US</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="Promotion_Quang Thuan.html">PROMOTIONS</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="Blog_Nhat Thanh.html">BLOGS</a>
+						</li>
+					  </ul>
+				  </div><!--------INFO------------->
+				  <div class="col-xl-3 
+							  col-lg-3
+							  col-md-3
+							  d-none d-md-block info">
+					   <h3>SUPPORT</h3>
+					  <ul class="column ">
+					    <li class="nav-item">
+							<a class="nav-link" href="Contact Us_Nhat Thanh.html">CONTACT</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="Terms and condition_Nhat Thanh.html">TERMS &amp; CONDITIONS</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="FAQ_My Hanh.html">FAQ</a>
+						</li>
+					  </ul>
+				</div><!--------SUPORT------------->
+				  <div class="col-xl-3
+							  col-lg-3
+							  col-md-3
+							  d-none d-md-block follow">
+					  <h3>FOLLOW US</h3>
+					  <ul class="nav justify-content-start">
+					    <li class="nav-item">
+							<a class="nav-link" href="#"><i class="fab fa-twitter-square"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fab fa-facebook-square"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fab fa-instagram-square"></i></a>
+						</li>
+					  </ul>
+					  <h3 id="connect">CONNECT US</h3>
+				   <form action="" method="post" id="sub">
+						<input id="subfill" placeholder="Your email...">
+						<button id="subbtn"><i class="fas fa-paper-plane"></i></button>
+				   </form>
+					<div class="pay">
+						<br>
+					  <ul class="nav justify-content-start">
+						  <li class="nav-item"><i class="fab fa-cc-paypal"></i></li>
+						
+						  <li class="nav-item"><i class="fab fa-cc-visa"></i></li>
+						  
+						  <li class="nav-item"><i class="fab fa-cc-jcb"></i></li>
+						  
+						  <li class="nav-item"><i class="fab fa-cc-mastercard"></i></li>
+					  </ul>
+				  </div>
+				  </div>
+			  </div><!-----------row------------->
+		  </div><!-----------container------------->
+	  </div><!-----------container-fluid------------->
+	  <!-----------------MOBIfooter----->
+	  <div class="container-fluid d-md-none mobilefooter">
+		  <div class="row justify-content-center">
+			  <div class="col-sm-6
+						  col-8">
+				  <a href="Home_Van Ninh.html" class="logofooter"><img class="logofooter" src="imgs/logo (yelow.png"></a>
+					  <p><strong>Address:</strong> No.1 Nguyen Hue, District 1, Ho Chi Minh City</p>
+					  <p><strong>Hotline:</strong> 1900 8080</p>
+					  <p><strong>Email:</strong> thefactory@gmail.com</p>
+				    <div id="accordion">
+						<div class="card">
+						  <div class="card-header infod">
+							<a class="card-link" data-toggle="collapse" href="#collapseOne">
+							  INFORMATION <i class="fas fa-caret-down"></i>
+							</a>
+						  </div>
+						  <div id="collapseOne" class="collapse show" data-parent="#accordion">
+							<div class="card-body">
+							  <ul> 
+								<li><a href="About us_Nhat Thanh.html">ABOUT US</a></li>
+								<li><a href="Promotion_Quang Thuan.html">PROMOTIONS</a></li>
+								<li><a href="Blog_Nhat Thanh.html">BLOGS</a></li>
+							  </ul>
+							</div>
+						  </div>
+						</div>
+						<div class="card">
+						  <div class="card-header infod">
+							<a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">SUPPORT <i class="fas fa-caret-down"></i>
+						  </a>
+						  </div>
+						  <div id="collapseTwo" class="collapse" data-parent="#accordion">
+							<div class="card-body">
+							  <ul>
+								<li><a href="Contact Us_Nhat Thanh.html">CONTACT</a></li>
+                         		<li><a href="Terms and condition_Nhat Thanh.html">TERMS &amp; CONDITIONS</a></li>
+                         		<li><a href="FAQ_My Hanh.html">FAQ</a></li>
+							   </ul>
+							</div>
+						  </div>
+						</div>
+					  </div>
+				<div class="followconnect">
+				  <h3>FOLLOW US</h3>
+					  <ul class="nav justify-content-center follow1">
+					    <li class="nav-item">
+							<a class="nav-link" href="#"><i class="fab fa-twitter-square"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fab fa-facebook-square"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fab fa-instagram-square"></i></a>
+						</li>
+					  </ul>
+					  <h3 id="connect1">CONNECT US</h3>
+				   <form action="" method="post" id="sub1">
+						<input id="subfill1" placeholder="Your email...">
+						<button id="subbtn1"><i class="fas fa-paper-plane"></i></button>
+				   </form>
+				  </div>
+			  </div>
+			  </div>
+		  </div>
+	  <div class="container-fluid end">
+		  <div class="container">
+			  <div class="row justify-content-center">
+				  <div class="col-12 copy">
+					  <p>Copyright <i class="fas fa-copyright"></i> FootwearFactory</p>
+				  </div>
+			  </div>	   
+		  </div>
+	  </div>
+	</body>
+</html>>>>>>

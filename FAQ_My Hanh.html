@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FAQ</title>
+    <!-- CSS -->
+	<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+	<link href="js/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" rel="stylesheet">
+	<link href="js/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css" rel="stylesheet">
+	<link href="css/fontawesome/css/all.min.css" rel="stylesheet">
+	<link href="css/homestyle.css" rel="stylesheet">
+	<link href="css/products.css" rel="stylesheet">
+	<link href="css/faq.css" rel="stylesheet">
+	  
+	<!-- JavaScript --> 
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.3.1.js"></script>
+	<script src="js/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#bgmobilenavi").hide();
+			$("#bgmobilesearch").hide();
+			$("#blacksreen").hide();
+								
+		    $("#icon3line").click(function(){
+				$("#bgmobilenavi").slideToggle();
+				$("#blacksreen").fadeToggle();
+			});
+			
+		    $("#searchmobile").click(function(){
+				$("#bgmobilesearch").slideToggle();
+				$("#blacksreen").fadeToggle();
+			});
+		});
+		$(document).ready(function(){
+			$(".owl-carousel").owlCarousel({
+				margin:30,
+				loop: true,
+				autoplay: true,
+				autoplayTimeout: 3000,
+				responsive:{
+					0:{
+						items:1,
+						autoplay: false,
+					},
+					576:{
+						items:1,
+						autoplay: false,
+					},
+					768:{
+						items: 2,
+					},
+					992:{
+						items:3,
+					},
+					1200:{
+						items:3, 
+					},
+				}
+			});
+		});	
+	</script>
+  </head>
+  <body>
+	  <!------------Header--------->
+  	<div class="container-fluid d-none d-md-block" id="bgheader">
+		<div class="container" id="header">
+			<div class="row">
+				<div class="col-xl-3
+							col-lg-5
+							col-md-7
+							d-none d-md-block" id="searchbox">
+					<form action="" method="post">
+						<input id="searchfill" placeholder="Search...">
+						<button id="searchbtn"><i class="fas fa-search"></i></button>
+					</form>
+				</div>
+				<div class="col-xl-2 offset-xl-7
+							col-lg-7
+							col-md-5" id="signinup">
+					 <ul class="nav justify-content-end">
+						<li class="nav-item">
+							<a class="nav-link" href="#signsm" data-toggle="modal"><i class="fas fa-user"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="Shopping Cart_Quang Thuan.html"><i class="fas fa-shopping-cart"></i></a>
+						</li>
+					</ul>
+				 </div>
+			</div>
+		</div><!---------container------------>
+	</div><!---------container-fluid------------>
+	  
+	  <!---------Navi------------>
+	  <div class="container-fluid" id="bgnavi">
+		<div class="container">
+			<div class="row">
+				<div class="d-md-none 
+							col-sm-2 
+							col-2" id="icon3line"><i class="fas fa-bars"></i></div>
+				<div class="d-md-none
+							col-md-4 offset-md-2
+							col-sm-4 offset-sm-2
+							col-4 offset-1" id ="logomobile">
+					<a href="Home_Van Ninh.html"><img class="logo" src="imgs/logo.png"></a></div> 
+				<div class="col-xl-2 
+							col-lg-2
+							col-md-2
+							d-none d-md-block menu">
+					<a href="Home_Van Ninh.html"><img class="logo" src="imgs/logo.png"></a>
+			    </div><!---menu-->
+				<div class="col-xl-10 
+							col-lg-10
+							col-md-10
+							d-none d-md-block menu"	>
+					<ul class="nav justify-content-end">
+						<li class="nav-item">
+							<a class="nav-link" href="Home_Van Ninh.html">HOME</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="About us_Nhat Thanh.html">ABOUT US</a>
+						</li>
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropbtn" href="#">PRODUCTS
+							<i class="fa fa-caret-down"></i>
+						  </a>
+						<div class="dropdown-content">
+							<a href="Products_My Hanh.html">MEN</a>
+							<a href="#">WOMEN</a>
+							<a href="#">KIDS</a>
+						</div>
+					  </li>
+						<li class="nav-item dropdown">
+                        <a class="nav-link dropbtn" data-toggle="dropdown" href="Promotion_Quang Thuan.html">NEWS <i class="fa fa-caret-down"></i></a>
+                       <div class="dropdown-content">
+                         <a href="">RECRUITMENT</a>
+                         <a href="Blog_My Hanh.html">BLOGS</a>
+                       </div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="Contact Us_Nhat Thanh.html">CONTACT</a>
+						</li>
+					</ul>
+			    </div><!---menu-->
+				
+				<div class="d-md-none
+							col-sm-4 
+							col-5  " id="signinupmobile">
+					 <ul class="nav justify-content-end">
+						<li class="nav-item"  >
+							<a class="nav-link" href="#"><i id="searchmobile" class="fas fa-search"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+						</li>
+					</ul>
+				</div><!------searchmobile--->
+	    </div><!---row--->
+		</div><!---contianer--->
+	</div><!---container-fluid--->
+	    <!----------------MOBILE NAVI---------------->
+	<div class="container-fluid d-md-none" id="bgmobilenavi">
+		<div class="row">
+			<div class="col-sm-12
+						col-12" id="mobilenavi">
+				<ul class="flex-column">
+					<li class="nav-item">
+							<a class="nav-link" href="About us_Nhat Thanh.html">ABOUT US</a>
+						</li>
+						 <li class="nav-item dropdown" >
+                        	<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">PRODUCTS<span class="caret"></span></a>
+                       <ul class="dropdown-menu">
+                         <li><a href="Products_My Hanh.html">MEN</a></li>
+                         <li><a href="#">WOMEN</a></li>
+                         <li><a href="#">KIDS</a></li>
+                       </ul>
+                       </li>
+					<li class="nav-item">
+							<a class="nav-link" href="Contact Us_Nhat Thanh.html">CONTACT</a>
+				    </li>
+					<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="Promotion_Quang Thuan.html">NEWS<span class="caret"></span></a>
+                       <ul class="dropdown-menu">
+                         <li><a href="#">RECRUITMENT</a></li>
+                         <li><a href="Blog_My Hanh.html">BLOGS</a></li>
+                       </ul>
+					</li>
+					<li class="nav-item">
+							<a class="nav-link"  href="#signsm" data-toggle="modal">SIGN IN/SIGN UP</a>
+					</li>
+					</ul>
+			</div><!------mobilenavi------>
+		</div><!-------row----------->
+	</div><!-----------container-fluid------------->
+	  <!---------MOBILE SEARCH---------->
+	  <div class="container-fluid" id="bgmobilesearch">
+		  <div class="row">
+			  <div class="col-sm-12
+						  col-12" id="mobilesearch">
+				  <form action="" method="post">
+						<input id="searchfillmobile" placeholder="Search...">
+						<button id="searchbtnmobile"><i class="fas fa-search"></i></button>
+				  </form>
+			  </div>
+		  </div><!-----------row------------->
+	  </div><!-----------container-fluid------------->
+	    <!--SIGN IN SIGN UP-->
+	   <div class="modal fade" id="signsm">
+        <div class="modal-dialog modal-dialog-signin">
+            <div class="login-wrap modal-content">
+                <button type="button" data-dismiss="modal"><i class="fas fa-times"></i></button><!-- Close button -->
+				<div class="imgsignin"><img src="imgs/logo (yelow.png" width="35%"></div>
+                <div class="login-html">
+                    <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">SIGN IN</label>
+                    <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">SIGN UP</label>
+                    <div class="login-form">
+                        <!--------------------------------- Sign In --------------------------------->
+                        <form class="sign-in-htm">
+                            <div class="group">
+                                <label for="user" class="label">Email:</label>
+                                <input id="user" type="text" class="input" placeholder="Enter your email..." required oninvalid="this.setCustomValidity('Vui lòng nhập tên tài khoản')"
+                                    oninput="this.setCustomValidity('')">
+                            </div>
+                            <div class="group">
+                                <label for="pass" class="label">Password:</label>
+                                <input id="pass" type="password" class="input" data-type="password" placeholder="Your password..." required oninvalid="this.setCustomValidity('Your password...')"
+                                    oninput="this.setCustomValidity('')">
+                            </div>
+                            <div class="foot-lnk">
+                                <a href="#forgot">Forgot your password?</a>
+                            </div>
+                            <div class="group">
+                                <input type="submit" class="button" value="SIGN IN">
+                            </div><!-- Button -->
+                            <div class="hr">Or</div>
+                            <div class="sign_social_icons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                            </div><!-- Social -->
+                            <div class="foot-lnk">
+                                <label for="tab-2">Don't have an account?</label>
+                            </div>
+                        </form><!-- Sign in -->
+
+                        <!--------------------------------- Sign Up --------------------------------->
+                        <form class="sign-up-htm">
+                            <div class="group">
+                                <label for="username" class="label">Username:</label>
+                                <input id="username" type="text" class="input" placeholder="Enter your name..." required oninvalid="this.setCustomValidity('Vui lòng nhập tên tài khoản')"
+                                    oninput="this.setCustomValidity('')">
+                            </div>
+                            <div class="group">
+                                <label for="email_sm" class="label">Email:</label>
+                                <input id="email_sm" type="email" class="input" placeholder="Enter your email..." required oninvalid="this.setCustomValidity('Vui lòng nhập email')"
+                                    oninput="this.setCustomValidity('')">
+                            </div>
+                            <div class="group">
+                                <label for="pass01" class="label">Password</label>
+                                <input id="pass01" type="password" class="input" data-type="password" placeholder="Create a password..." required oninvalid="this.setCustomValidity('Vui lòng nhập mật khẩu')"
+                                    oninput="this.setCustomValidity('')">
+                            </div>
+                            <div class="group">
+                                <label for="pass02" class="label">Confirm password</label>
+                                <input id="pass02" type="password" class="input" data-type="password" placeholder="Confirm a password..." required
+                                    oninvalid="this.setCustomValidity('Vui lòng nhập lại mật khẩu')" oninput="this.setCustomValidity('')">
+                            </div>
+                            <div class="group">
+                                <input type="submit" class="button" value="SIGN UP" required>
+                            </div><!-- Button -->
+                            <div class="hr">Or</div>
+                            <div class="sign_social_icons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                            </div><!-- Social -->
+                            <div class="foot-lnk">
+                                <label for="tab-1">Already a member?</label>
+                            </div>
+                        </form><!-- Sign up -->
+                    </div>
+                </div>
+            </div><!-- Modal content -->
+        </div><!-- Modal dialog -->
+    </div>
+	  
+	 <!---NỘI DUNG SẢN PHẨM--->
+	<div class="container-fluid" id="pagename">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-12
+							col-md-12
+							col-sm-12" id="namepage">
+					<h2>FREQUENTLY ASKED QUESTIONS</h2><br>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-12
+							col-md-12
+							col-sm-12" id="linkpage">
+					<p><a href="Home_Van Ninh.html"><b>Home</b></a>/<a href=""><b>FAQ</b></a></p>
+				</div>
+			</div>
+		</div>
+	</div><!-------banner link page---->
+	  <div class="container">
+		  <div class="row" id="faq">
+			  <div class="col-xl-4
+						  col-lg-4
+						  col-md-12
+						  col-sm-12
+						  col-12" id="option">
+				  <ul>
+					  <li><a href="#option1" class="card-link" data-toggle="collapse">GENERAL QUESTIONS</a></li>
+					   <li><a href="#option2" class="card-link" data-toggle="collapse">ORDERS</a></li>
+					   <li><a href="#option3" class="card-link" data-toggle="collapse">MY ACCOUNT</a></li>
+					   <li><a href="#option4" class="card-link" data-toggle="collapse">PAYMENT</a></li>
+					   <li><a href="#option5" class="card-link" data-toggle="collapse">SHIPPING</a></li>
+					   <li><a href="#option6" class="card-link" data-toggle="collapse">RETURNS / REFUNDS</a></li>
+				  </ul>
+			  </div>
+			  
+				  
+			  <div class="col-xl-8
+						  col-lg-8
+						  col-md-12
+						  col-sm-12
+						  col-12"   >
+				  
+				  <div id="option1" class="collapse show" data-parent="#faq">
+				  <!---GENERAL QUESTIONS---->
+				  <div id="accordion">
+
+				  <div class="card">
+					<div class="card-header">
+					  <a class="card-link" data-toggle="collapse" href="#collapseOne">
+						How does your product different from the others?
+					  </a>
+					</div>
+					<div id="collapseOne" class="collapse show" data-parent="#accordion">
+					  <div class="card-body">
+						We always focus on high quality, genuine products. Products always keep up with fashion trends and bring comfort to users.
+					  </div>
+					</div>
+				  </div>
+
+				  <div class="card">
+					<div class="card-header">
+					  <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+						Do you accept international credit cards?
+					  </a>
+					</div>
+					<div id="collapseTwo" class="collapse" data-parent="#accordion">
+					  <div class="card-body">
+						Visa and Mastercard are widely accepted worldwide. If an establishment uses credit cards, your Visa or Mastercard is best. American Express and Discover also have an international presence, but they are accepted by fewer merchants.
+					  </div>
+					</div>
+				  </div>
+
+				  <div class="card">
+					<div class="card-header">
+					  <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+						Can I exchange my order instead of returning it?
+					  </a>
+					</div>
+					<div id="collapseThree" class="collapse" data-parent="#accordion">
+					  <div class="card-body">
+						In an effort to expedite return processing for our customers, and enhance the user experience, we only allow returns for refund at this time. Unfortunately, we are not able to offer exchanges.
+
+						If you purchased something from one of our sales and want to lock-in the same sale price on your new order for the right size, please refer to this article.
+
+						If you received something as a gift and need to get into the right size or different product, you can refer to this article.
+
+						If you have any questions about the return process, please reach out to us on our website or hotline (1900 8080) for quick assistance.
+					  </div>
+					</div>
+				  </div>
+				<div class="card">
+					<div class="card-header">
+					  <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+						How will i know how much my order will cost?
+					  </a>
+					</div>
+					<div id="collapseFour" class="collapse" data-parent="#accordion">
+					  <div class="card-body">
+						Just add items to your basket and click "secure check out". Borderfree calculates and displays the order total in your preferred currency, including all shipping costs.
+						The order total presented at checkout is the exact amount you’ll be billed by Borderfree, and there will be no additional costs due upon delivery.
+					  </div>
+					</div>
+				  </div>
+
+				</div></div><!----GENERAL QUESTIONS---->
+				
+				  <div id="option2" class="collapse" data-parent="#faq"><!---ORDERS---->
+				  <div id="order">
+
+					  <div class="card">
+						<div class="card-header">
+						  <a class="card-link" data-toggle="collapse" href="#collapseOne2">
+							What happens after the order has been placed?
+						  </a>
+						</div>
+						<div id="collapseOne2" class="collapse show" data-parent="#order">
+						  <div class="card-body">
+							After submitting your payment details, you will receive an order confirmation by email.
+							Shipping times are mentioned on the Shoe Factory homepage and will appear on your order confirmation. Once your order is shipped, you will receive an official invoice.
+						  </div>
+						</div>
+					  </div>
+					  
+					  <div class="card">
+						<div class="card-header">
+						  <a class="card-link" data-toggle="collapse" href="#collapsetwo2">
+							Can I cancel my order?
+						  </a>
+						</div>
+						<div id="collapsetwo2" class="collapse" data-parent="#order">
+						  <div class="card-body">
+							You can cancel physical items or orders that haven't entered the shipping process yet.
+						  </div>
+						</div>
+					  </div>
+					  
+					  <div class="card">
+						<div class="card-header">
+						  <a class="card-link" data-toggle="collapse" href="#collapsethree2">
+							Will I be able to change my address after the order is confirmed?
+						  </a>
+						</div>
+						<div id="collapsethree2" class="collapse" data-parent="#order">
+						  <div class="card-body">
+							Buyers can now choose to change the address after placing an order before sellers proceed to arrange for shipment. If the order has been shipped, buyers are advised to inform sellers regarding the changes at the soonest and may need to cancel the order to place a new order with the correct address.
+						  </div>
+						</div>
+					  </div>
+					</div>
+				  	</div><!---orders---->
+				  <div id="option3" class="collapse" data-parent="#faq"><!---MY ACCOUNT---->
+				  <div id="myaccount">
+
+					  <div class="card">
+						<div class="card-header">
+						  <a class="card-link" data-toggle="collapse" href="#collapseOne3">
+							The password reset is not working. What should I do?
+						  </a>
+						</div>
+						<div id="collapseOne3" class="collapse show" data-parent="#myaccount">
+						  <div class="card-body">
+							If your new password isn’t working, please request the password reset once again. Ensure consistency with spelling and capitalization when you set the password and log in later. It could be that you previously used different upper/lowercase letters or that you added blank spaces.
+						  </div>
+						</div>
+					  </div>
+					  
+					  <div class="card">
+						<div class="card-header">
+						  <a class="card-link" data-toggle="collapse" href="#collapsetwo3">
+							How do I change my e-mail address?
+						  </a>
+						</div>
+						<div id="collapsetwo3" class="collapse" data-parent="#myaccount">
+						  <div class="card-body">
+							Here's how to do it:<br>
+							1. Open account and click the gear icon.<br>
+							2. Select Settings.<br>
+							3. Select the “Forwarding and POP/IMAP” tab.<br>
+							4. Click on “Add a forwarding address.”<br>
+							5. Enter your new email address.<br>
+							6. You'll get a verification email at your new email address—click the link to confirm.
+						  </div>
+						</div>
+					  </div>
+					  
+					  <div class="card">
+						<div class="card-header">
+						  <a class="card-link" data-toggle="collapse" href="#collapsethree3">
+							How do I create an account?
+						  </a>
+						</div>
+						<div id="collapsethree3" class="collapse" data-parent="#myaccount">
+						  <div class="card-body">
+							1. Select Accounts.<br>
+							2. Tap on Add account.<br>
+							3. Pick Create account.<br>
+							4. Follow on-screen instructions by entering your personal information, selecting a username, etc...<br>
+							5. Tap the I Agree button to create your account.
+						  </div>
+						</div>
+					  </div>
+					</div>
+				  	</div><!---MY ACCOUNT---->
+				  
+				  <div id="option4" class="collapse" data-parent="#faq"><!---PAYMENT---->
+				  <div id="payment">
+
+					  <div class="card">
+						<div class="card-header">
+						  <a class="card-link" data-toggle="collapse" href="#collapseOne4">
+							What forms of payment do you accept?
+						  </a>
+						</div>
+						<div id="collapseOne4" class="collapse show" data-parent="#payment">
+						  <div class="card-body">
+							Payment Options: Cash, Checks, Debit cards, Credit cards, Mobile payments, Electronic bank transfers.
+							
+						  </div>
+						</div>
+					  </div>
+					  
+					  <div class="card">
+						<div class="card-header">
+						  <a class="card-link" data-toggle="collapse" href="#collapsetwo4">
+							Can I split my payment into smaller payments?
+						  </a>
+						</div>
+						<div id="collapsetwo4" class="collapse" data-parent="#payment">
+						  <div class="card-body">
+							We do not currently accept split payments.
+						  </div>
+						</div>
+					  </div>
+					  
+					  <div class="card">
+						<div class="card-header">
+						  <a class="card-link" data-toggle="collapse" href="#collapsethree4">
+							Do you accept international credit cards?
+						  </a>
+						</div>
+						<div id="collapsethree4" class="collapse" data-parent="#payment">
+						  <div class="card-body">
+							We accept international credit cards
+						  </div>
+						</div>
+					  </div>
+					</div>
+				  	</div><!---PAYMENT---->
+				  <div id="option5" class="collapse" data-parent="#faq"><!---SHIPPING---->
+				  <div id="shipping">
+
+					  <div class="card">
+						<div class="card-header">
+						  <a class="card-link" data-toggle="collapse" href="#collapseOne5">
+							How long does it take to ship my order?
+						  </a>
+						</div>
+						<div id="collapseOne5" class="collapse show" data-parent="#shipping">
+						  <div class="card-body">
+							Domestic orders normally arrive within 3-7 days of shipping, unless otherwise noted.<br>
+							International orders normally arrive within 2-4 weeks of shipping. Please note that these orders need to pass through the customs office in your country before it will be released for final delivery, which can occasionally cause additional delays.
+						  </div>
+						</div>
+					  </div>
+					  
+					  <div class="card">
+						<div class="card-header">
+						  <a class="card-link" data-toggle="collapse" href="#collapsetwo5">
+							Can I combine shipping on two or more orders?
+						  </a>
+						</div>
+						<div id="collapsetwo5" class="collapse" data-parent="#shipping">
+						  <div class="card-body">
+							Simplify shipping to a single buyer in a marketplace by combining their orders into one shipment . Orders page . Select the orders to combine by checking the box to the left of the individual orders or to the left of Order Date to select all . Then select the Combine Selected Orders.
+						  </div>
+						</div>
+					  </div>
+					  
+					  <div class="card">
+						<div class="card-header">
+						  <a class="card-link" data-toggle="collapse" href="#collapsethree5">
+							Will I pay taxes for international shipping?
+						  </a>
+						</div>
+						<div id="collapsethree5" class="collapse" data-parent="#shipping">
+						  <div class="card-body">
+							How you pay duty depends on how your goods were shipped. If your goods were shipped through the International Postal Service, you will need to pay the mail carrier and/or go to your local post office to pay any duty and processing fees owed when your package arrives at that post office.
+						  </div>
+						</div>
+					  </div>
+					</div>
+				  	</div><!---SHIPPING---->
+				  
+				  <div id="option6" class="collapse" data-parent="#faq"><!---RETURNS---->
+				  <div id="returns">
+
+					  <div class="card">
+						<div class="card-header">
+						  <a class="card-link" data-toggle="collapse" href="#collapseOne6">
+							Do you accept returns?
+						  </a>
+						</div>
+						<div id="collapseOne6" class="collapse show" data-parent="#returns">
+						  <div class="card-body">
+							If an item arrives damaged, doesn't match the listing description, or if the buyer received the wrong item, you can return it.
+						  </div>
+						</div>
+					  </div>
+					  
+					  <div class="card">
+						<div class="card-header">
+						  <a class="card-link" data-toggle="collapse" href="#collapsetwo6">
+							Are returns free?
+						  </a>
+						</div>
+						<div id="collapsetwo6" class="collapse" data-parent="#returns">
+						  <div class="card-body">
+							We can fully support the return and exchange fees for you if the product is damaged or does not match the order.
+						  </div>
+						</div>
+					  </div>
+					  
+					  <div class="card">
+						<div class="card-header">
+						  <a class="card-link" data-toggle="collapse" href="#collapsethree6">
+							Can I exchange my order instead of returning it?
+						  </a>
+						</div>
+						<div id="collapsethree6" class="collapse" data-parent="#returns">
+						  <div class="card-body">
+							In an effort to expedite return processing for our customers, and enhance the user experience, we only allow returns for refund at this time. Unfortunately, we are not able to offer exchanges.
+
+						If you purchased something from one of our sales and want to lock-in the same sale price on your new order for the right size, please refer to this article.
+
+						If you received something as a gift and need to get into the right size or different product, you can refer to this article.
+
+						If you have any questions about the return process, please reach out to us on our website or hotline (1900 8080) for quick assistance.
+						  </div>
+						</div>
+					  </div>
+					</div>
+				  	</div><!---RETURNS---->
+				  
+			  </div>
+			  
+			  
+			  
+		  </div>
+	  </div>
+	  
+	 <!-----MORE HELP---->
+	  <div class="container">
+		  <div class="row justify-content-center">
+			  <div class="col-xl-12
+						  col-lg-12
+						  col-md-12
+						  col-sm-12
+						  col-12 morehelp">
+				  <h2>NEED MORE HELP?</h2>
+				  <a href="Contact Us_Nhat Thanh.html" class="basicbtn">CONTACT US</a>
+			  </div>
+		  </div>
+	  </div><!---more help--->
+	  
+	
+	  <!---------FOOTER----->
+	  <div class="container-fluid d-none d-md-block" id="footer">
+		  <div class="container">
+			  <div class="row">
+				  <div class="col-xl-3
+							  col-lg-3
+							  col-md-3
+							  d-none d-md-block add">
+					  <a href="Home_Van Ninh.html"><img class="logofooter img-fluid" src="imgs/logo (yelow.png"></a>
+					  <br><br>
+					  <p><strong>Address:</strong> No.1 Nguyen Hue, District 1, Ho Chi Minh City</p>
+					  <p><strong>Hotline:</strong> 1900 8080</p>
+					  <p><strong>Email:</strong> thefactory@gmail.com</p>
+				  </div>
+				  <div class="col-xl-2 offset-xl-1
+							  col-lg-3 
+							  col-md-3
+							  d-none d-md-block info">
+					 <h3>INFORMATION</h3>
+					  <ul class="column ">
+					    <li class="nav-item">
+							<a class="nav-link" href="About us_Nhat Thanh.html">ABOUT US</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="Promotion_Quang Thuan.html">PROMOTIONS</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="Blog_Nhat Thanh.html">BLOGS</a>
+						</li>
+					  </ul>
+				  </div><!--------INFO------------->
+				  <div class="col-xl-3 
+							  col-lg-3
+							  col-md-3
+							  d-none d-md-block info">
+					   <h3>SUPPORT</h3>
+					  <ul class="column ">
+					    <li class="nav-item">
+							<a class="nav-link" href="Contact Us_Nhat Thanh.html">CONTACT</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="Terms and condition_Nhat Thanh.html">TERMS &amp; CONDITIONS</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="FAQ_My Hanh.html">FAQ</a>
+						</li>
+					  </ul>
+				</div><!--------SUPORT------------->
+				  <div class="col-xl-3
+							  col-lg-3
+							  col-md-3
+							  d-none d-md-block follow">
+					  <h3>FOLLOW US</h3>
+					  <ul class="nav justify-content-start">
+					    <li class="nav-item">
+							<a class="nav-link" href="#"><i class="fab fa-twitter-square"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fab fa-facebook-square"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fab fa-instagram-square"></i></a>
+						</li>
+					  </ul>
+					  <h3 id="connect">CONNECT US</h3>
+				   <form action="" method="post" id="sub">
+						<input id="subfill" placeholder="Your email...">
+						<button id="subbtn"><i class="fas fa-paper-plane"></i></button>
+				   </form>
+					<div class="pay">
+						<br>
+					  <ul class="nav justify-content-start">
+						  <li class="nav-item"><i class="fab fa-cc-paypal"></i></li>
+						
+						  <li class="nav-item"><i class="fab fa-cc-visa"></i></li>
+						  
+						  <li class="nav-item"><i class="fab fa-cc-jcb"></i></li>
+						  
+						  <li class="nav-item"><i class="fab fa-cc-mastercard"></i></li>
+					  </ul>
+				  </div>
+				  </div>
+			  </div><!-----------row------------->
+		  </div><!-----------container------------->
+	  </div><!-----------container-fluid------------->
+	  <!-----------------MOBIfooter----->
+	  <div class="container-fluid d-md-none mobilefooter">
+		  <div class="row justify-content-center">
+			  <div class="col-sm-6
+						  col-8">
+				  <a href="Home_Van Ninh.html" class="logofooter"><img class="logofooter" src="imgs/logo (yelow.png"></a>
+					  <p><strong>Address:</strong> No.1 Nguyen Hue, District 1, Ho Chi Minh City</p>
+					  <p><strong>Hotline:</strong> 1900 8080</p>
+					  <p><strong>Email:</strong> thefactory@gmail.com</p>
+				    <div id="accordion">
+						<div class="card">
+						  <div class="card-header infod">
+							<a class="card-link" data-toggle="collapse" href="#collapseOne">
+							  INFORMATION <i class="fas fa-caret-down"></i>
+							</a>
+						  </div>
+						  <div id="collapseOne" class="collapse show" data-parent="#accordion">
+							<div class="card-body">
+							  <ul> 
+								<li><a href="About us_Nhat Thanh.html">ABOUT US</a></li>
+								<li><a href="Promotion_Quang Thuan.html">PROMOTIONS</a></li>
+								<li><a href="Blog_Nhat Thanh.html">BLOGS</a></li>
+							  </ul>
+							</div>
+						  </div>
+						</div>
+						<div class="card">
+						  <div class="card-header infod">
+							<a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">SUPPORT <i class="fas fa-caret-down"></i>
+						  </a>
+						  </div>
+						  <div id="collapseTwo" class="collapse" data-parent="#accordion">
+							<div class="card-body">
+							  <ul>
+								<li><a href="Contact Us_Nhat Thanh.html">CONTACT</a></li>
+                         		<li><a href="Terms and condition_Nhat Thanh.html">TERMS &amp; CONDITIONS</a></li>
+                         		<li><a href="FAQ_My Hanh.html">FAQ</a></li>
+							   </ul>
+							</div>
+						  </div>
+						</div>
+					  </div>
+				<div class="followconnect">
+				  <h3>FOLLOW US</h3>
+					  <ul class="nav justify-content-center follow1">
+					    <li class="nav-item">
+							<a class="nav-link" href="#"><i class="fab fa-twitter-square"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fab fa-facebook-square"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fab fa-instagram-square"></i></a>
+						</li>
+					  </ul>
+					  <h3 id="connect1">CONNECT US</h3>
+				   <form action="" method="post" id="sub1">
+						<input id="subfill1" placeholder="Your email...">
+						<button id="subbtn1"><i class="fas fa-paper-plane"></i></button>
+				   </form>
+				  </div>
+			  </div>
+			  </div>
+		  </div>
+	  <div class="container-fluid end">
+		  <div class="container">
+			  <div class="row justify-content-center">
+				  <div class="col-12 copy">
+					  <p>Copyright <i class="fas fa-copyright"></i> FootwearFactory</p>
+				  </div>
+			  </div>	   
+		  </div>
+	  </div>
+	</body>
+</html>>>

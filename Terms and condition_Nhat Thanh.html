@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Terms and conditions</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+	<link href="css/Style terms.css" rel="stylesheet">
+	<link href="css/fontawesome/css/all.min.css" rel="stylesheet"> 
+	<link href="css/homestyle.css" rel="stylesheet">
+	  
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.3.1.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#bgmobilenavi").hide();
+			$("#bgmobilesearch").hide();
+			$("#blacksreen").hide();
+			
+		    $("#icon3line").click(function(){
+				$("#bgmobilenavi").slideToggle();
+				$("#blacksreen").fadeToggle();
+			});
+			
+		    $("#searchmobile").click(function(){
+				$("#bgmobilesearch").slideToggle();
+				$("#blacksreen").fadeToggle();
+			});
+		});
+	</script>
+  </head>
+  <body>
+  		  <!------------Header--------->
+  	<div class="container-fluid d-none d-md-block" id="bgheader">
+		<div class="container" id="header">
+			<div class="row">
+				<div class="col-xl-3
+							col-lg-5
+							col-md-7
+							d-none d-md-block" id="searchbox">
+					<form action="" method="post">
+						<input id="searchfill" placeholder="Search...">
+						<button id="searchbtn"><i class="fas fa-search"></i></button>
+					</form>
+				</div>
+				<div class="col-xl-2 offset-xl-7
+							col-lg-7
+							col-md-5" id="signinup">
+					 <ul class="nav justify-content-end">
+						<li class="nav-item">
+							<a class="nav-link" href="#signsm" data-toggle="modal"><i class="fas fa-user"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="Shopping Cart_Quang Thuan.html"><i class="fas fa-shopping-cart"></i></a>
+						</li>
+					</ul>
+				 </div>
+			</div>
+		</div><!---------container------------>
+	</div><!---------container-fluid------------>
+	  
+	  <!---------Navi------------>
+	  <div class="container-fluid" id="bgnavi">
+		<div class="container">
+			<div class="row">
+				<div class="d-md-none 
+							col-sm-2 
+							col-2" id="icon3line"><i class="fas fa-bars"></i></div>
+				<div class="d-md-none
+							col-md-4 offset-md-2
+							col-sm-4 offset-sm-2
+							col-4 offset-1" id ="logomobile">
+					<a href="Home_Van Ninh.html"><img class="logo" src="imgs/logo.png"></a></div> 
+				<div class="col-xl-2 
+							col-lg-2
+							col-md-2
+							d-none d-md-block menu">
+					<a href="Home_Van Ninh.html"><img class="logo" src="imgs/logo.png"></a>
+			    </div><!---menu-->
+				<div class="col-xl-10 
+							col-lg-10
+							col-md-10
+							d-none d-md-block menu"	>
+					<ul class="nav justify-content-end">
+						<li class="nav-item">
+							<a class="nav-link" href="Home_Van Ninh.html">HOME</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="About us_Nhat Thanh.html">ABOUT US</a>
+						</li>
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropbtn" href="#">PRODUCTS
+							<i class="fa fa-caret-down"></i>
+						  </a>
+						<div class="dropdown-content">
+							<a href="Products_My Hanh.html">MEN</a>
+							<a href="#">WOMEN</a>
+							<a href="#">KIDS</a>
+						</div>
+					  </li>
+						<li class="nav-item dropdown">
+                        <a class="nav-link dropbtn" data-toggle="dropdown" href="#">NEWS <i class="fa fa-caret-down"></i></a>
+                       <div class="dropdown-content">
+                         <a href="">RECRUITMENT</a>
+                         <a href="Blog_My Hanh.html">BLOGS</a>
+                       </div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="Contact Us_Nhat Thanh.html">CONTACT</a>
+						</li>
+					</ul>
+			    </div><!---menu-->
+				
+				<div class="d-md-none
+							col-sm-4 
+							col-5  " id="signinupmobile">
+					 <ul class="nav justify-content-end">
+						<li class="nav-item"  >
+							<a class="nav-link" href="#"><i id="searchmobile" class="fas fa-search"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+						</li>
+					</ul>
+				</div><!------searchmobile--->
+	    </div><!---row--->
+		</div><!---contianer--->
+	</div><!---container-fluid--->
+	    <!----------------MOBILE NAVI---------------->
+	<div class="container-fluid d-md-none" id="bgmobilenavi">
+		<div class="row">
+			<div class="col-sm-12
+						col-12" id="mobilenavi">
+				<ul class="flex-column">
+					<li class="nav-item">
+							<a class="nav-link" href="About us_Nhat Thanh.html">ABOUT US</a>
+						</li>
+						 <li class="nav-item dropdown" >
+                        	<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">PRODUCTS<span class="caret"></span></a>
+                       <ul class="dropdown-menu">
+                         <li><a href="Products_My Hanh.html">MEN</a></li>
+                         <li><a href="#">WOMEN</a></li>
+                         <li><a href="#">KIDS</a></li>
+                       </ul>
+                       </li>
+					<li class="nav-item">
+							<a class="nav-link" href="Contact Us_Nhat Thanh.html">CONTACT</a>
+				    </li>
+					<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="Promotion_Quang Thuan.html">NEWS<span class="caret"></span></a>
+                       <ul class="dropdown-menu">
+                         <li><a href="#">RECRUITMENT</a></li>
+                         <li><a href="Blog_My Hanh.html">BLOGS</a></li>
+                       </ul>
+					</li>
+					<li class="nav-item">
+							<a class="nav-link"  href="#signsm" data-toggle="modal">SIGN IN/SIGN UP</a>
+					</li>
+					</ul>
+			</div><!------mobilenavi------>
+		</div><!-------row----------->
+	</div><!-----------container-fluid------------->
+	  <!---------MOBILE SEARCH---------->
+	  <div class="container-fluid" id="bgmobilesearch">
+		  <div class="row">
+			  <div class="col-sm-12
+						  col-12" id="mobilesearch">
+				  <form action="" method="post">
+						<input id="searchfillmobile" placeholder="Search...">
+						<button id="searchbtnmobile"><i class="fas fa-search"></i></button>
+				  </form>
+			  </div>
+		  </div><!-----------row------------->
+	  </div><!-----------container-fluid------------->
+	    <!--SIGN IN SIGN UP-->
+	   <div class="modal fade" id="signsm">
+        <div class="modal-dialog modal-dialog-signin">
+            <div class="login-wrap modal-content">
+                <button type="button" data-dismiss="modal"><i class="fas fa-times"></i></button><!-- Close button -->
+				<div class="imgsignin"><img src="imgs/logo (yelow.png" width="35%"></div>
+                <div class="login-html">
+                    <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">SIGN IN</label>
+                    <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">SIGN UP</label>
+                    <div class="login-form">
+                        <!--------------------------------- Sign In --------------------------------->
+                        <form class="sign-in-htm">
+                            <div class="group">
+                                <label for="user" class="label">Email:</label>
+                                <input id="user" type="text" class="input" placeholder="Enter your email..." required oninvalid="this.setCustomValidity('Vui lòng nhập tên tài khoản')"
+                                    oninput="this.setCustomValidity('')">
+                            </div>
+                            <div class="group">
+                                <label for="pass" class="label">Password:</label>
+                                <input id="pass" type="password" class="input" data-type="password" placeholder="Your password..." required oninvalid="this.setCustomValidity('Your password...')"
+                                    oninput="this.setCustomValidity('')">
+                            </div>
+                            <div class="foot-lnk">
+                                <a href="#forgot">Forgot your password?</a>
+                            </div>
+                            <div class="group">
+                                <input type="submit" class="button" value="SIGN IN">
+                            </div><!-- Button -->
+                            <div class="hr">Or</div>
+                            <div class="sign_social_icons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                            </div><!-- Social -->
+                            <div class="foot-lnk">
+                                <label for="tab-2">Don't have an account?</label>
+                            </div>
+                        </form><!-- Sign in -->
+
+                        <!--------------------------------- Sign Up --------------------------------->
+                        <form class="sign-up-htm">
+                            <div class="group">
+                                <label for="username" class="label">Username:</label>
+                                <input id="username" type="text" class="input" placeholder="Enter your name..." required oninvalid="this.setCustomValidity('Vui lòng nhập tên tài khoản')"
+                                    oninput="this.setCustomValidity('')">
+                            </div>
+                            <div class="group">
+                                <label for="email_sm" class="label">Email:</label>
+                                <input id="email_sm" type="email" class="input" placeholder="Enter your email..." required oninvalid="this.setCustomValidity('Vui lòng nhập email')"
+                                    oninput="this.setCustomValidity('')">
+                            </div>
+                            <div class="group">
+                                <label for="pass01" class="label">Password</label>
+                                <input id="pass01" type="password" class="input" data-type="password" placeholder="Create a password..." required oninvalid="this.setCustomValidity('Vui lòng nhập mật khẩu')"
+                                    oninput="this.setCustomValidity('')">
+                            </div>
+                            <div class="group">
+                                <label for="pass02" class="label">Confirm password</label>
+                                <input id="pass02" type="password" class="input" data-type="password" placeholder="Confirm a password..." required
+                                    oninvalid="this.setCustomValidity('Vui lòng nhập lại mật khẩu')" oninput="this.setCustomValidity('')">
+                            </div>
+                            <div class="group">
+                                <input type="submit" class="button" value="SIGN UP" required>
+                            </div><!-- Button -->
+                            <div class="hr">Or</div>
+                            <div class="sign_social_icons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                            </div><!-- Social -->
+                            <div class="foot-lnk">
+                                <label for="tab-1">Already a member?</label>
+                            </div>
+                        </form><!-- Sign up -->
+                    </div>
+                </div>
+            </div><!-- Modal content -->
+        </div><!-- Modal dialog -->
+    </div>
+	  
+	  <!-----------------------Banner------------------>
+	  <div class="container-fluid"></div>
+	  <!------------------------Pagename------------->
+	  <div class="container-fluid" id="pagename">
+		  		
+		  		<h2>TERMS AND CONDITIONS</h2><br>
+	  			<p>	<a href="Home_Van Ninh.html"> Home</a> / Terms and conditions</p>
+	  </div>
+	  
+	  <!------------terms---------------------->
+	  <div class="container-fluid">
+			<div class="container" id="terms">
+				<h4>Web User Guide</h4>
+				<button class="accordion">Web User Guide</button>
+				<div class="panel">
+  							<p>We license the use so that you can shop on the web within the framework of the Terms and Conditions of Use set forth.
+							Use of any part of this website for commercial purposes or on behalf of any third party is strictly prohibited without our prior written permission. If we violate any of these, we will cancel your license without notice.
+							This website is only used to provide product information that the system distributes, we are not the manufacturer.</p>
+				</div>
+
+				<button class="accordion">Customer comments</button>
+				<div class="panel">
+  							<p>All website content and your comments are our property. If we detect any fake information, we will immediately lock your account or take other measures in accordance with Vietnamese law.</p>
+				</div>
+				<h4>Order and Promotions</h4>
+				<button class="accordion">Order and order confirmation</button>
+				<div class="panel">
+  							<p>When you place an order at FootFactory.com , we will receive an order request and send you an order number. However, order requests need to go through an order confirmation step, FootFactory only ships when contacted and confirmed with the consignee.
+							In order for your order to be confirmed quickly, please provide complete and correct information related to the delivery or the terms and conditions of the promotion (if any) in which you participate.</p>
+				</div>
+				
+				<button class="accordion">Promotions </button>
+				<div class="panel">
+  							<p>With the desire to bring many benefits to customers, FootFactory often has special discount programs:
+							Rules of the promotion will be updated at the promotion page from time to time and can be changed without prior notice to customers.
+							FootFactory reserves the right to refuse orders that do not satisfy the terms and conditions of participating in promotions without notice to customers. Therefore, please carefully refer to the Rules of each program before making a purchase</p>
+				</div>
+				<button class="accordion">Discount code</button>
+				<div class="panel">
+  							<p>A discount code is a form of discount that FootFactoryoffers exclusively to customers, which can have a value of reducing part or all of the value of the order.
+							Each order can only apply one discount code, you will receive information about the terms and conditions of use of the discount code attached. To ensure fairness for customers, we reserve the right to refuse orders that use discount codes that are not used for personal purposes, bulk purchases or resale purposes.
+							FootFactory reserves the right to refuse orders using a discount code that do not satisfy the terms and conditions of using the discount code without prior notice. The discount code in this case will not be reissued. In addition, FootFactory also reserves the right to refuse the renewal of an expired discount code, the code is not used to its full value, or the case of unilateral termination of order fulfillment arising from the customer.</p>
+				</div>
+				<h4>Product policy</h4>
+				<button class="accordion">Product information </button>
+				<div class="panel">
+  							<p>FootFactory provides detailed information for each product that we post, but we cannot guarantee to provide the most complete, and error-free information for each product.
+							In case the product you receive is not exactly what FootFactory described in the product information section, please inform Customer Support as soon as possible after receiving the goods. At the same time, make sure the product is in unused condition for exchange support.</p>
+				</div>
+				<button class="accordion">Policy on counterfeit goods, imitation goods</button>
+				<div class="panel">
+  							<p>Footwear Factory is a genuine distribution brand, specializing in famous shoe brands in the world Converse, Vans, Palladium. All goods we sell are guaranteed to be genuine from an exclusive distributor in Vietnam.
+							FootFactory aims to provide the best goods and services to customers through the products listed for sale on our website.</p>
+				</div>
+				<h4>Legal rights and Privacy policy</h4>
+				<button class="accordion">Legal rights</button>
+				<div class="panel">
+  							<p>The terms and contents of this website are governed by the laws of Vietnam and the competent courts in Vietnam will resolve any disputes arising from the unauthorized use of this website.</p>
+				</div>
+				<button class="accordion">Privacy Policy</button>
+				<div class="panel">
+  							<p>Our website takes the protection of information seriously and uses best practices to protect your information and payments. Your information during the payment process will be encrypted for safety. After you complete the ordering process, you will exit safe mode.
+							You must not use any programs, tools or other means to interfere with the system or change the data structure. The website also strictly prohibits any form of distribution, dissemination or promotion of any activities aimed at interfering, destroying or infiltrating the system's data. Violating individuals or organizations will be deprived of all rights and will be prosecuted before the law if necessary.
+							All transaction information will be kept confidential, but in case the law enforcement agency requires, we are required to provide transaction information to the law enforcement agency.</p>
+				</div>
+				<button class="accordion">Incorrect information input </button>
+				<div class="panel">
+  							<p>Customers are responsible for providing complete and accurate information when participating in transactions at ww.FootFactory.vn. In case the customer enters incorrect information submitted to the sales website www.FootFactory.vn, FootFactory has the right to refuse to perform the transaction. In addition, in all cases, the customer has the right to unilaterally terminate the transaction by notifying the hotline</p>
+				</div>
+				
+		  </div>
+	  
+	  </div>
+			<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+  		acc[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+	  
+	  
+	  
+	  <!---------FOOTER----->
+	  <div class="container-fluid d-none d-md-block" id="footer">
+		  <div class="container">
+			  <div class="row">
+				  <div class="col-xl-3
+							  col-lg-3
+							  col-md-3
+							  d-none d-md-block add">
+					  <a href="Home_Van Ninh.html"><img class="logofooter img-fluid" src="imgs/logo (yelow.png"></a>
+					  <br><br>
+					  <p><strong>Address:</strong> No.1 Nguyen Hue, District 1, Ho Chi Minh City</p>
+					  <p><strong>Hotline:</strong> 1900 8080</p>
+					  <p><strong>Email:</strong> thefactory@gmail.com</p>
+				  </div>
+				  <div class="col-xl-2 offset-xl-1
+							  col-lg-3 
+							  col-md-3
+							  d-none d-md-block info">
+					 <h3>INFORMATION</h3>
+					  <ul class="column ">
+					    <li class="nav-item">
+							<a class="nav-link" href="About us_Nhat Thanh.html">ABOUT US</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">PROMOTIONS</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="Blog_Nhat Thanh.html">BLOGS</a>
+						</li>
+					  </ul>
+				  </div><!--------INFO------------->
+				  <div class="col-xl-3 
+							  col-lg-3
+							  col-md-3
+							  d-none d-md-block info">
+					   <h3>SUPPORT</h3>
+					  <ul class="column ">
+					    <li class="nav-item">
+							<a class="nav-link" href="Contact Us_Nhat Thanh.html">CONTACT</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">TERMS &amp; CONDITIONS</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="FAQ_My Hanh.html">FAQ</a>
+						</li>
+					  </ul>
+				</div><!--------SUPORT------------->
+				  <div class="col-xl-3
+							  col-lg-3
+							  col-md-3
+							  d-none d-md-block follow">
+					  <h3>FOLLOW US</h3>
+					  <ul class="nav justify-content-start">
+					    <li class="nav-item">
+							<a class="nav-link" href="#"><i class="fab fa-twitter-square"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fab fa-facebook-square"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fab fa-instagram-square"></i></a>
+						</li>
+					  </ul>
+					  <h3 id="connect">CONNECT US</h3>
+				   <form action="" method="post" id="sub">
+						<input id="subfill" placeholder="Your email...">
+						<button id="subbtn"><i class="fas fa-paper-plane"></i></button>
+				   </form>
+					<div class="pay">
+						<br>
+					  <ul class="nav justify-content-start">
+						  <li class="nav-item"><i class="fab fa-cc-paypal"></i></li>
+						
+						  <li class="nav-item"><i class="fab fa-cc-visa"></i></li>
+						  
+						  <li class="nav-item"><i class="fab fa-cc-jcb"></i></li>
+						  
+						  <li class="nav-item"><i class="fab fa-cc-mastercard"></i></li>
+					  </ul>
+				  </div>
+				  </div>
+			  </div><!-----------row------------->
+		  </div><!-----------container------------->
+	  </div><!-----------container-fluid------------->
+	  <!-----------------MOBIfooter----->
+	  <div class="container-fluid d-md-none mobilefooter">
+		  <div class="row justify-content-center">
+			  <div class="col-sm-6
+						  col-8">
+				  <a href="Home_Van Ninh.html" class="logofooter"><img class="logofooter" src="imgs/logo (yelow.png"></a>
+					  <p><strong>Address:</strong> No.1 Nguyen Hue, District 1, Ho Chi Minh City</p>
+					  <p><strong>Hotline:</strong> 1900 8080</p>
+					  <p><strong>Email:</strong> thefactory@gmail.com</p>
+				    <div id="accordion">
+						<div class="card">
+						  <div class="card-header infod">
+							<a class="card-link" data-toggle="collapse" href="#collapseOne">
+							  INFORMATION <i class="fas fa-caret-down"></i>
+							</a>
+						  </div>
+						  <div id="collapseOne" class="collapse show" data-parent="#accordion">
+							<div class="card-body">
+							  <ul> 
+								<li><a href="About us_Nhat Thanh.html">ABOUT US</a></li>
+								<li><a href="Promotion_Quang Thuan.html">PROMOTIONS</a></li>
+								<li><a href="Blog_Nhat Thanh.html">BLOGS</a></li>
+							  </ul>
+							</div>
+						  </div>
+						</div>
+						<div class="card">
+						  <div class="card-header infod">
+							<a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">SUPPORT <i class="fas fa-caret-down"></i>
+						  </a>
+						  </div>
+						  <div id="collapseTwo" class="collapse" data-parent="#accordion">
+							<div class="card-body">
+							  <ul>
+								<li><a href="Contact Us_Nhat Thanh.html">CONTACT</a></li>
+                         		<li><a href="#">TERMS &amp; CONDITIONS</a></li>
+                         		<li><a href="FAQ_My Hanh.html">FAQ</a></li>
+							   </ul>
+							</div>
+						  </div>
+						</div>
+					  </div>
+				<div class="followconnect">
+				  <h3>FOLLOW US</h3>
+					  <ul class="nav justify-content-center follow1">
+					    <li class="nav-item">
+							<a class="nav-link" href="#"><i class="fab fa-twitter-square"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fab fa-facebook-square"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fab fa-instagram-square"></i></a>
+						</li>
+					  </ul>
+					  <h3 id="connect1">CONNECT US</h3>
+				   <form action="" method="post" id="sub1">
+						<input id="subfill1" placeholder="Your email...">
+						<button id="subbtn1"><i class="fas fa-paper-plane"></i></button>
+				   </form>
+				  </div>
+			  </div>
+			  </div>
+		  </div>
+	  <div class="container-fluid end">
+		  <div class="container">
+			  <div class="row justify-content-center">
+				  <div class="col-12 copy">
+					  <p>Copyright <i class="fas fa-copyright"></i> FootwearFactory</p>
+				  </div>
+			  </div>	   
+		  </div>
+	  </div>
+	
+  </body>
+</html>>

@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	font-family: bodyfont;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: heading;
+}
+/**=====================*/
+
+.accordion {
+  background-color: #000000;
+  color: #FFFFFF;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 21px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #000;
+}
+
+.accordion:after {
+  content: "\25bc";
+  color:  #fccc0c;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\25b2";
+}
+
+.panel {
+  padding: 0px 20px;
+  background-color: #fccc0c;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin-bottom: 20px;
+}
+.panel p{
+	padding: 30px 20px 20px 20px;
+
+}
+.h3{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}

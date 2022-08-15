@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS Document */
+
+.contact{
+	float: left;
+	height: 50px;
+	width: 100%;
+	margin-top: 5px;
+	border: 1px  solid #000000;
+    padding-left: 7px;
+	color: #898989;
+	margin-bottom: 20px;
+}
+#mess{
+	width: 100%;
+	float: left;
+	margin-top: 5px;
+	border: 1px  solid #000000;
+    padding-left: 7px;
+	color: #898989;
+	margin-bottom: 20px;
+	text-align: start;
+	resize: none;
+	height: 140px;
+}
+#sendbtn{
+	display: block;
+	height: 40px;
+	width: 120px;
+	font-size: 16px;
+	font-weight: bold;
+	background-color: #FBCC0A;
+	border: 2px solid #FBCC0A;
+}
+#information{
+	margin-top: 20px;
+}
+#information form{
+	margin-top: 20px;
+}
+#information h3{
+	font-weight: bold;
+}
+#getintouch{
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 16px;
+	margin-top: 20px;
+}
+#getintouch h3{
+	font-weight: bold;
+}
+#getintouch a{
+	font-size: 30px;
+	color:  #FBCC0A;
+	margin-left: 15px;
+	margin-right: 10px;
+}
+#ggmap{
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+/*=============EXTRA LARGE========*/
+@media(min-width: 1200px){
+	#sendbtn:hover{
+	background-color: #FFFFFF;
+}
+}
+/*============LARGE========*/
+@media(min-width: 992px) and (max-width: 1199px){
+
+	
+}
+/*============MEDIUM========*/
+@media(min-width: 768px) and (max-width: 991px){
+	
+}
+/*============SMALL========*/
+@media(min-width: 576px) and (max-width: 767px) {
+	
+}
+/*============EXTRA SMALL========*/
+@media(max-width: 575px) {
+	
+}

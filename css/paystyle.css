@@ -1,0 +1,167 @@
+@charset "utf-8";
+/* CSS Document */
+/*============================================Payment============================================*/
+#paymentbg{
+    margin-bottom: 45px;
+	margin-top: 40px;
+}
+#payment h3{
+    margin-bottom: 40px;
+    text-align: center;
+}
+#payment p{
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-family: mybody;
+    color: #888888;
+}
+#payment label{
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-family: mybody;
+    color: #888888;
+}
+#payment input[type=text], #payment input[type=date]{
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 50px;
+    background-color: rgba(251,198,164,0.15);
+    color: rgba(102,102,102,0.80);
+    padding: 7px 30px 7px 15px;
+    transition: all ease 0.5s;
+}
+#payment input:focus{
+    outline: none;
+}
+.payment_method {
+    border: none;
+    background-color: #f9e7b1;
+    background-image: linear-gradient(to right, white , rgba(251,198,164,0.15));
+    border-radius: 50px;
+    display: block;
+    height: 45px;
+    width: 100%;
+    position: relative;
+    padding: 11.5px 30px 11px 45px;
+    font-size: 16px !important;
+    font-family: bodyfont !important;
+    color: rgba(102,102,102,0.50) !important;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.payment_method input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.payment_method span{
+    float: right;
+    color: #FCCC0C;
+    font-size: 20px;
+}
+.payment_checkmark {
+    position: absolute;
+    top: 13px;
+    left: 15px;
+    height: 18px;
+    width: 18px;
+    background-color: #FCCC0C;
+    border-radius: 50%;
+}
+.payment_method input:checked ~ .payment_checkmark {
+    background-color: #FCCC0C;
+	color: #000;
+}
+.payment_checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.payment_method input:checked ~ .payment_checkmark:after {
+    display: block;
+}
+.payment_method .payment_checkmark:after {
+ 	top: 5px;
+	left: 5px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+#card_info{
+    margin-top: 20px;
+    padding-bottom: 10px;
+    transition: all ease 0.5s;
+}
+#card_info input{
+    margin-bottom: 15px;
+}
+#card_info input:focus{
+    transition: all ease 0.5s;
+    border-radius: 20px 20px 0 0;
+}
+#card_cvc input{
+    margin-bottom: 0!important;
+}
+/*============================================Buttons============================================*/
+#back_btn a{
+    color: #666666;
+    text-decoration: none;
+    transition: all ease 0.3s;
+    margin-top: 30px;
+    display: block;
+}
+#next_btn a{
+    display: block;
+    padding: 7px;
+    width: 190px;
+    float: right;
+    color: #000;
+    background-color: #FCCC0C;
+    
+    text-decoration: none;
+    transition: all ease 0.3s;
+    text-align: center;
+    margin-top: 30px;
+}
+@media(min-width: 1200px){
+	#next_btn a:hover{
+       text-decoration: none;
+		transition: all ease .5s;
+		background-color: #fff;
+		border: #FBCC0A solid 2px;
+		color: #000;
+    }
+    #back_btn a:hover{
+        color: #999999;
+        transition: all ease 0.3s;
+    }
+}
+@media(min-width: 992px) and (max-width: 1199px){
+	#next_btn a:hover{
+       text-decoration: none;
+		transition: all ease .5s;
+		background-color: #fff;
+		border: #FBCC0A solid 2px;
+		color: #000;
+    }
+    #back_btn a:hover{
+        color: #999999;
+        transition: all ease 0.3s;
+    }
+}
+@media(min-width: 768px) and (max-width: 991px){
+	
+}
+/*============================================Small============================================*/
+@media(min-width: 576px) and (max-width: 767px){
+    
+}
+/*============================================Extra small============================================*/
+@media(max-width: 575px){
+   
+}

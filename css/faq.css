@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+.morehelp{
+	text-align: center;
+	margin-top: 30px;
+	
+}
+#option{
+	background-color: #fccc0c;
+	margin-bottom: 15px;
+	}
+#option ul{
+	list-style-type: none;
+	padding-left: 0PX;
+	
+}
+#option ul li{
+	padding-top: 15px;
+}
+#option ul li a{
+	text-decoration: none;
+	font-size: 21px;
+	font-weight: bold;
+	color: black;
+}
+
+.card{
+	border: solid 2px #a4a4a4;
+	font-size: 16px;
+	margin: 0px;
+}
+.card-header {
+    background-color: #000000;
+    padding: 10px 15px;
+}
+.card-header a{
+	color: white;
+	text-decoration: none;
+}
+.card-body {
+    padding: 15px;
+}
+
+
+/*=============EXTRA LARGE========*/
+@media(min-width: 1200px){
+	.morehelp a{
+		margin-left: 485px;
+		margin-top: 15px;
+	}
+	
+	#option ul li a:hover{
+		color: white;
+		transition: all ease .2s;
+	}
+}
+/*============LARGE========*/
+@media(min-width: 992px) and (max-width: 1199px){
+	.morehelp a{
+		margin-left: 400px;
+		margin-top: 15px;
+	}
+	#option ul li a:hover{
+		color: white;
+		transition: all ease .2s;
+	}
+}
+/*============MEDIUM========*/
+@media(min-width: 768px) and (max-width: 991px){
+	.morehelp a{
+		margin-left: 280px;
+		margin-top: 15px;
+	}
+}
+/*============SMALL========*/
+@media(min-width: 576px) and (max-width: 767px) {
+	.morehelp a{
+		margin-left: 190px;
+		margin-top: 15px;
+	}
+}
+/*============EXTRA SMALL========*/
+@media(max-width: 575px) {
+	.morehelp a{
+		margin-left: 160px;
+		margin-top: 15px;
+	}
+	#faq{
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+}

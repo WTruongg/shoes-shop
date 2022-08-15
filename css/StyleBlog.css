@@ -1,0 +1,133 @@
+@charset "utf-8";
+/* CSS Document */
+
+#blog h6{
+	font-size: 16px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#blog p{
+	font-size: 16px;
+}
+.source{
+	text-align: center;
+	font-style: italic;
+	font-size: 16px;
+}
+#credit1{
+	opacity: 50%;
+	font-size: 16px;
+	text-align: center;
+}
+.credit{
+	opacity: 50%;
+	font-size: 16px;
+}
+#blog img{
+	margin-bottom: 20px;
+}
+.name{
+	height: 40px;
+	background-color:  #FBCC0A;
+	font-size: 21px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	padding-bottom: 10px;
+	padding-top: 5px;
+}
+.tag ul li a{
+	font-size: 16px;
+	color: black;
+	text-align: center;
+}
+.tag ul li a mark{
+	background-color: #f9e7b1;
+}
+#Share ul li a{
+	font-size: 30px;
+	color: #FBCC0A;
+}
+.similar a{
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.post a{
+	text-decoration: none;
+	font-weight: bold;
+	color:black;
+	font-size: 16px;
+	display: block;
+	margin-bottom: 7px;
+}
+.post p{
+	opacity: 50%;
+}
+.flex-container {
+	  display: flex;
+	  flex-wrap: wrap;
+	  font-size: 16px;
+	
+}
+.flex-container a{
+	text-decoration: none;
+	color: #FBCC0A;
+	font-size: 21px;
+}
+.flex-item-left {
+	  padding: 10px;
+	  flex: 50%;
+}
+
+.flex-item-right {
+	  padding: 10px;
+	  flex: 50%;
+	  text-align: right;
+
+}
+/*=============EXTRA LARGE========*/
+@media(min-width: 1200px){
+	.flex-item-left:hover{
+		font-style: italic;
+		font-weight: bold;
+		color: #FBCC0A;
+	}
+
+	.flex-item-right:hover{
+		font-style: italic;
+		font-weight: bold;
+		color: #FBCC0A;
+	}
+	.tag ul li a mark:hover{
+		background-color: black;
+		color:white;
+	}
+	.similar a:hover{
+		color: #FBCC0A;
+	}
+	.post a:hover{
+		color: #FBCC0A;
+	}
+}
+/*============LARGE========*/
+@media(min-width: 992px) and (max-width: 1199px){
+
+	
+}
+/*============MEDIUM========*/
+@media(min-width: 768px) and (max-width: 991px){
+	
+}
+/*============SMALL========*/
+@media(min-width: 576px) and (max-width: 767px) {
+	
+}
+/*============EXTRA SMALL========*/
+@media(max-width: 575px) {
+	
+}

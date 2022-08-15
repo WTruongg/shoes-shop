@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BLOG</title>
+    <!-- CSS -->
+	<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+	<link href="js/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" rel="stylesheet">
+	<link href="js/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css" rel="stylesheet">
+	<link href="css/fontawesome/css/all.min.css" rel="stylesheet">
+	<link href="css/homestyle.css" rel="stylesheet">
+	<link href="css/products.css" rel="stylesheet">
+	<link href="css/blog.css" rel="stylesheet">
+
+	
+	<!-- JavaScript --> 
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.3.1.js"></script>
+	<script src="js/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#bgmobilenavi").hide();
+			$("#bgmobilesearch").hide();
+			$("#blacksreen").hide();
+								
+		    $("#icon3line").click(function(){
+				$("#bgmobilenavi").slideToggle();
+				$("#blacksreen").fadeToggle();
+			});
+			
+		    $("#searchmobile").click(function(){
+				$("#bgmobilesearch").slideToggle();
+				$("#blacksreen").fadeToggle();
+			});
+		});
+		$(document).ready(function(){
+			$(".owl-carousel").owlCarousel({
+				margin:30,
+				loop: true,
+				autoplay: true,
+				autoplayTimeout: 3000,
+				responsive:{
+					0:{
+						items:1,
+						autoplay: false,
+					},
+					576:{
+						items:1,
+						autoplay: false,
+					},
+					768:{
+						items: 2,
+					},
+					992:{
+						items:3,
+					},
+					1200:{
+						items:3, 
+					},
+				}
+			});
+		});	
+	</script>
+  </head>
+  <body>
+	  <!------------Header--------->
+  	<div class="container-fluid d-none d-md-block" id="bgheader">
+		<div class="container" id="header">
+			<div class="row">
+				<div class="col-xl-3
+							col-lg-5
+							col-md-7
+							d-none d-md-block" id="searchbox">
+					<form action="" method="post">
+						<input id="searchfill" placeholder="Search...">
+						<button id="searchbtn"><i class="fas fa-search"></i></button>
+					</form>
+				</div>
+				<div class="col-xl-2 offset-xl-7
+							col-lg-7
+							col-md-5" id="signinup">
+					 <ul class="nav justify-content-end">
+						<li class="nav-item">
+							<a class="nav-link" href="#signsm" data-toggle="modal"><i class="fas fa-user"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="Shopping Cart_Quang Thuan.html"><i class="fas fa-shopping-cart"></i></a>
+						</li>
+					</ul>
+				 </div>
+			</div>
+		</div><!---------container------------>
+	</div><!---------container-fluid------------>
+	  
+	  <!---------Navi------------>
+	  <div class="container-fluid" id="bgnavi">
+		<div class="container">
+			<div class="row">
+				<div class="d-md-none 
+							col-sm-2 
+							col-2" id="icon3line"><i class="fas fa-bars"></i></div>
+				<div class="d-md-none
+							col-md-4 offset-md-2
+							col-sm-4 offset-sm-2
+							col-4 offset-1" id ="logomobile">
+					<a href="Home_Van Ninh.html"><img class="logo" src="imgs/logo.png"></a></div> 
+				<div class="col-xl-2 
+							col-lg-2
+							col-md-2
+							d-none d-md-block menu">
+					<a href="Home_Van Ninh.html"><img class="logo" src="imgs/logo.png"></a>
+			    </div><!---menu-->
+				<div class="col-xl-10 
+							col-lg-10
+							col-md-10
+							d-none d-md-block menu"	>
+					<ul class="nav justify-content-end">
+						<li class="nav-item">
+							<a class="nav-link" href="Home_Van Ninh.html">HOME</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="About us_Nhat Thanh.html">ABOUT US</a>
+						</li>
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropbtn" href="#">PRODUCTS
+							<i class="fa fa-caret-down"></i>
+						  </a>
+						<div class="dropdown-content">
+							<a href="Products_My Hanh.html">MEN</a>
+							<a href="#">WOMEN</a>
+							<a href="#">KIDS</a>
+						</div>
+					  </li>
+						<li class="nav-item dropdown">
+                        <a class="nav-link dropbtn" data-toggle="dropdown" href="Promotion_Quang Thuan.html">NEWS <i class="fa fa-caret-down"></i></a>
+                       <div class="dropdown-content">
+                         <a href="">RECRUITMENT</a>
+                         <a href="Blog_My Hanh.html">BLOGS</a>
+                       </div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="Contact Us_Nhat Thanh.html">CONTACT</a>
+						</li>
+					</ul>
+			    </div><!---menu-->
+				
+				<div class="d-md-none
+							col-sm-4 
+							col-5  " id="signinupmobile">
+					 <ul class="nav justify-content-end">
+						<li class="nav-item"  >
+							<a class="nav-link" href="#"><i id="searchmobile" class="fas fa-search"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+						</li>
+					</ul>
+				</div><!------searchmobile--->
+	    </div><!---row--->
+		</div><!---contianer--->
+	</div><!---container-fluid--->
+	    <!----------------MOBILE NAVI---------------->
+	<div class="container-fluid d-md-none" id="bgmobilenavi">
+		<div class="row">
+			<div class="col-sm-12
+						col-12" id="mobilenavi">
+				<ul class="flex-column">
+					<li class="nav-item">
+							<a class="nav-link" href="About us_Nhat Thanh.html">ABOUT US</a>
+						</li>
+						 <li class="nav-item dropdown" >
+                        	<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">PRODUCTS<span class="caret"></span></a>
+                       <ul class="dropdown-menu">
+                         <li><a href="Products_My Hanh.html">MEN</a></li>
+                         <li><a href="#">WOMEN</a></li>
+                         <li><a href="#">KIDS</a></li>
+                       </ul>
+                       </li>
+					<li class="nav-item">
+							<a class="nav-link" href="Contact Us_Nhat Thanh.html">CONTACT</a>
+				    </li>
+					<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="Promotion_Quang Thuan.html">NEWS<span class="caret"></span></a>
+                       <ul class="dropdown-menu">
+                         <li><a href="#">RECRUITMENT</a></li>
+                         <li><a href="Blog_My Hanh.html">BLOGS</a></li>
+                       </ul>
+					</li>
+					<li class="nav-item">
+							<a class="nav-link"  href="#signsm" data-toggle="modal">SIGN IN/SIGN UP</a>
+					</li>
+					</ul>
+			</div><!------mobilenavi------>
+		</div><!-------row----------->
+	</div><!-----------container-fluid------------->
+	  <!---------MOBILE SEARCH---------->
+	  <div class="container-fluid" id="bgmobilesearch">
+		  <div class="row">
+			  <div class="col-sm-12
+						  col-12" id="mobilesearch">
+				  <form action="" method="post">
+						<input id="searchfillmobile" placeholder="Search...">
+						<button id="searchbtnmobile"><i class="fas fa-search"></i></button>
+				  </form>
+			  </div>
+		  </div><!-----------row------------->
+	  </div><!-----------container-fluid------------->
+	    <!--SIGN IN SIGN UP-->
+	   <div class="modal fade" id="signsm">
+        <div class="modal-dialog modal-dialog-signin">
+            <div class="login-wrap modal-content">
+                <button type="button" data-dismiss="modal"><i class="fas fa-times"></i></button><!-- Close button -->
+				<div class="imgsignin"><img src="imgs/logo (yelow.png" width="35%"></div>
+                <div class="login-html">
+                    <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">SIGN IN</label>
+                    <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">SIGN UP</label>
+                    <div class="login-form">
+                        <!--------------------------------- Sign In --------------------------------->
+                        <form class="sign-in-htm">
+                            <div class="group">
+                                <label for="user" class="label">Email:</label>
+                                <input id="user" type="text" class="input" placeholder="Enter your email..." required oninvalid="this.setCustomValidity('Vui lòng nhập tên tài khoản')"
+                                    oninput="this.setCustomValidity('')">
+                            </div>
+                            <div class="group">
+                                <label for="pass" class="label">Password:</label>
+                                <input id="pass" type="password" class="input" data-type="password" placeholder="Your password..." required oninvalid="this.setCustomValidity('Your password...')"
+                                    oninput="this.setCustomValidity('')">
+                            </div>
+                            <div class="foot-lnk">
+                                <a href="#forgot">Forgot your password?</a>
+                            </div>
+                            <div class="group">
+                                <input type="submit" class="button" value="SIGN IN">
+                            </div><!-- Button -->
+                            <div class="hr">Or</div>
+                            <div class="sign_social_icons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                            </div><!-- Social -->
+                            <div class="foot-lnk">
+                                <label for="tab-2">Don't have an account?</label>
+                            </div>
+                        </form><!-- Sign in -->
+
+                        <!--------------------------------- Sign Up --------------------------------->
+                        <form class="sign-up-htm">
+                            <div class="group">
+                                <label for="username" class="label">Username:</label>
+                                <input id="username" type="text" class="input" placeholder="Enter your name..." required oninvalid="this.setCustomValidity('Vui lòng nhập tên tài khoản')"
+                                    oninput="this.setCustomValidity('')">
+                            </div>
+                            <div class="group">
+                                <label for="email_sm" class="label">Email:</label>
+                                <input id="email_sm" type="email" class="input" placeholder="Enter your email..." required oninvalid="this.setCustomValidity('Vui lòng nhập email')"
+                                    oninput="this.setCustomValidity('')">
+                            </div>
+                            <div class="group">
+                                <label for="pass01" class="label">Password</label>
+                                <input id="pass01" type="password" class="input" data-type="password" placeholder="Create a password..." required oninvalid="this.setCustomValidity('Vui lòng nhập mật khẩu')"
+                                    oninput="this.setCustomValidity('')">
+                            </div>
+                            <div class="group">
+                                <label for="pass02" class="label">Confirm password</label>
+                                <input id="pass02" type="password" class="input" data-type="password" placeholder="Confirm a password..." required
+                                    oninvalid="this.setCustomValidity('Vui lòng nhập lại mật khẩu')" oninput="this.setCustomValidity('')">
+                            </div>
+                            <div class="group">
+                                <input type="submit" class="button" value="SIGN UP" required>
+                            </div><!-- Button -->
+                            <div class="hr">Or</div>
+                            <div class="sign_social_icons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                            </div><!-- Social -->
+                            <div class="foot-lnk">
+                                <label for="tab-1">Already a member?</label>
+                            </div>
+                        </form><!-- Sign up -->
+                    </div>
+                </div>
+            </div><!-- Modal content -->
+        </div><!-- Modal dialog -->
+    </div>
+	 
+	<!---LINK PAGE--->
+	<div class="container-fluid" id="pagename">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-12
+							col-md-12
+							col-sm-12" id="namepage">
+					<h2>BLOG</h2><br>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-12
+							col-md-12
+							col-sm-12" id="linkpage">
+					<p><a href="Home_Van Ninh.html"><b>Home</b></a>/<a href=""><b>Blog</b></a>/<a href="">Learn how to lace up Vans Authetic shoes</a></p>
+				</div>
+			</div>
+		</div>
+	</div><!-------banner link page---->
+	  
+	<!---NỘI DUNG--->
+	  <div class="container">
+		  <div class="row">
+			  <div class="col-xl-7
+						  col-lg-7
+						  col-md-12
+						  col-sm-12
+						  col-12" id="blog">
+				  
+					  <h2><b>Learn how to lace up Vans Authetic shoes</b></h2>
+					
+						<p id="time"><i class="fas fa-globe"></i> 03/04/2022&emsp; <i class="fas fa-user"></i> Admin</p>
+					
+				  <div class="row">
+					  <div class="col-xl-12
+								  col-lg-12
+								  col-md-12
+								  col-sm-12
+								  col-12">
+					  <p><br><br>The way to tie Vans Authentic shoes is quite diverse and easy to do, so it is used by most of you every day to bring something new to your Vans shoes. Besides, changing the way you tie your shoelaces also helps you feel excited and confident to unleash your creativity for your everyday style. Let Drake VN pocket more unique ways to tie Vans shoelaces right in the article below! Surely it will help you find the most impressive way to tie your own.<br></p>
+					  <img src="imgs/blog/cach-that-day-giay-vans-authentic-15.jpg" class="img-fluid">
+					  <p class="source"><br>Source: Collector</p>
+					  <p class="break">How to tie Vans Authentic shoelaces in a trapezoidal pattern</p>
+					  <p>Of the many ways to tie Vans Authentic shoes, the trapezoidal lace-up method is quite popular with many of you. Because this way of tying is quite simple and easy to do, but it makes a difference and is much more impressive than normal knotting styles. With 4 basic steps, you can tie a unique trapezoidal pattern for your Vans Authentic shoes. Let's get started right away with these 4 steps:<br></p>
+					  <img src="imgs/blog/cach-that-day-giay-vans-authentic-3.jpg" class="img-fluid">
+					  <p class="source"><br>Source: Collector</p>
+					  <p><b>Step 1:</b> Thread the two ends of the string into the top first hole in the direction from outside to inside. Pull evenly to balance the two ropes.
+
+						<br><b>Step 2:</b> Take the left shoelace and insert it into the next hole on the same side from the inside out. At the same time, the right string is pierced into the third hole in the same row, also from the inside out.
+
+						<br><b>Step 3:</b> Continue to thread the left wire through the right into the opposite hole, from the outside to the inside. Do the same with the right string.
+
+						<br><b>Step 4:</b> With the remaining piercing holes, you do the same as step 2.3. However, the right strand goes into the next hole, and the left strand goes into the 3rd hole in the same row. At the end of the row, you can tie and hide the shoelaces under the tongue and you've finished tying the trapezoidal Vans Authentic shoelaces.</p>
+					  	<img src="imgs/blog/cach-that-day-giay-vans-authentic-9.jpg" class="img-fluid">
+						 <p class="source"><br>Source: Collector</p>
+						  <p class="break">How to lace Vans Authentic Loosely style shoes</p>
+							<p>Loose shoelaces always make people feel annoyed and uncomfortable. Therefore, the correct way of tying shoelaces to limit the slippage of shoelaces is also something that people are quite concerned about. Loosely style Vans Authentic shoelace without laces, less slip on shoelaces than other styles will definitely make you satisfied. Get started right away with the following 4 basic steps:<br></p>
+					  <img src="imgs/blog/cach-that-day-giay-vans-authentic-2.jpg" class="img-fluid">
+						 <p class="source"><br>Source: Collector</p>
+				  		<p><b>Step 1:</b> Thread the rope through the first two holes on the top in the direction from the inside out.
+
+						<br><b>Step 2:</b> Take the right piece of string and put it in the opposite hole on the left, and vice versa. Then continue to take the right part of the wire and pierce it into the next hole and solder. The left side does the same.
+
+						<br><b>Step 3:</b> Take the right piece of string and put it through the second hole on the left again from the outside to the inside, doing the opposite of the left side of the string.
+
+						<br><b>Step 4:</b> The right part of the string is pierced into the next hole in the same row, and vice versa. Do the same steps 2 and 3. Make friends thread the two ends of the extra laces into the two holes on the last two sides of the eyelet. So you have completed how to tie Vans Authentic Loosely shoelaces.<br></p>
+					  <img src="imgs/blog/cach-that-day-giay-vans-authentic-7.jpg" class="img-fluid">
+					  <p class="source"><br>Source: Collector</p>
+						  <p class="break">How to tie a diamond shaped Vans shoelace</p>
+						  <p>With the ways of tying Vans Authentic shoes, the diamond style is considered the most unique style of lacing. Most people find this type of belt quite sophisticated, but with Vans Authentic, there are only 5-6 piercings, so it will be much simpler. Just follow these 4 basic steps and you can complete this knot.<br></p>
+					  <img src="imgs/blog/cach-that-day-giay-vans-authentic-1.jpg" class="img-fluid">
+					  <p class="source"><br>Source: Collector</p>
+					  <p><b>Step 1:</b> Thread the 2 ends of the wire into the first 2 holes in the direction from the inside to the outside.
+
+						<br><b>Step 2:</b> Then put the string on the left side into the 3rd hole in the opposite row. Do the same with the right string. Continue to put the left string through the 2nd hole in the same row, the right side does the same.
+
+						<br><b>Step 3</b>: Thread the left string into the opposite 4th hole. Then thread the right wire down the first part of the wire and put it into the 4th hole in the left row.
+
+						<br><b>Step 4:</b> Continue to put 2 pieces of wire on the upper hole and do the same steps 1,2,3. In a row, you can tie the string and hide it under the reed. So you've done how to tie the Vans Authentic shoelace with diamond pattern.<br></p>
+					  <img src="imgs/blog/cach-that-day-giay-vans-authentic-5.jpg" class="img-fluid">
+					  <p class="source"><br>Source: Collector</p>
+						  <p class="break">How to tie Vans Authentic shoelaces Zig Zag</p>
+
+						<p>Zig Zag style Vans Authentic shoelaces are always attracted by the playful, younger look of your shoes. This style is also quite simple and easy to do quickly so you can use it for daily changes. Shake hands now with 4 simple steps to change "new shirt" for your Vans Authentic shoes.<br></p>
+					  <img src="imgs/blog/cach-that-day-giay-vans-authentic-4.jpg" class="img-fluid">
+					  <p class="source"><br>Source: Collector</p>
+					  <p><b>Step 1:</b> Thread the 2 ends of the shoelaces into the first two holes and measure the lengths of the two laces to be equal.
+
+						<b><br>Step 2:</b> Take the left shoelace and insert it into the second hole on the same side, from the outside to the inside. Then continue to pierce the 2nd hole on the opposite side from the inside out. Continue through the third hole on the right side. Continue doing this in a zigzag pattern until the last piercing.
+
+						<b><br>Step 3:</b> Take the right shoelace and thread it under the left laces in the shape of a Zigzag. Continuously thread to the last eyelet and you have a Zigzag-shaped shoelace.
+
+						<b><br>Step 4:</b> Tie the string and hide under the reed. Finished the unique and easy way to tie Vans Authentic shoes.<br></p>
+						  <img src="imgs/blog/cach-that-day-giay-vans-authentic-11.jpg" class="img-fluid">
+						  <p class="source"><br>Source: Collector</p>
+						  <p>There are many ways to tie your Vans Authentic shoes, but the ways that Drake VN just shared are the easiest and most impressive. Don't forget that at Drake VN, there are always Vans shoes with many different designs and colors, suitable for every style you are looking for. Come to the store to experience it firsthand.</p>
+
+				  </div></div>
+			  <div class="container-fluid tag">
+							Tags: <ul class="nav justify-content-start">
+										 <li class="nav-item">
+										<a class="nav-link" href="#"><mark>Fashion</mark></a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#"><mark>Vans</mark></a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#"><mark>Converse</mark></a>
+										</li>
+										 <li class="nav-item">
+											<a class="nav-link" href="#"><mark>Leather Shoes</mark></a>
+										</li>
+								  </ul> 
+							</div>
+							<br>
+							<div class="container-fluid" id="Share">
+							Share: <ul class="nav justify-content-start">
+										 <li class="nav-item">
+											<a class="nav-link" href="#"><i class="fab fa-twitter-square"></i></a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#"><i class="fab fa-facebook-square"></i></a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#"><i class="fab fa-instagram-square"></i></a>
+										</li>
+								  </ul>
+								</div>
+							<div class="flex-container">
+									<div class="flex-item-left"><a href="#"><i class="fas fa-angle-left"></i> Previous post</a></div>
+									<div class="flex-item-right"><a href="#">Next post <i class="fas fa-angle-right"></i></a> </div>
+							 </div>
+						
+							
+							<div class="name"> Similars posts</div>
+							<div class="row">
+								
+								<div class="col-xl-6
+										col-lg-6
+										col-md-12
+										col-sm-12
+										col-12 similar" ><img src="imgs/blog/Converse-70s-recycled-rpet-canvas-0.jpg" class="img-thumbnail"><br>
+													<a href="#">The "heart-stopping" color scheme of Converse 70s Recycled RPET Canvas<br><br></a>
+													<p class="credit"><i class="fas fa-globe"></i> 03/04/2022 &emsp; <i class="fas fa-user"></i> Admin</p>
+								</div>
+								<div class="col-xl-6
+										col-lg-6
+										col-md-10
+										col-sm-12
+										col-12 similar" > <img src="imgs/blog/giay-vans-caro-luoi-14.jpg" class="img-thumbnail"><br>
+													<a href="#">The Vans slip-on shoes - Classic shoe model that no item can replace<br><br></a>
+													<p class="credit"><i class="fas fa-globe"></i> 19/04/2022 &emsp; <i class="fas fa-user"></i> Admin</p>
+								
+								</div>
+							</div>
+				  
+			  </div><!----nội dung chính--->
+			  
+			  <div class="col-xl-5
+							col-lg-5
+							col-md-12
+							col-sm-12
+							col-12" id="recentpost">
+							<div class="name"> Recently posts</div>
+							<div class="row post">
+								<div class="col-xl-6
+											col-lg-5
+											col-md-12
+											col-sm-12
+											col-12 img"><img src="imgs/blog/giay-vans-old-skool-mau-den-13.jpg" class="img-thumbnail"></div>
+								<div class="col-xl-6
+											col-lg-7
+											col-md-12
+											col-sm-12
+											col-12">	<a href="#">Check out the elegant black and monochrome Vans Old Skool shoes</a><br><br>
+														<p class="credit"><i class="fas fa-globe"></i> 19/04/2022 &emsp;<i class="fas fa-user"></i> Admin</p></div>
+							</div>
+							<div class="row post">
+								<div class="col-xl-6
+											col-lg-5
+											col-md-12
+											col-sm-12
+											col-12 img"><img src="imgs/blog/giay-vans-full-black-13.jpg" class="img-thumbnail"></div>
+								<div class="col-xl-6
+											col-lg-7
+											col-md-12
+											col-sm-12
+											col-12">	<a href="#">Add a little personality and strength with Vans full black shoes</a>
+														<br><br>
+														<p class="credit"><i class="fas fa-globe"></i> 17/04/2022&emsp; <i class="fas fa-user"></i> Admin</p></div>
+							</div>
+							<div class="row post">
+								<div class="col-xl-6
+											col-lg-5
+											col-md-12
+											col-sm-12
+											col-12 img"><img src="imgs/blog/giay-converse-nu-phoi-do-14.jpg" class="img-thumbnail"></div>
+								<div class="col-xl-6
+											col-lg-7
+											col-md-12
+											col-sm-12
+											col-12">	<a href="#">Women's Converse shoes mix and match to blow away boring everyday outfits</a><br><br>
+														<p class="credit"><i class="fas fa-globe"></i> 15/04/2022 &emsp;<i class="fas fa-user"></i> Admin</p></div>
+							</div>
+							<div class="name"> Tags</div>
+							<div class="container-fluid tag">
+							 <ul class="nav justify-content-start">
+										 <li class="nav-item">
+										<a class="nav-link" href="#"><mark>Fashion</mark></a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#"><mark>Vans</mark></a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#"><mark>Converse</mark></a>
+										</li>
+										 <li class="nav-item">
+											<a class="nav-link" href="#"><mark>Supra</mark></a>
+										</li>
+										 <li class="nav-item">
+											<a class="nav-link" href="#"><mark>Leather Shoes</mark></a>
+										</li>
+								 		<li class="nav-item">
+											<a class="nav-link" href="#"><mark>K-Swiss</mark></a>
+										</li>
+								  </ul> 
+							</div>
+						</div><!-----nội dung phụ--->
+		  </div>
+	  </div><!---NỘI DUNG--->
+	 <!---BÀI VIẾT ĐỀ XUẤT--->
+	  <div class="container">
+		  <div class="row">
+			  <div class="col-xl-12
+						  col-lg-12
+						  col-md-12
+						  col-sm-12
+						  col-12"></div>
+		  </div>
+	  </div><!---BÀI VIẾT ĐỀ XUẤT--->
+	  
+	  
+	 
+	  <!---------FOOTER----->
+	  <div class="container-fluid d-none d-md-block" id="footer">
+		  <div class="container">
+			  <div class="row">
+				  <div class="col-xl-3
+							  col-lg-3
+							  col-md-3
+							  d-none d-md-block add">
+					  <a href="Home_Van Ninh.html"><img class="logofooter img-fluid" src="imgs/logo (yelow.png"></a>
+					  <br><br>
+					  <p><strong>Address:</strong> No.1 Nguyen Hue, District 1, Ho Chi Minh City</p>
+					  <p><strong>Hotline:</strong> 1900 8080</p>
+					  <p><strong>Email:</strong> thefactory@gmail.com</p>
+				  </div>
+				  <div class="col-xl-2 offset-xl-1
+							  col-lg-3 
+							  col-md-3
+							  d-none d-md-block info">
+					 <h3>INFORMATION</h3>
+					  <ul class="column ">
+					    <li class="nav-item">
+							<a class="nav-link" href="About us_Nhat Thanh.html">ABOUT US</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="Promotion_Quang Thuan.html">PROMOTIONS</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="Blog_Nhat Thanh.html">BLOGS</a>
+						</li>
+					  </ul>
+				  </div><!--------INFO------------->
+				  <div class="col-xl-3 
+							  col-lg-3
+							  col-md-3
+							  d-none d-md-block info">
+					   <h3>SUPPORT</h3>
+					  <ul class="column ">
+					    <li class="nav-item">
+							<a class="nav-link" href="Contact Us_Nhat Thanh.html">CONTACT</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="Terms and condition_Nhat Thanh.html">TERMS &amp; CONDITIONS</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="FAQ_My Hanh.html">FAQ</a>
+						</li>
+					  </ul>
+				</div><!--------SUPORT------------->
+				  <div class="col-xl-3
+							  col-lg-3
+							  col-md-3
+							  d-none d-md-block follow">
+					  <h3>FOLLOW US</h3>
+					  <ul class="nav justify-content-start">
+					    <li class="nav-item">
+							<a class="nav-link" href="#"><i class="fab fa-twitter-square"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fab fa-facebook-square"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fab fa-instagram-square"></i></a>
+						</li>
+					  </ul>
+					  <h3 id="connect">CONNECT US</h3>
+				   <form action="" method="post" id="sub">
+						<input id="subfill" placeholder="Your email...">
+						<button id="subbtn"><i class="fas fa-paper-plane"></i></button>
+				   </form>
+					<div class="pay">
+						<br>
+					  <ul class="nav justify-content-start">
+						  <li class="nav-item"><i class="fab fa-cc-paypal"></i></li>
+						
+						  <li class="nav-item"><i class="fab fa-cc-visa"></i></li>
+						  
+						  <li class="nav-item"><i class="fab fa-cc-jcb"></i></li>
+						  
+						  <li class="nav-item"><i class="fab fa-cc-mastercard"></i></li>
+					  </ul>
+				  </div>
+				  </div>
+			  </div><!-----------row------------->
+		  </div><!-----------container------------->
+	  </div><!-----------container-fluid------------->
+	  <!-----------------MOBIfooter----->
+	  <div class="container-fluid d-md-none mobilefooter">
+		  <div class="row justify-content-center">
+			  <div class="col-sm-6
+						  col-8">
+				  <a href="Home_Van Ninh.html" class="logofooter"><img class="logofooter" src="imgs/logo (yelow.png"></a>
+					  <p><strong>Address:</strong> No.1 Nguyen Hue, District 1, Ho Chi Minh City</p>
+					  <p><strong>Hotline:</strong> 1900 8080</p>
+					  <p><strong>Email:</strong> thefactory@gmail.com</p>
+				    <div id="accordion">
+						<div class="card">
+						  <div class="card-header infod">
+							<a class="card-link" data-toggle="collapse" href="#collapseOne">
+							  INFORMATION <i class="fas fa-caret-down"></i>
+							</a>
+						  </div>
+						  <div id="collapseOne" class="collapse show" data-parent="#accordion">
+							<div class="card-body">
+							  <ul> 
+								<li><a href="About us_Nhat Thanh.html">ABOUT US</a></li>
+								<li><a href="Promotion_Quang Thuan.html">PROMOTIONS</a></li>
+								<li><a href="Blog_Nhat Thanh.html">BLOGS</a></li>
+							  </ul>
+							</div>
+						  </div>
+						</div>
+						<div class="card">
+						  <div class="card-header infod">
+							<a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">SUPPORT <i class="fas fa-caret-down"></i>
+						  </a>
+						  </div>
+						  <div id="collapseTwo" class="collapse" data-parent="#accordion">
+							<div class="card-body">
+							  <ul>
+								<li><a href="Contact Us_Nhat Thanh.html">CONTACT</a></li>
+                         		<li><a href="Terms and condition_Nhat Thanh.html">TERMS &amp; CONDITIONS</a></li>
+                         		<li><a href="FAQ_My Hanh.html">FAQ</a></li>
+							   </ul>
+							</div>
+						  </div>
+						</div>
+					  </div>
+				<div class="followconnect">
+				  <h3>FOLLOW US</h3>
+					  <ul class="nav justify-content-center follow1">
+					    <li class="nav-item">
+							<a class="nav-link" href="#"><i class="fab fa-twitter-square"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fab fa-facebook-square"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fab fa-instagram-square"></i></a>
+						</li>
+					  </ul>
+					  <h3 id="connect1">CONNECT US</h3>
+				   <form action="" method="post" id="sub1">
+						<input id="subfill1" placeholder="Your email...">
+						<button id="subbtn1"><i class="fas fa-paper-plane"></i></button>
+				   </form>
+				  </div>
+			  </div>
+			  </div>
+		  </div>
+	  <div class="container-fluid end">
+		  <div class="container">
+			  <div class="row justify-content-center">
+				  <div class="col-12 copy">
+					  <p>Copyright <i class="fas fa-copyright"></i> FootwearFactory</p>
+				  </div>
+			  </div>	   
+		  </div>
+	  </div>
+	</body>
+</html>>>>>

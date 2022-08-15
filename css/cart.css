@@ -1,0 +1,1178 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+:root {
+     --main-color: #fbcc0a;
+}
+
+.headingHome{
+     color: #000;
+     text-decoration: none;
+}
+
+.headingHome:hover{
+     text-decoration: none;
+     color: #000;
+}
+
+body {
+     font-family: mybody;
+     margin: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+     font-family: myheading;
+}
+
+@font-face {
+     font-family: mybody;
+     src: url("../fonts/Poppins-Regular.ttf"),
+          url("../fonts/Poppins-Regular.eot"),
+          url("../fonts/Poppins-Regular.woff");
+}
+
+@font-face {
+     font-family: myheading;
+     src: url("../fonts/Poppins-Bold.ttf"),
+          url("../fonts/Poppins-Bold.eot"),
+          url("../fonts/Poppins-Regular.woff");
+}
+
+
+
+/* ========== header ============== */
+#bgheader {
+     height: 40px;
+     background-color: #000;
+}
+
+#searchfill {
+     width: 88%;
+     float: left;
+     height: 30px;
+     margin-top: 5px;
+     border: 1px solid #FBCC0A;
+     padding-left: 7px;
+     background-color: #000000;
+     color: #FBCC0A;
+}
+
+#searchbtn {
+     width: 12%;
+     float: left;
+     height: 30px;
+     margin-top: 5px;
+     border: none;
+     background-color: #FBCC0A;
+     color: #000;
+     font-size: 16px;
+     transition: all ease .5s;
+}
+
+#signinup {
+     padding: 0px;
+}
+
+#signinup ul li {
+     padding-top: 0px;
+}
+
+#signinup ul li a {
+     padding-top: 1px;
+     color: #fff;
+     padding-left: 15px;
+     padding-right: 15px;
+     transition: all ease 0.5s;
+     font-size: 26px;
+}
+
+#bgnavi {
+     height: 80px;
+     background-color: #FBCC0A;
+}
+
+.logo {
+     max-height: 80px;
+     width: auto;
+     height: auto;
+}
+
+#icon3line i,
+#searchmobile i {
+     font-size: 40px;
+     padding-top: 20px;
+}
+
+#signinupmobile {
+     font-size: 26px;
+     list-style-type: none;
+     padding-top: 10px;
+}
+
+#signinupmobile ul li a {
+     color: #000;
+     font-size: 26px;
+     list-style-type: none;
+}
+
+.menu ul li a {
+     color: #000;
+     height: 80px;
+     display: block;
+     padding-top: 23px;
+     padding-left: 20px;
+     padding-right: 20px;
+     transition: all ease 0.5s;
+     font-size: 21px;
+}
+
+.dropdown {
+     position: relative;
+     display: inline-block;
+}
+
+.dropdown-content {
+     display: none;
+     position: absolute;
+     z-index: 100;
+     background-color: #FBCC0A;
+     min-width: 200px;
+     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+     color: #000;
+     padding: 13px 40px !important;
+     text-decoration: none;
+     display: block;
+     height: 60px !important;
+}
+
+.dropdown:hover .dropdown-content {
+     display: block;
+}
+
+.dropdown:hover .dropbtn {
+     background-color: #000;
+     color: #FBCC0A !important;
+}
+
+.dropdown-menu {
+     position: relative !important;
+     z-index: 1900;
+     background-color: #000;
+     color: #fff;
+     border: none;
+     margin-top: 0px;
+     transform: none !important;
+     padding: 0px;
+}
+
+.dropdown-menu li a {
+     display: block;
+     border: none !important;
+     padding-left: 80px !important;
+}
+
+.dropdown-menu li a:hover {
+     text-decoration: none;
+}
+
+/*===========MOBILE NAVI===========*/
+#bgmobilenavi {
+     background-color: #000;
+     padding: 0px;
+}
+
+#mobilenavi {
+     padding: 0px;
+}
+
+#mobilenavi ul li {
+     list-style-type: none;
+}
+
+#mobilenavi ul li a {
+     color: #fff;
+     padding-left: 50px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     font-size: 17px;
+     display: block;
+}
+
+#logomobile {
+     text-align: center;
+}
+
+#search mobile {
+     font-size: 20px;
+}
+
+/*============MOBILE SEARCH=========*/
+#bgmobilesearch {
+     padding: 10px 30px;
+     position: fixed;
+     z-index: 2000;
+     background-color: #000;
+}
+
+#searchfillmobile,
+#subfill,
+#subfill1 {
+     width: 85%;
+     float: left;
+     border: none;
+     padding-left: 7px;
+     border: 1px solid #FBCC0A;
+     height: 30px;
+}
+
+#searchbtnmobile,
+#subbtn,
+#subbtn1 {
+     width: 15%;
+     float: left;
+     border: none;
+     border: 1px solid #FBCC0A;
+     color: #000;
+     background-color: #FBCC0A;
+     height: 30px;
+}
+
+
+/* ========== end header =========== */
+
+
+
+/* ========== banner  =========== */
+
+.banner-heading {
+     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 100%), url(../imgs/jaizer-capangpangan-Z8K5AiK7s04-unsplash.jpg) center / cover no-repeat;
+     text-align: center;
+     padding-top: 35%;
+     position: relative;
+}
+
+.banner-heading .banner-content {
+     position: absolute;
+     left: 50%;
+     top: 35%;
+     transform: translateX(-50%);
+}
+
+.banner-heading h2 {
+     font-size: 3rem;
+     text-transform: capitalize;
+     margin-bottom: 2rem;
+}
+
+.banner-heading p {
+     font-size: 1.5rem;
+}
+
+.banner-heading p span {
+     font-weight: 700;
+}
+
+/* ========== end banner  =========== */
+
+
+/* ========== section cart  =========== */
+
+.section-cart {
+     padding: 20px 4%;
+}
+
+.cart p {
+     font-size: 1.5rem;
+     margin-bottom: 2rem;
+}
+
+.cart-list>p {
+     text-align: center;
+     padding: 3rem 0;
+}
+
+.cart-item {
+     margin-bottom: 3rem;
+}
+
+.cart-item_top {
+     display: flex;
+     padding: 0 4rem;
+}
+
+.cart-item_img {
+     border: .3rem solid #000;
+}
+
+.cart-item_img img {
+     width: 100%;
+     max-width: 300px;
+}
+
+.cart-item_des {
+     margin-left: 5rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+}
+
+.cart-item_name {
+     font-size: 2rem;
+}
+
+.cart-item_des p {
+     font-size: 1.5rem;
+     font-weight: 600;
+     opacity: .7;
+}
+
+.cart-item_quantity {
+     display: flex;
+     margin: 20px 0 10px 8%;
+}
+
+.cart-item_quantity button {
+     padding: 1rem 1.7rem;
+     border: .1rem solid #000;
+     font-weight: 900;
+     font-size: 1rem;
+}
+
+.cart-item_icons {
+     display: flex;
+     justify-content: space-between;
+}
+
+.edit-remove-favo {
+     justify-content: space-between;
+     display: flex;
+}
+
+.edit-remove-favo p {
+     margin-right: 2rem;
+     font-size: 1.5rem;
+}
+
+.edit-remove-favo p i {
+     color: var(--main-color);
+     margin-right: 1rem;
+}
+
+.cart-item_amount {
+     margin-right: 5%;
+     font-size: 1.8rem;
+     font-family: myheading;
+}
+
+/* ========== end section cart  =========== */
+
+
+/* ========== order note  =========== */
+
+.note {
+     padding: 0 4%;
+     display: flex;
+     margin-bottom: 4rem;
+     justify-content: space-between;
+}
+
+.note form {
+     flex-basis: 50%;
+}
+
+.note form h3 {
+     font-size: 2rem;
+     margin-left: 2rem;
+     margin-bottom: 4rem;
+}
+
+.note form textarea {
+     border: .1rem solid #000;
+     resize: none;
+     padding: 1rem;
+     font-size: 1.5rem;
+     width: 100%;
+     opacity: .7;
+}
+
+.note form textarea::placeholder {
+     color: #000;
+}
+
+.note form button {
+     float: right;
+     border: none;
+     padding: .8rem 1.4rem;
+     font-weight: 800;
+     margin-top: 2rem;
+     background-color: var(--main-color);
+}
+
+.note form button:hover {
+     background-color: #F9E7B1;
+}
+
+
+.note .checkout {
+     flex-basis: 40%;
+     border: .1rem solid #000;
+}
+
+.note .checkout h3 {
+     text-align: center;
+     font-size: 2rem;
+}
+
+.note .checkout .checkout-total {
+     display: flex;
+     justify-content: space-between;
+     margin: 0 10%;
+     font-size: 1.5rem;
+}
+
+
+.note .checkout>p {
+     font-size: 1.5rem;
+     margin: 2rem 1rem;
+     opacity: .7;
+}
+
+.note .checkout .checkout-btn {
+     text-align: center;
+     margin: 2rem 0;
+}
+
+.note .checkout .checkout-btn .btn {
+     font-size: 1.5rem;
+     padding: .7rem 1.2rem;
+     border: none;
+     font-weight: 600;
+     background-color: var(--main-color);
+}
+
+.note .checkout .checkout-btn .btn:hover {
+     background-color: #F9E7B1;
+}
+
+.note .checkout .checkout-btn p {
+     margin: 2rem 0;
+     font-size: 1.5rem;
+     font-weight: 700;
+}
+
+/* ========== end order note  =========== */
+
+
+/*=============FOOTER=======*/
+#footer {
+     background-color: #000;
+     color: #FDFDFD;
+     padding-top: 40px;
+}
+
+.logofooter {
+     max-height: 100px;
+     width: auto;
+     height: auto;
+}
+
+.info {
+     color: #FBCC0A;
+}
+
+.info ul {
+     list-style-type: none;
+     margin: 0px;
+     padding: 0px;
+}
+
+.info ul li a {
+     padding-left: 0px;
+     color: #fff;
+     transition: all ease .5s;
+}
+
+.info h3,
+.follow h3,
+.mobilefooter h3 {
+     font-size: 20px;
+     font-weight: bold;
+}
+
+.follow,
+.mobilefooter h3 {
+     color: #FBCC0A;
+}
+
+.follow ul,
+.follow1 {
+     padding: 0px;
+}
+
+.follow ul li,
+.follow1 li {
+     list-style-type: none;
+     margin: 0px;
+     padding: 0px;
+     display: block;
+}
+
+.follow ul li a,
+.follow1 li a {
+     padding-left: 0px;
+     color: #fff;
+     text-decoration: none;
+     display: block;
+     font-size: 30px;
+     transition: all ease .5s;
+}
+
+#connect {
+     margin-top: 25px;
+}
+
+#sub {
+     padding-top: 15px;
+}
+
+.copy {
+     padding-top: 5px;
+     text-align: center;
+     margin-bottom: 20px !important;
+}
+
+.end {
+     background-color: #000;
+     color: #FBCC0A;
+}
+
+.pay {
+     font-size: 30px;
+}
+
+.pay ul {
+     margin: 0px;
+     padding-bottom: 10px;
+}
+
+.pay ul li {
+     font-size: 25px;
+     padding-right: 20px;
+}
+
+/*=============mobileFOOTER=======*/
+.mobilefooter {
+     text-align: center;
+     background-color: #000;
+     color: #fff;
+     padding-top: 40px;
+}
+
+.infod {
+     text-decoration: none;
+     font-weight: bold;
+     list-style-type: none;
+     color: #FBCC0A;
+}
+
+#sub1 {
+     padding-top: 15px;
+     position: absolute;
+     left: 50%;
+}
+
+#subfill1 {
+     height: 30px;
+     width: 150px;
+}
+
+#subbtn1 {
+     height: 30px;
+}
+
+.brand {
+     margin-bottom: 60px;
+}
+
+.brand1 ul li {
+     padding-left: 40px;
+}
+
+
+
+
+
+
+
+
+
+/* ========== responsive  =========== */
+@media(min-width: 1200px) {
+     #signinup ul li a:hover {
+          color: #FBCC0A;
+          transition: all ease 0.5s;
+     }
+
+     .menu ul li a:hover {
+          transition: all ease 0.5s;
+          background-color: #000000;
+          color: #fff;
+          text-decoration: none;
+     }
+
+     #searchbtn:hover {
+          transition: all ease .5s;
+          color: #FBCC0A;
+          background: #000;
+          border: 1px solid #FBCC0A;
+     }
+
+     #subbtn i:hover {
+          transition: all ease .5s;
+          color: #Fff;
+     }
+
+     .info ul li a:hover {
+          transition: all ease .5s;
+          color: #FBCC0A;
+     }
+
+     .folow ul li a:hover {
+          transition: all ease .5s;
+          color: #FBCC0A;
+     }
+
+     /*=======BANNER====*/
+     .btnread:hover,
+     .btnread2:hover,
+     .btnread3:hover {
+          text-decoration: none;
+          transition: all ease .5s;
+          background-color: #fff;
+          border: #FBCC0A solid 2px;
+          color: #000;
+     }
+
+     .btnread2 {
+          margin-left: 70%;
+          margin-right: 30%;
+     }
+
+     .btncart {
+          margin-left: 20px;
+     }
+
+     .btnbuy:hover,
+     .btncato:hover,
+     .btnaboutus:hover {
+          text-decoration: none;
+          transition: all ease .5s;
+          background-color: #fff;
+          border: #FBCC0A solid 2px;
+          color: #000;
+     }
+
+     .btncart:hover {
+          text-decoration: none;
+          transition: all ease .5s;
+          background-color: #F9E7B1;
+          color: #000;
+     }
+
+     
+}
+
+@media(min-width: 992px) and (max-width: 1199px) {
+     #signinup ul li a:hover {
+          color: #FBCC0A;
+          transition: all ease 0.5s;
+     }
+
+     .menu ul li a:hover {
+          transition: all ease 0.5s;
+          background-color: #000000;
+          color: #fff;
+          text-decoration: none;
+     }
+
+     #searchbtn:hover {
+          transition: all ease .5s;
+          color: #FBCC0A;
+          background: #000;
+          border: 1px solid #FBCC0A;
+     }
+
+     #subbtn:hover {
+          transition: all ease .5s;
+          color: #FBCC0A;
+          background: #000;
+          border: 1px solid #FBCC0A;
+     }
+
+     .info ul li a:hover {
+          transition: all ease .5s;
+          color: #FBCC0A;
+     }
+
+     .folow ul li a:hover {
+          transition: all ease .5s;
+          color: #FBCC0A;
+     }
+
+     /*=======BANNER====*/
+     .btnread:hover,
+     .btnread2:hover,
+     .btnread3:hover,
+     .btncato:hover,
+     .btnaboutus:hover {
+          text-decoration: none;
+          transition: all ease .5s;
+          background-color: #fff;
+          border: #FBCC0A solid 2px;
+          color: #000;
+     }
+
+     .btncart {
+          margin-left: 30px;
+     }
+
+     .btnbuy:hover,
+     .btncato:hover,
+     .btnaboutus:hover {
+          text-decoration: none;
+          transition: all ease .5s;
+          background-color: #fff;
+          border: #FBCC0A solid 2px;
+          color: #000;
+     }
+
+     .btncart:hover {
+          text-decoration: none;
+          transition: all ease .5s;
+          background-color: #F9E7B1;
+          color: #000;
+     }
+
+     
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+     .flex-column {
+          padding: 0px;
+     }
+
+     .nav justify-content-end {
+          text-align: center !important;
+     }
+
+     .menu ul li a {
+          padding-left: 10px;
+          padding-right: 10px;
+          transition: all ease 0.5s;
+          font-size: 18px;
+     }
+
+     .logofooter {
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+     }
+
+     .add {
+          font-size: 12px;
+     }
+
+     .mobilefooter ul li a {
+          text-decoration: none;
+          color: #fff;
+     }
+
+     .dropdown-menu li a:hover {
+          text-decoration: none;
+     }
+
+     .logofooter {
+          max-height: 55px;
+     }
+
+     #banner {
+          height: 300px;
+     }
+
+     .btnread:hover,
+     .btnread2:hover,
+     .btnread3:hover,
+     .btncato:hover,
+     .btnaboutus:hover,
+     .btnbuy:hover {
+          text-decoration: none;
+          color: #000;
+     }
+
+     .btncart:hover {
+          text-decoration: none;
+          color: #FBCC0A;
+     }
+
+     /* cart */
+     .cart-item_img img {
+          width: 220px;
+     }
+     
+     .cart-item_name {
+          font-size: 1.3rem;
+     }
+     
+     .cart-item_des p {
+          font-size: 1.2rem;
+     }
+     
+     .cart-item_quantity button {
+          padding: .4rem 1.2rem;
+          border: .1rem solid #000;
+          font-size: 1.2rem;
+     }
+     
+     
+     .edit-remove-favo p {
+          margin-right: 1rem;
+          font-size: 1rem;
+     }
+     
+     .cart-item_amount {
+          margin-right: 5%;
+          font-size: 1.4rem;
+     }
+
+     /* note */
+     .note form h3 {
+          font-size: 1.3rem;
+     }
+     
+     .note form textarea {
+          font-size: 1.2rem;
+     }
+     
+     .note .checkout h3 {
+          font-size: 1.3rem;
+     }
+     
+     .note .checkout .checkout-total {
+          font-size: 1.2rem;
+     }
+     
+     
+     .note .checkout>p {
+          font-size: 1.2rem;
+     }
+     
+     .note .checkout .checkout-btn .btn {
+          font-size: 1.2rem;
+     }
+     
+     .note .checkout .checkout-btn p {
+          font-size: 1.2rem;
+     }
+}
+
+@media (max-width:767px) {
+     
+
+     #signinupmobile ul li a {
+          color: #000;
+          font-size: 20px;
+          list-style-type: none;
+     }
+
+     #bgnavi {
+          height: 60px;
+          background-color: #FBCC0A;
+     }
+
+     .logo {
+          max-height: 60px;
+          width: auto;
+          height: auto;
+     }
+
+     #icon3line i,
+     #searchmobile i {
+          font-size: 40px;
+          padding-top: 10px;
+     }
+
+     #subfill1 {
+          width: 192px;
+     }
+
+     .logofooter {
+          max-height: 60px;
+          margin-bottom: 25px;
+     }
+
+     .end {
+          padding-top: 10px;
+     }
+
+     .btnread:hover,
+     .btnread2:hover,
+     .btnread3:hover,
+     .btncato:hover,
+     .btnaboutus:hover,
+     .btnbuy:hover {
+          text-decoration: none;
+          color: #000;
+     }
+
+     .btncart:hover {
+          text-decoration: none;
+          color: #FBCC0A;
+     }
+
+     /* banner */
+     
+     
+     
+     .banner-heading h2 {
+          font-size: 2rem;
+          margin-bottom: 1rem;
+     }
+     
+     .banner-heading p {
+          font-size: 1rem;
+     }
+     
+     .banner-heading p span {
+          font-weight: 700;
+     }
+
+     /* ========== section cart  =========== */
+
+     .cart-item_img img {
+          max-width: 200px;
+     }
+
+     /* cart */
+     .cart-item_img img {
+          width: 220px;
+     }
+     
+     .cart-item_name {
+          font-size: 1.2rem;
+     }
+     
+     .cart-item_des p {
+          font-size: 1rem;
+     }
+     
+     .cart-item_quantity button {
+          padding: .4rem 1.2rem;
+          border: .1rem solid #000;
+          font-size: 1.2rem;
+     }
+     
+     
+     .edit-remove-favo p {
+          margin-right: 1rem;
+          font-size: .8rem;
+     }
+     
+     .cart-item_amount {
+          margin-right: 5%;
+          font-size: 1.3rem;
+     }
+
+     
+
+
+     /* ========== order note  =========== */
+
+     .note .checkout {
+          flex-basis: 40%;
+          margin-right: 2rem;
+     }
+
+     /* note */
+     .note form h3 {
+          font-size: 1.1 rem;
+     }
+     
+     .note form textarea {
+          font-size: 1rem;
+     }
+     
+     .note .checkout h3 {
+          font-size: 1.1rem;
+     }
+     
+     .note .checkout .checkout-total {
+          font-size: 1rem;
+     }
+     
+     
+     .note .checkout>p {
+          font-size: 1rem;
+     }
+     
+     .note .checkout .checkout-btn .btn {
+          font-size: 1rem;
+     }
+     
+     .note .checkout .checkout-btn p {
+          font-size: 1rem;
+     }
+
+
+}
+
+@media (max-width:576px) {
+     
+     #signinupmobile ul li a {
+          color: #000;
+          font-size: 20px;
+          list-style-type: none;
+     }
+
+     #bgnavi {
+          height: 60px;
+          background-color: #FBCC0A;
+     }
+
+     .logo {
+          max-height: 60px;
+          width: auto;
+          height: auto;
+     }
+
+     #icon3line i,
+     #searchmobile i {
+          font-size: 40px;
+          padding-top: 10px;
+     }
+
+     .logofooter {
+          max-height: 60px;
+          margin-bottom: 25px;
+     }
+
+     .end {
+          padding-top: 10px;
+     }
+
+     .btnread:hover,
+     .btnread2:hover,
+     .btnread3:hover,
+     .btncato:hover,
+     .btnaboutus:hover,
+     .btnbuy:hover {
+          text-decoration: none;
+          color: #000;
+     }
+
+     .btncart:hover {
+          text-decoration: none;
+          color: #FBCC0A;
+     }
+
+
+     /* ========== section cart  =========== */
+
+     .cart-item_img {
+          /* width: 200px; */
+          /* height: 200px; */
+     }
+
+     .cart-item_img img{
+          /* width: 100%; */
+     }
+
+     .cart-item_icons {
+          position: relative;
+          flex-direction: column-reverse;
+     }
+
+
+     .cart-item_amount {
+          position: absolute;
+          top: -3.5rem;
+          right: 2px;
+     }
+
+     /* cart */
+     
+     .cart-item_name {
+          font-size: 1rem;
+     }
+     
+     .cart-item_des p {
+          font-size: .8rem;
+     }
+
+     .cart-item_quantity{
+          margin-left: 100px;
+     }
+     
+     .cart-item_quantity button {
+          padding: .4rem 1.2rem;
+          font-size: 1rem;
+     }
+     
+     
+     .edit-remove-favo p {
+          margin-right: 1rem;
+          font-size: 1rem;
+     }
+     
+     .cart-item_amount {
+          font-size: 1rem;
+     }
+
+     /* ========== order note  =========== */
+
+
+     .note {
+          flex-direction: column;
+     }
+
+     .note form h3 {
+          text-align: center;
+          font-size: 2.3rem;
+          margin-bottom: 0;
+     }
+
+     .note form textarea {
+          height: 90px;
+     }
+
+     .note .checkout {
+          margin-right: 0;
+          margin-top: 2rem;
+          padding-top: 1.5rem;
+     }
+
+     .note .checkout .checkout-btn {
+          display: flex;
+          padding: 0 5%;
+          justify-content: space-between;
+          margin-bottom: 1.5rem;
+          align-items: center;
+     }
+
+     .note .checkout .checkout-btn .btn {
+          padding: .7rem 1.7rem;
+          font-weight: 700;
+     }
+
+
+}

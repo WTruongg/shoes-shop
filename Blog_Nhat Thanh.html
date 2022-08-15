@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog 1</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+	<link href="css/StyleBlog.css" rel="stylesheet">
+	<link href="css/fontawesome/css/all.min.css" rel="stylesheet"> 
+	<link href="css/homestyle.css" rel="stylesheet">
+	  
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.3.1.js"></script>
+	
+	  <script>
+		$(document).ready(function(){
+			$("#bgmobilenavi").hide();
+			$("#bgmobilesearch").hide();
+			$("#blacksreen").hide();
+			
+		    $("#icon3line").click(function(){
+				$("#bgmobilenavi").slideToggle();
+				$("#blacksreen").fadeToggle();
+			});
+			
+		    $("#searchmobile").click(function(){
+				$("#bgmobilesearch").slideToggle();
+				$("#blacksreen").fadeToggle();
+			});
+		});
+	</script>
+  </head>
+  <body>
+  		  <!------------Header--------->
+  	<div class="container-fluid d-none d-md-block" id="bgheader">
+		<div class="container" id="header">
+			<div class="row">
+				<div class="col-xl-3
+							col-lg-5
+							col-md-7
+							d-none d-md-block" id="searchbox">
+					<form action="" method="post">
+						<input id="searchfill" placeholder="Search...">
+						<button id="searchbtn"><i class="fas fa-search"></i></button>
+					</form>
+				</div>
+				<div class="col-xl-2 offset-xl-7
+							col-lg-7
+							col-md-5" id="signinup">
+					 <ul class="nav justify-content-end">
+						<li class="nav-item">
+							<a class="nav-link" href="#signsm" data-toggle="modal"><i class="fas fa-user"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="Shopping Cart_Quang Thuan.html"><i class="fas fa-shopping-cart"></i></a>
+						</li>
+					</ul>
+				 </div>
+			</div>
+		</div><!---------container------------>
+	</div><!---------container-fluid------------>
+	  
+	  <!---------Navi------------>
+	  <div class="container-fluid" id="bgnavi">
+		<div class="container">
+			<div class="row">
+				<div class="d-md-none 
+							col-sm-2 
+							col-2" id="icon3line"><i class="fas fa-bars"></i></div>
+				<div class="d-md-none
+							col-md-4 offset-md-2
+							col-sm-4 offset-sm-2
+							col-4 offset-1" id ="logomobile">
+					<a href="Home_Van Ninh.html"><img class="logo" src="imgs/logo.png"></a></div> 
+				<div class="col-xl-2 
+							col-lg-2
+							col-md-2
+							d-none d-md-block menu">
+					<a href="Home_Van Ninh.html"><img class="logo" src="imgs/logo.png"></a>
+			    </div><!---menu-->
+				<div class="col-xl-10 
+							col-lg-10
+							col-md-10
+							d-none d-md-block menu"	>
+					<ul class="nav justify-content-end">
+						<li class="nav-item">
+							<a class="nav-link" href="Home_Van Ninh.html">HOME</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="About us_Nhat Thanh.html">ABOUT US</a>
+						</li>
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropbtn" href="#">PRODUCTS
+							<i class="fa fa-caret-down"></i>
+						  </a>
+						<div class="dropdown-content">
+							<a href="Products_My Hanh.html">MEN</a>
+							<a href="#">WOMEN</a>
+							<a href="#">KIDS</a>
+						</div>
+					  </li>
+						<li class="nav-item dropdown">
+                        <a class="nav-link dropbtn" data-toggle="dropdown" href="#">NEWS <i class="fa fa-caret-down"></i></a>
+                       <div class="dropdown-content">
+                         <a href="">RECRUITMENT</a>
+                         <a href="Blog_My Hanh.html">BLOGS</a>
+                       </div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="Contact Us_Nhat Thanh.html">CONTACT</a>
+						</li>
+					</ul>
+			    </div><!---menu-->
+				
+				<div class="d-md-none
+							col-sm-4 
+							col-5  " id="signinupmobile">
+					 <ul class="nav justify-content-end">
+						<li class="nav-item"  >
+							<a class="nav-link" href="#"><i id="searchmobile" class="fas fa-search"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+						</li>
+					</ul>
+				</div><!------searchmobile--->
+	    </div><!---row--->
+		</div><!---contianer--->
+	</div><!---container-fluid--->
+	    <!----------------MOBILE NAVI---------------->
+	<div class="container-fluid d-md-none" id="bgmobilenavi">
+		<div class="row">
+			<div class="col-sm-12
+						col-12" id="mobilenavi">
+				<ul class="flex-column">
+					<li class="nav-item">
+							<a class="nav-link" href="About us_Nhat Thanh.html">ABOUT US</a>
+						</li>
+						 <li class="nav-item dropdown" >
+                        	<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">PRODUCTS<span class="caret"></span></a>
+                       <ul class="dropdown-menu">
+                         <li><a href="Products_My Hanh.html">MEN</a></li>
+                         <li><a href="#">WOMEN</a></li>
+                         <li><a href="#">KIDS</a></li>
+                       </ul>
+                       </li>
+					<li class="nav-item">
+							<a class="nav-link" href="Contact Us_Nhat Thanh.html">CONTACT</a>
+				    </li>
+					<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="Promotion_Quang Thuan.html">NEWS<span class="caret"></span></a>
+                       <ul class="dropdown-menu">
+                         <li><a href="#">RECRUITMENT</a></li>
+                         <li><a href="Blog_My Hanh.html">BLOGS</a></li>
+                       </ul>
+					</li>
+					<li class="nav-item">
+							<a class="nav-link"  href="#signsm" data-toggle="modal">SIGN IN/SIGN UP</a>
+					</li>
+					</ul>
+			</div><!------mobilenavi------>
+		</div><!-------row----------->
+	</div><!-----------container-fluid------------->
+	  <!---------MOBILE SEARCH---------->
+	  <div class="container-fluid" id="bgmobilesearch">
+		  <div class="row">
+			  <div class="col-sm-12
+						  col-12" id="mobilesearch">
+				  <form action="" method="post">
+						<input id="searchfillmobile" placeholder="Search...">
+						<button id="searchbtnmobile"><i class="fas fa-search"></i></button>
+				  </form>
+			  </div>
+		  </div><!-----------row------------->
+	  </div><!-----------container-fluid------------->
+	    <!--SIGN IN SIGN UP-->
+	   <div class="modal fade" id="signsm">
+        <div class="modal-dialog modal-dialog-signin">
+            <div class="login-wrap modal-content">
+                <button type="button" data-dismiss="modal"><i class="fas fa-times"></i></button><!-- Close button -->
+				<div class="imgsignin"><img src="imgs/logo (yelow.png" width="35%"></div>
+                <div class="login-html">
+                    <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">SIGN IN</label>
+                    <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">SIGN UP</label>
+                    <div class="login-form">
+                        <!--------------------------------- Sign In --------------------------------->
+                        <form class="sign-in-htm">
+                            <div class="group">
+                                <label for="user" class="label">Email:</label>
+                                <input id="user" type="text" class="input" placeholder="Enter your email..." required oninvalid="this.setCustomValidity('Vui lòng nhập tên tài khoản')"
+                                    oninput="this.setCustomValidity('')">
+                            </div>
+                            <div class="group">
+                                <label for="pass" class="label">Password:</label>
+                                <input id="pass" type="password" class="input" data-type="password" placeholder="Your password..." required oninvalid="this.setCustomValidity('Your password...')"
+                                    oninput="this.setCustomValidity('')">
+                            </div>
+                            <div class="foot-lnk">
+                                <a href="#forgot">Forgot your password?</a>
+                            </div>
+                            <div class="group">
+                                <input type="submit" class="button" value="SIGN IN">
+                            </div><!-- Button -->
+                            <div class="hr">Or</div>
+                            <div class="sign_social_icons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                            </div><!-- Social -->
+                            <div class="foot-lnk">
+                                <label for="tab-2">Don't have an account?</label>
+                            </div>
+                        </form><!-- Sign in -->
+
+                        <!--------------------------------- Sign Up --------------------------------->
+                        <form class="sign-up-htm">
+                            <div class="group">
+                                <label for="username" class="label">Username:</label>
+                                <input id="username" type="text" class="input" placeholder="Enter your name..." required oninvalid="this.setCustomValidity('Vui lòng nhập tên tài khoản')"
+                                    oninput="this.setCustomValidity('')">
+                            </div>
+                            <div class="group">
+                                <label for="email_sm" class="label">Email:</label>
+                                <input id="email_sm" type="email" class="input" placeholder="Enter your email..." required oninvalid="this.setCustomValidity('Vui lòng nhập email')"
+                                    oninput="this.setCustomValidity('')">
+                            </div>
+                            <div class="group">
+                                <label for="pass01" class="label">Password</label>
+                                <input id="pass01" type="password" class="input" data-type="password" placeholder="Create a password..." required oninvalid="this.setCustomValidity('Vui lòng nhập mật khẩu')"
+                                    oninput="this.setCustomValidity('')">
+                            </div>
+                            <div class="group">
+                                <label for="pass02" class="label">Confirm password</label>
+                                <input id="pass02" type="password" class="input" data-type="password" placeholder="Confirm a password..." required
+                                    oninvalid="this.setCustomValidity('Vui lòng nhập lại mật khẩu')" oninput="this.setCustomValidity('')">
+                            </div>
+                            <div class="group">
+                                <input type="submit" class="button" value="SIGN UP" required>
+                            </div><!-- Button -->
+                            <div class="hr">Or</div>
+                            <div class="sign_social_icons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                            </div><!-- Social -->
+                            <div class="foot-lnk">
+                                <label for="tab-1">Already a member?</label>
+                            </div>
+                        </form><!-- Sign up -->
+                    </div>
+                </div>
+            </div><!-- Modal content -->
+        </div><!-- Modal dialog -->
+    </div>
+	  
+	  <!-----------------------Banner------------------>
+	  <div class="container-fluid"></div>
+	  <!------------------------Pagename------------->
+	  <div class="container-fluid" id="pagename">
+		  		
+		  		<h2>BLOG</h2>
+		  <p>	<a href="Home_Van Ninh.html"> Home</a> / Blog</p><br>
+	  		
+	  </div>
+	  
+	  <!------------Blog--------------------------->
+		<div class="container-fluid">
+	  		<div class="container">
+				<div class="row">
+						<div class="col-xl-7
+									col-lg-7
+									col-md-12
+									col-sm-12
+									col-12" id="blogcontent">
+										<div id="blog">
+											<h2>The "heart-stopping" color scheme of Converse 70s Recycled RPET Canvas</h2>
+											<p id="credit1"> <i class="fa-solid fa-globe"></i> 03/04/2022 &emsp; <i class="fas fa-user"></i> Admin</p>
+											<br>
+											<h6>Converse 70s Recycled RPET Canvas has brought an extremely impressive version for its fans. Besides, this return Converse will bring a new experience to users with special Recycled RPET Canvas material. Let's discover with FootwareFactory that there are special things hidden in this design.</h6><br>
+											<img src="imgs/Converse-70s-recycled-rpet-canvas-0.jpg" class="img-fluid">
+											<h6>Recycled RPET Canvas - Recycle to make life more green</h6>
+											<p>Converse 70s Recycled RPET Canvas collection has been improved with quite unique materials. People may not know that the R in RPET means recycled, PET is called polyethylene terephthalate. Or more simply, you can understand that it is an environmentally friendly recycled fabric. This material is mainly used in industry, clothing production or home textiles.</p>
+											<img src="imgs/Converse-70s-recycled-rpet-canva-112.jpg" class="img-fluid">
+											<p>So what is so special about this material that the designers brought into the new Converse collection? First of all, it can be said that the ability to limit water absorption is very good, very suitable as the main material for shoes. The thicker the fabric, the higher its ability to limit water absorption, so if it encounters water, it is likely that the water will slide off the surface of the fabric.</p>
+											<img src="imgs/Converse-70s-recycled-rpet-canva-114.jpg" class="img-fluid">
+											<p class="source">Source: Collector</p>
+											<p>The second advantage that this material brings is its high heat resistance. So, if used as the main material for shoes, when in a high temperature environment, the shoes will not lose their form or dry out. Besides, RPET fabric is highly resistant to tearing, so it will last you longer. With the above advantages, it will help users feel more comfortable and comfortable when wearing Converse 70s Recycled RPET Canvas.</p>
+											<h6>Converse 70s Recycled RPET Canvas with impressive color scheme<br><br>
+											Midnight Navy - Exquisite, unique creates a luxurious look</h6>
+											<img src="imgs/Converse-70s-recycled-rpet-canva-111.jpg" class="img-fluid">
+											<p>Midnight Navy - The "hard-wearing" color scheme of guys or girls who like warmth and simplicity but still make their own mark. With this tone, you can easily mix-match with different styles. When combined with the Midnight Navy color scheme, you just need to pay attention to the intensity of the color shades in your outfit so that it is flexible. Along with that, this blue color also increases your new day energy, choose to combine with blue or white colors to look more prominent wherever you are.</p>
+											<h6>Papyrus - Color schemes dominate this year's fashion market trends</h6>
+											<img src="imgs/Converse-70s-recycled-rpet-canva-116.jpg" class="img-fluid">
+											<p>Not too strange for fashionistas, the Papyrus / Egret / Black color scheme seems to have become a trend in recent years. The Papyrus color scheme seems to have brought a new "color" to the Converse Chuck 1970s High Recycled Canvas. With this neutral color, you can combine it with light or dark colors depending on your preferences, to create your own personality. Not only that, this color is also suitable for many ages and is easy to coordinate with many different outfits. But to make it more prominent, you should use contrasting colors such as black, blue, .. to help enhance the unique impression of your own shoes.</p>
+											<h6>Pink – The sweetness that dominates every outfit</h6>
+											<p>Sweet and delicate is what Converse 70s Recycled RPET Canvas brings into its color scheme this time. Psychologists have shown that mood and emotions will be affected by the surrounding colors. Converse Recycles RPET Canvas is covered in pink throughout the entire shoe, giving you enthusiasm and positive energy for the whole day.</p>
+											<img src="imgs/Converse-70s-recycled-rpet-canvas-4.jpg" class="img-fluid">
+											<p>If you are looking to impress your partner on a first date, pink shoes will be the “must have item” for you. Try changing your everyday look with Converse 70s Recycled RPET Canvas to make a difference to your style.</p>
+											<h6>What's impressive about the design of Converse 70s Recycled RPET Canvas?</h6>
+											<p>Converse 70s Recycled RPET Canvas collection still owns two high neck and low neck designs, more suitable for your choice. If High Top makes your outfit unique and personal with a high neckline that hugs your ankles, in Low Top you will feel more flexible and dynamic for your steps. Regardless of the design, the wearer feels the classic charm and comfort of this collection.</p>
+											<img src="imgs/Converse-70s-recycled-rpet-canva-113.jpg" class="img-fluid">
+											<p>Bringing in the classic and sophistication of the cult 1970s line, Converse 70s Recycled RPET Canvas has become more attractive and unique than previous designs. At the same time, the details on this item are also applied the most modern technology to give customers a great experience.</p>
+											<img src="imgs/Converse-70s-recycled-rpet-canvas-11.jpg" class="img-fluid">
+											<p>With impressive RPET Canvas material, the shoe form becomes thicker. This material also helps the wearer avoid hot weather when using shoes for a long time, limiting water absorption and providing greater durability than conventional materials. The ivory-white soleplate typical of the 1970s is thick and covered with a glossy outer layer to limit staining as well as make it easier for the wearer to clean.</p>
+											<img src="imgs/Converse-70s-recycled-rpet-canvas-10.jpg" class="img-fluid">
+											<p class="source">Source: Collector</p>
+											<p>The distinctive black foxing around the sole creates an eye-catching highlight. Not to forget the Vintage logo on the back of the shoe. With a gentle 1970s font on "Converse All Star Chuck Taylor", white text on a black background will make the heel more fancy and attractive.</p>
+											<img src="imgs/Converse-70s-recycled-rpet-canva-115.jpg" class="img-fluid">
+											<p class="source">Source: Collector</p>
+											<p>A small point that people pay little attention to in this design is that the part in the reed is added with a star symbolizing the brand logo located right on the information tape. Designers are always clever to add brand identity in the most subtle and meticulous way.</p>
+											<img src="imgs/Converse-70s-recycled-rpet-canvas-5.jpg" class="img-fluid">
+											<p class="source">Source: Collector</p>
+											<p>Not only that, the inside of the Converse 70s Recycled RPET Canvas shoes also has a smooth, modern OrthoLite cushioning that provides support for every step as well as contributes to reducing friction between the toes and the shoe. Modern but not harmful is what Converse designers always bring to their fans.</p>
+											<img src="imgs/Converse-70s-recycled-rpet-canva-118.jpg" class="img-fluid">
+											<p class="source">Source: Collector</p>
+											<p>With each new collection, the designers always put their heart into giving the wearer the best experience. Converse 70s Recycled RPET Canvas collection promises to help you change your look to be sweet and impressive with any outfit. The product is currently on display at FootwareFactory's shelf, visit the nearest store to experience it firsthand.</p>
+										</div>
+							<div class="container-fluid tag">Tags: <ul class="nav justify-content-start">
+										 <li class="nav-item">
+										<a class="nav-link" href="#"><mark>Fashion</mark></a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#"><mark>Vans</mark></a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#"><mark>Converse</mark></a>
+										</li>
+										 <li class="nav-item">
+											<a class="nav-link" href="#"><mark>Leather Shoes</mark></a>
+										</li>
+								  </ul> 
+							</div>
+							<br>
+							<div class="container-fluid" id="Share">Share: <ul class="nav justify-content-start">
+										 <li class="nav-item">
+											<a class="nav-link" href="#"><i class="fab fa-twitter-square"></i></a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#"><i class="fab fa-facebook-square"></i></a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#"><i class="fab fa-instagram-square"></i></a>
+										</li>
+								  </ul>
+								</div>
+							<div class="flex-container">
+									<div class="flex-item-left"><a href="Blog_My Hanh.html"><i class="fa-solid fa-angle-left"></i> </a>Previous post</div>
+									<div class="flex-item-right">Next post<a href="Blog_My Hanh.html"> <i class="fa-solid fa-angle-right"></i></a> </div>
+							 </div>
+						
+							
+							<div class="name"> Similars posts</div>
+							<div class="row">
+								<div class="col-xl-6
+										col-lg-6
+										col-md-12
+										col-sm-12
+										col-12 similar" > <img src="imgs/giay-vans-era-13.jpg" class="img-thumbnail"><br>
+													<a href="Blog_My Hanh.html">Vans Era shoes - Simple design with classic features for every outfit</a>
+													<p class="credit"><i class="fa-solid fa-globe"></i> 03/04/2022 &emsp; <i class="fas fa-user"></i> Admin</p>
+								
+								</div>
+								<div class="col-xl-6
+										col-lg-6
+										col-md-12
+										col-sm-12
+										col-12 similar" ><img src="imgs/giay-vans-da-0.jpg" class="img-thumbnail"><br>
+													<a href="Blog_My Hanh.html">Vans Leather Shoes - Helping you to unleash your own style creation</a>
+													<p class="credit"><i class="fa-solid fa-globe"></i> 03/04/2022 &emsp;<i class="fas fa-user"></i> Admin</p>
+								</div>
+							</div>
+					</div>
+						<div class="col-xl-5
+									col-lg-5
+									col-md-12
+									col-sm-12
+									col-12" id="recentpost">
+							<div class="name"> Recently posts</div>
+							<div class="row post">
+								<div class="col-xl-6
+											col-lg-6
+											col-md-12
+											col-sm-12
+											col-12 img"><img src="imgs/cach-that-day-giay-vans-authentic-0.jpg" class="img-thumbnail"></div>
+								<div class="col-xl-6
+											col-lg-6
+											col-md-12
+											col-sm-12
+											col-12">	<a href="Blog_My Hanh.html">Learn how to lace up Vans Authentic shoes right now</a>
+														<p class="credit"><i class="fa-solid fa-globe"></i> 03/04/2022 <i class="fas fa-user"></i> Admin</p></div>
+							</div>
+							<div class="row post">
+								<div class="col-xl-6
+											col-lg-6
+											col-md-12
+											col-sm-12
+											col-12 img"><img src="imgs/giay-converse-nam-thap-co-11.jpg" class="img-thumbnail"></div>
+								<div class="col-xl-6
+											col-lg-6
+											col-md-12
+											col-sm-12
+											col-12">	<a href="Blog_My Hanh.html">Men's low-cut Converse shoes - the trump card of the billion-dollars brand</a>
+													
+														<p class="credit"><i class="fa-solid fa-globe"></i> 03/04/2022 <i class="fas fa-user"></i> Admin</p></div>
+							</div>
+							<div class="row post">
+								<div class="col-xl-6
+											col-lg-6
+											col-md-12
+											col-sm-12
+											col-12 img"><img src="imgs/ve-sinh-giay-vans-da-lon-3.jpg" class="img-thumbnail"></div>
+								<div class="col-xl-6
+											col-lg-6
+											col-md-12
+											col-sm-12
+											col-12">	<a href="Blog_My Hanh.html">Find out the most detailed steps to clean Vans suede shoes</a>
+														<p class="credit"><i class="fa-solid fa-globe"></i> 03/04/2022 <i class="fas fa-user"></i> Admin</p></div>
+							</div>
+							<div class="name">Tags</div>
+							<div class="container-fluid tag">
+							 <ul class="nav justify-content-start">
+										 <li class="nav-item">
+										<a class="nav-link" href="#"><mark>Fashion</mark></a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#"><mark>Vans</mark></a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#"><mark>Converse</mark></a>
+										</li>
+										 <li class="nav-item">
+											<a class="nav-link" href="#"><mark>Supra</mark></a>
+										</li>
+										 <li class="nav-item">
+											<a class="nav-link" href="#"><mark>Leather Shoes</mark></a>
+										</li>
+								 		<li class="nav-item">
+											<a class="nav-link" href="#"><mark>K-Swiss</mark></a>
+										</li>
+								  </ul> 
+							</div>
+						</div>
+				</div>
+			</div>
+	  </div>
+	  
+	  <!---------FOOTER----->
+	  <div class="container-fluid d-none d-md-block" id="footer">
+		  <div class="container">
+			  <div class="row">
+				  <div class="col-xl-3
+							  col-lg-3
+							  col-md-3
+							  d-none d-md-block add">
+					  <a href="Home_Van Ninh.html"><img class="logofooter img-fluid" src="imgs/logo (yelow.png"></a>
+					  <br><br>
+					  <p><strong>Address:</strong> No.1 Nguyen Hue, District 1, Ho Chi Minh City</p>
+					  <p><strong>Hotline:</strong> 1900 8080</p>
+					  <p><strong>Email:</strong> thefactory@gmail.com</p>
+				  </div>
+				  <div class="col-xl-2 offset-xl-1
+							  col-lg-3 
+							  col-md-3
+							  d-none d-md-block info">
+					 <h3>INFORMATION</h3>
+					  <ul class="column ">
+					    <li class="nav-item">
+							<a class="nav-link" href="About us_Nhat Thanh.html">ABOUT US</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">PROMOTIONS</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="Blog_Nhat Thanh.html">BLOGS</a>
+						</li>
+					  </ul>
+				  </div><!--------INFO------------->
+				  <div class="col-xl-3 
+							  col-lg-3
+							  col-md-3
+							  d-none d-md-block info">
+					   <h3>SUPPORT</h3>
+					  <ul class="column ">
+					    <li class="nav-item">
+							<a class="nav-link" href="Contact Us_Nhat Thanh.html">CONTACT</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">TERMS &amp; CONDITIONS</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="FAQ_My Hanh.html">FAQ</a>
+						</li>
+					  </ul>
+				</div><!--------SUPORT------------->
+				  <div class="col-xl-3
+							  col-lg-3
+							  col-md-3
+							  d-none d-md-block follow">
+					  <h3>FOLLOW US</h3>
+					  <ul class="nav justify-content-start">
+					    <li class="nav-item">
+							<a class="nav-link" href="#"><i class="fab fa-twitter-square"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fab fa-facebook-square"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fab fa-instagram-square"></i></a>
+						</li>
+					  </ul>
+					  <h3 id="connect">CONNECT US</h3>
+				   <form action="" method="post" id="sub">
+						<input id="subfill" placeholder="Your email...">
+						<button id="subbtn"><i class="fas fa-paper-plane"></i></button>
+				   </form>
+					<div class="pay">
+						<br>
+					  <ul class="nav justify-content-start">
+						  <li class="nav-item"><i class="fab fa-cc-paypal"></i></li>
+						
+						  <li class="nav-item"><i class="fab fa-cc-visa"></i></li>
+						  
+						  <li class="nav-item"><i class="fab fa-cc-jcb"></i></li>
+						  
+						  <li class="nav-item"><i class="fab fa-cc-mastercard"></i></li>
+					  </ul>
+				  </div>
+				  </div>
+			  </div><!-----------row------------->
+		  </div><!-----------container------------->
+	  </div><!-----------container-fluid------------->
+	  <!-----------------MOBIfooter----->
+	  <div class="container-fluid d-md-none mobilefooter">
+		  <div class="row justify-content-center">
+			  <div class="col-sm-6
+						  col-8">
+				  <a href="Home_Van Ninh.html" class="logofooter"><img class="logofooter" src="imgs/logo (yelow.png"></a>
+					  <p><strong>Address:</strong> No.1 Nguyen Hue, District 1, Ho Chi Minh City</p>
+					  <p><strong>Hotline:</strong> 1900 8080</p>
+					  <p><strong>Email:</strong> thefactory@gmail.com</p>
+				    <div id="accordion">
+						<div class="card">
+						  <div class="card-header infod">
+							<a class="card-link" data-toggle="collapse" href="#collapseOne">
+							  INFORMATION <i class="fas fa-caret-down"></i>
+							</a>
+						  </div>
+						  <div id="collapseOne" class="collapse show" data-parent="#accordion">
+							<div class="card-body">
+							  <ul> 
+								<li><a href="About us_Nhat Thanh.html">ABOUT US</a></li>
+								<li><a href="Promotion_Quang Thuan.html">PROMOTIONS</a></li>
+								<li><a href="Blog_Nhat Thanh.html">BLOGS</a></li>
+							  </ul>
+							</div>
+						  </div>
+						</div>
+						<div class="card">
+						  <div class="card-header infod">
+							<a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">SUPPORT <i class="fas fa-caret-down"></i>
+						  </a>
+						  </div>
+						  <div id="collapseTwo" class="collapse" data-parent="#accordion">
+							<div class="card-body">
+							  <ul>
+								<li><a href="Contact Us_Nhat Thanh.html">CONTACT</a></li>
+                         		<li><a href="#">TERMS &amp; CONDITIONS</a></li>
+                         		<li><a href="FAQ_My Hanh.html">FAQ</a></li>
+							   </ul>
+							</div>
+						  </div>
+						</div>
+					  </div>
+				<div class="followconnect">
+				  <h3>FOLLOW US</h3>
+					  <ul class="nav justify-content-center follow1">
+					    <li class="nav-item">
+							<a class="nav-link" href="#"><i class="fab fa-twitter-square"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fab fa-facebook-square"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fab fa-instagram-square"></i></a>
+						</li>
+					  </ul>
+					  <h3 id="connect1">CONNECT US</h3>
+				   <form action="" method="post" id="sub1">
+						<input id="subfill1" placeholder="Your email...">
+						<button id="subbtn1"><i class="fas fa-paper-plane"></i></button>
+				   </form>
+				  </div>
+			  </div>
+			  </div>
+		  </div>
+	  <div class="container-fluid end">
+		  <div class="container">
+			  <div class="row justify-content-center">
+				  <div class="col-12 copy">
+					  <p>Copyright <i class="fas fa-copyright"></i> FootwearFactory</p>
+				  </div>
+			  </div>	   
+		  </div>
+	  </div>
+  </body>
+
+</html>>

@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+      <!-- ============ link Bootstrap ============== -->
+     <link href="./js/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" rel="stylesheet">
+     <link href="./js/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css" rel="stylesheet">
+    <link href="./css/bootstrap-4.3.1.css" rel="stylesheet">
+    <!-- /* ========== link FontAwesome  =========== */ -->
+    <link href="./css/fontawesome/css/all.min.css" rel="stylesheet">
+    <!-- JavaScript --> 
+     <script src="./js/jquery-3.3.1.min.js"></script>
+     <script src="./js/popper.min.js"></script> 
+     <script src="./js/bootstrap-4.3.1.js"></script>
+     <script src="./js/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <!-- /* ========== link CSS  =========== */ -->
+      <link rel="stylesheet" href="./css/detail.css">
+      <title>Detail</title>
+      <script>
+            $(document).ready(function(){
+                    $("#bgmobilenavi").hide();
+                    $("#bgmobilesearch").hide();
+                    $("#blacksreen").hide();
+                                                  
+                  $("#icon3line").click(function(){
+                          $("#bgmobilenavi").slideToggle();
+                          $("#blacksreen").fadeToggle();
+                    });
+                    
+                  $("#searchmobile").click(function(){
+                          $("#bgmobilesearch").slideToggle();
+                          $("#blacksreen").fadeToggle();
+                    });
+              });
+       </script>
+</head>
+
+<body>
+      <!------------Header--------->
+  	<div class="container-fluid d-none d-md-block" id="bgheader">
+		<div class="container" id="header">
+			<div class="row">
+				<div class="col-xl-3
+							col-lg-5
+							col-md-7
+							d-none d-md-block" id="searchbox">
+					<form action="" method="post">
+						<input id="searchfill" placeholder="Search...">
+						<button id="searchbtn"><i class="fas fa-search"></i></button>
+					</form>
+				</div>
+				<div class="col-xl-2 offset-xl-7
+							col-lg-7
+							col-md-5" id="signinup">
+					 <ul class="nav justify-content-end">
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fas fa-user"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="Shopping Cart_Quang Thuan.html"><i class="fas fa-shopping-cart"></i></a>
+						</li>
+					</ul>
+				 </div>
+			</div>
+		</div><!---------container------------>
+	</div><!---------container-fluid------------>
+	  <!---------Navi------------>
+	  <div class="container-fluid" id="bgnavi">
+		<div class="container">
+			<div class="row">
+				<div class="d-md-none 
+							col-sm-2 
+							col-2" id="icon3line"><i class="fas fa-bars"></i></div>
+				<div class="d-md-none
+							col-md-4 offset-md-2
+							col-sm-4 offset-sm-2
+							col-4 offset-1" id ="logomobile">
+					<a href="Home_Van Ninh.html"><img class="logo" src="./imgs/logo.png"></a></div> 
+				<div class="col-xl-2 
+							col-lg-2
+							col-md-2
+							d-none d-md-block menu">
+					<a href="Home_Van Ninh.html"><img class="logo" src="./imgs/logo.png"></a>
+			    </div><!---menu-->
+				<div class="col-xl-10 
+							col-lg-10
+							col-md-10
+							d-none d-md-block menu"	>
+					<ul class="nav justify-content-end">
+						<li class="nav-item">
+							<a class="nav-link" href="Home_Van Ninh.html">HOME</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="About us_Nhat Thanh.html">ABOUT US</a>
+						</li>
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropbtn" href="Products_My Hanh.html">PRODUCT
+							<i class="fa fa-caret-down"></i>
+						  </a>
+						<div class="dropdown-content">
+							<a href="Products_My Hanh.html">MEN</a>
+							<a href="#">WOMEN</a>
+							<a href="#">KID</a>
+						</div>
+					  </li>
+						<li class="nav-item dropdown">
+                        <a class="nav-link dropbtn" data-toggle="dropdown" href="Promotion_Quang Thuan.html">NEWS<i class="fa fa-caret-down"></i></a>
+                       <div class="dropdown-content">
+                         <a href="#">RECRUITMENT</a>
+                         <a href="Blog_My Hanh.html">BLOGS</a>
+                       </div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="Contact Us_Nhat Thanh.html">CONTACT</a>
+						</li>
+					</ul>
+			    </div><!---menu-->
+				
+				<div class="d-md-none
+							col-sm-3 offset-sm-1
+							col-5  " id="signinupmobile">
+					 <ul class="nav justify-content-end">
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fas fa-user"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="Shopping Cart_Quang Thuan.html"><i class="fas fa-shopping-cart"></i></a>
+						</li>
+					</ul>
+				</div><!------searchmobile--->
+	    </div><!---row--->
+		</div><!---contianer--->
+	</div><!---container-fluid--->
+	    <!----------------MOBILE NAVI---------------->
+	<div class="container-fluid d-md-none" id="bgmobilenavi">
+		<div class="row">
+			<div class="col-sm-12
+						col-12" id="mobilenavi">
+				<ul class="flex-column">
+					<li class="nav-item">
+							<a class="nav-link" href="Home_Van Ninh.html">HOME</a>
+						</li>
+					<li class="nav-item">
+							<a class="nav-link" href="About us_Nhat Thanh.html">ABOUT US</a>
+						</li>
+						 <li class="nav-item dropdown" >
+                        	<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="Products_My Hanh.html">PRODUCTS<span class="caret"></span></a>
+                       <ul class="dropdown-menu">
+                         <li><a href="Products_My Hanh.html">MEN</a></li>
+                         <li><a href="#">WOMEN</a></li>
+                         <li><a href="#">KID</a></li>
+                       </ul>
+                       </li>
+					<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="Promotion_Quang Thuan.html">NEWS<span class="caret"></span></a>
+                       <ul class="dropdown-menu">
+                         <li><a href="#">RECRUITMENT</a></li>
+                         <li><a href="Blog_My Hanh.html">BLOGS</a></li>
+                       </ul>
+					</li>
+					<li class="nav-item">
+							<a class="nav-link" href="Contact Us_Nhat Thanh.html">CONTACT</a>
+				    </li>
+					</ul>
+			</div><!------mobilenavi------>
+		</div><!-------row----------->
+	</div><!-----------container-fluid------------->
+	  <!---------MOBILE SEARCH---------->
+	  <div class="container-fluid" id="bgmobilesearch">
+		  <div class="row">
+			  <div class="col-sm-12
+						  col-12" id="mobilesearch">
+				  <form action="" method="post">
+						<input id="searchfillmobile" placeholder="Search...">
+						<button id="searchbtnmobile"><i class="fas fa-search"></i></button>
+				  </form>
+			  </div>
+		  </div><!-----------row------------->
+	  </div><!-----------container-fluid------------->
+     <!-- /* ========== end header =========== */
+
+ /* ========== product detail =========== */ -->
+      <section class="detail">
+            <div class="heading">
+                  <h2><span> <a href="Home_Van Ninh.html" class="headingHome">Home</a> /</span>Product / Converse Chuck Taylor All Star Keith Haring</h2>
+            </div>
+            <div class="item">
+                  <div class="item-img">
+                        <!-- ==== slide thumbnail ==== -->
+                        <div id="slidethumbnail">
+                              <div class="big-img">
+                                    <img id="featured" src="./imgs/171860C-650x650.jpg" id="">
+                              </div>
+                              <div class="thumbnail-img">
+                                    <img id="thumbnail1" src="./imgs/171860C-1-650x650.jpg" alt="">
+                                    <img id="thumbnail2" src="./imgs/171860C-2-650x650.jpg" alt="">
+                                    <img id="thumbnail3" src="./imgs/171860C-3-650x650.jpg" alt="">
+                              </div>
+                        </div>
+                        <div class="item-quantity">
+                              <button><span>-</span></button>
+                              <button><span>1</span></button>
+                              <button><span>+</span></button>
+                        </div>
+                  </div>
+                  <!-- ==== item description ==== -->
+                  <div class="item-des">
+                        <h4 class="item-name">
+                              Converse Chuck Taylor All Star Keith Haring
+                        </h4>
+                        <p class="item-rating">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                        </p>
+                        <p class="item-code">
+                              SKU: #171860C
+                        </p>
+                        <div class="item-brand">
+                              <p>Brand: <span>Converse</span></p>
+                              <p>WareHouse: <span>In stock</span></p>
+                        </div>
+                        <h5 class="item-price">
+                              1.900.000 VND
+                        </h5>
+                        <div class="item-size">
+                              <span>Size: </span>
+                              <div id="item-size_btns">
+                                    <button class="buttonSize">7 <i  class="fas fa-check"></i></button>
+                                    <button class="buttonSize">7.5 <i  class="fas fa-check"></i></button>
+                                    <button class="buttonSize">8 <i  class="fas fa-check "></i></button>
+                                    <button class="buttonSize">8.5 <i  class="fas fa-check "></i></button>
+                                    <button class="buttonSize">9 <i  class="fas fa-check "></i></button>
+                                    <button class="buttonSize">9.5 <i  class="fas fa-check "></i></button>
+                                    <button class="buttonSize">10 <i  class="fas fa-check "></i></button>
+                                    <button class="buttonSize">10.5 <i  class="fas fa-check "></i></button>
+                                    <button class="buttonSize">11 <i  class="fas fa-check "></i></button>
+                                    <button class="buttonSize ">11.5 <i  class="fas fa-check "></i></button>
+                                    <button class="buttonSize">12 <i  class="fas fa-check  "></i></button>
+                              </div>
+                        </div>
+                        <div class="item-add_btns">
+                              <button>BUY NOW</button>
+                              <button><a class="addToCartBtn" href="Shopping Cart_Quang Thuan.html">ADD TO CART</a></button>
+                        </div>
+                  </div>
+            </div>
+            <!-- ==== item information ==== -->
+            <div class="item-info">
+                  <div class="item-info_box">
+                        <h2>manufactured sku</h2>
+                        <p>171860C</p>
+                  </div>
+                  <div class="item-info_box">
+                        <h2>gender</h2>
+                        <p>UNISEX</p>
+                  </div>
+                  <div class="item-info_box">
+                        <h2>nickname</h2>
+                        <p>Converse Chuck Taylor All Star Keith Haring</p>
+                  </div>
+                  <div class="item-info_box">
+                        <h2>colorway</h2>
+                        <p>White/Black/Red</p>
+                  </div>
+                  <div class="item-info_box">
+                        <h2>warranty</h2>
+                        <p>1 month</p>
+                  </div>
+            </div>
+      </section>
+      <!-- /* ========== description =========== */ -->
+
+      <div class="description">
+            <h3 class="heading">Product Description</h3>
+            <div class="text">
+                  <p>
+                        <span>Keith Haring</span>'s drawings will be featured on <span>Converse</span> products for the
+                        first time.
+                        This collection includes versions of Chuck Taylor All Star and Run Start Hike that
+                        are presented as subtly and createtively as
+                        Keith Haring's impressive works of art.
+                  </p>
+            </div>
+            <div class="description-img">
+                  <img src="imgs/Converse-x-Keith-Haring-11.jpg" alt="">
+            </div>
+            <p class="text">
+                  <span>Converse Chuck Taylor All Star Keith Haring </span>
+                  combine iconic motifs but are not distraction, youtful and presonal style Converse uses thick, durable
+                  canvas to sew products, delicate and meticulois
+                  stitching. Soft insole, support movement, comfortable to wear. The sole has anti-slip griives to
+                  ensure absolute safety for you during the move
+            </p>
+
+            <h3 class="heading">
+                  Product Features
+            </h3>
+            <div class="text">
+                  <p> - New, more sophistacited design, combining outstanding textures</p>
+                  <p> - The shoe body us sewn from thick, durable woven fabric, easy to clean and maintain</p>
+                  <p> - The shoe sole is made of slit neoprene material Anti-slip, creating safety when moveing</p>
+                  <p> - Round toe combined with tight form for steady footsteps but still comfortable, not restrictive
+                  </p>
+                  <p> - Suitable for many situations going to school, going out, going to work; Easy to combine with
+                        many different fashion styles</p>
+            </div>
+            <div class="feature-img">
+                  <img src="./imgs/Converse-x-Keith-Haring-24.jpg" alt="">
+                  <img src="./imgs/giay-converse-chuck-taylor-all-star-low-top-keith-haring__2__3d67e722aaeb4256bcb896f8c567fc1e_grande.png"
+                        alt="">
+            </div>
+            <h3 class="heading">
+                  Converse shoe care instructions
+            </h3>
+            <div class="text">
+                  <p> - Store in a dry place</p>
+                  <p> - Avoid soaking in water for too long</p>
+                  <p> - Do not user bleach or detergent with a lot of bleach</p>
+                  <p> - Use a polish that matches the color and material of your skin</p>
+                  <p> - Do no expose the product to direct sunlight God</p>
+            </div>
+      </div>
+
+      <!-- /* ========== slide rating =========== */ -->
+
+      <section class="slide-rating">
+            <h3 class="heading">
+                  Review
+            </h3>
+            <!-- ===== evaluate ===== -->
+            <h2>
+                  Give your rating
+            </h2>
+            <form action="" class="rating">
+                  <input type="text" placeholder="Your name..">
+                  <textarea rows="8" placeholder="Comment"></textarea>
+                  <button class="btn-send">Send</button>
+            </form>
+
+            <p class="rating">
+                  <span>Evaluate:</span>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+            </p>
+            <h3 class="heading">
+                  You May Also Like
+            </h3>
+            <!-- ========== product slide ============= -->
+
+            <div class="wrapper">
+                  <div class="carousel owl-carousel">
+                        <div class="card-item ">
+                              <div class="card-item_img">
+                                    <img src="./imgs/171860C-650x650.jpg" />
+                              </div>
+                              <div class="card-item_body">
+                                    <p class="card-title">Converse Chuck Taylor All Star Double Stack Lift
+                                          Story</p>
+                                    <p class="card-code">#570321C</p>
+                                    <p class="card-price">1.800.000VND</p>
+                                    <div class="card-btns">
+                                          <button>SHOP NOW</button>
+                                          <button>ADD TO CART</button>
+                                    </div>
+                              </div>
+								  </div>
+                        <div class="card-item ">
+                              <div class="card-item_img">
+                                    <img src="./imgs/VN0A38G19XG_1-650x650.jpg" />
+                              </div>
+                              <div class="card-item_body">
+                                    <p class="card-title">Converse Chuck Taylor All Star Double Stack Lift
+                                          Story</p>
+                                    <p class="card-code">#570321C</p>
+                                    <p class="card-price">1.800.000VND</p>
+                                    <div class="card-btns">
+                                          <button>SHOP NOW</button>
+                                          <button>ADD TO CART</button>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="card-item ">
+                              <div class="card-item_img">
+                                    <img src="./imgs/77082-008-M-650x650.jpg" />
+                              </div>
+                              <div class="card-item_body">
+                                    <p class="card-title">Converse Chuck Taylor All Star Double Stack Lift
+                                          Story</p>
+                                    <p class="card-code">#570321C</p>
+                                    <p class="card-price">1.800.000VND</p>
+                                    <div class="card-btns">
+                                          <button>SHOP NOW</button>
+                                          <button>ADD TO CART</button>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="card-item ">
+                              <div class="card-item_img">
+                                    <img src="./imgs/VN0A3WKT4FV-drake-02-650x650.jpg" />
+                              </div>
+                              <div class="card-item_body">
+                                    <p class="card-title">Converse Chuck Taylor All Star Double Stack Lift
+                                          Story</p>
+                                    <p class="card-code">#570321C</p>
+                                    <p class="card-price">1.800.000VND</p>
+                                    <div class="card-btns">
+                                          <button>SHOP NOW</button>
+                                          <button>ADD TO CART</button>
+                                          
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="card-item ">
+                              <div class="card-item_img">
+                                    <img src="./imgs/VN0A3WKT4FV-drake-02-650x650.jpg" />
+                              </div>
+                              <div class="card-item_body">
+                                    <p class="card-title">Converse Chuck Taylor All Star Double Stack Lift
+                                          Story</p>
+                                    <p class="card-code">#570321C</p>
+                                    <p class="card-price">1.800.000VND</p>
+                                    <div class="card-btns">
+                                          <button>SHOP NOW</button>
+                                          <button>ADD TO CART</button>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="card-item ">
+                              <div class="card-item_img">
+                                    <img src="./imgs/92352-116-M-11-650x650.jpg" />
+                              </div>
+                              <div class="card-item_body">
+                                    <p class="card-title">Converse Chuck Taylor All Star Double Stack Lift
+                                          Story</p>
+                                    <p class="card-code">#570321C</p>
+                                    <p class="card-price">1.800.000VND</p>
+                                    <div class="card-btns">
+                                          <button>SHOP NOW</button>
+                                          <button>ADD TO CART</button>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+               </div>
+            
+
+      </section>
+
+
+
+
+
+
+      <!-- /* ========== footer =========== */ -->
+
+      <!---------FOOTER----->
+	  <div class="container-fluid d-none d-md-block" id="footer">
+            <div class="container">
+                 <div class="row">
+                      <div class="col-xl-3
+                                     col-lg-4
+                                     col-md-3
+                                     d-none d-md-block add col1inFor">
+                           <a href="Home_Van Ninh.html"><img class="logofooter" src="./imgs/logo (yelow.png"></a>
+                           <br><br>
+                           <p><strong>Address:</strong> No.1 Nguyen Hue, District 1, Ho Chi Minh City</p>
+                           <p><strong>Hotline:</strong> 1900 8080</p>
+                           <p><strong>Email:</strong> thefactory@gmail.com</p>
+                      </div>
+                      <div class="col-xl-3 
+                                     col-lg-3 offset-xl-1
+                                     col-md-3
+                                     d-none d-md-block info">
+                          <h3>INFORMATION</h3>
+                           <ul class="column ">
+                             <li class="nav-item">
+                                   <a class="nav-link" href="About us_Nhat Thanh.html">ABOUT US</a>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link" href="Promotion_Quang Thuan.html">PROMOTION</a>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link" href="Blog_My Hanh.html">BLOGS</a>
+                              </li>
+                           </ul>
+                      </div><!--------INFO------------->
+                      <div class="col-xl-2 
+                                     col-lg-2
+                                     col-md-3
+                                     d-none d-md-block info">
+                            <h3>SUPPORT</h3>
+                           <ul class="column ">
+                             <li class="nav-item">
+                                   <a class="nav-link" href="Contact Us_Nhat Thanh.html">CONTACT</a>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link" href="#">RECRUITMENT</a>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link" href="FAQ_My Hanh.html">FAQ</a>
+                              </li>
+                           </ul>
+                    </div><!--------SUPORT------------->
+                      <div class="col-xl-3
+                                     col-lg-3
+                                     col-md-3
+                                     d-none d-md-block follow">
+                           <h3>FOLLOW US</h3>
+                           <ul class="nav justify-content-start">
+                             <li class="nav-item">
+                                   <a class="nav-link" href="#"><i class="fab fa-twitter-square"></i></a>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link" href="#"><i class="fab fa-facebook-square"></i></a>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link" href="#"><i class="fab fa-instagram-square"></i></a>
+                              </li>
+                           </ul>
+                           <h3 id="connect">CONNECT US</h3>
+                       <form action="" method="post" id="sub">
+                              <input id="subfill" placeholder="Your email...">
+                              <button id="subbtn"><i class="fas fa-paper-plane"></i></button>
+                       </form>
+                         <div class="pay">
+                              <br>
+                           <ul class="nav justify-content-start">
+                                <li class="nav-item"><i class="fab fa-cc-paypal"></i></li>
+                              
+                                <li class="nav-item"><i class="fab fa-cc-visa"></i></li>
+                                
+                                <li class="nav-item"><i class="fab fa-cc-jcb"></i></li>
+                                
+                                <li class="nav-item"><i class="fab fa-cc-mastercard"></i></li>
+                           </ul>
+                      </div>
+                      </div>
+                 </div><!-----------row------------->
+            </div><!-----------container------------->
+       </div><!-----------container-fluid------------->
+       <!-----------------MOBINAVI----->
+       <div class="container-fluid d-md-none mobilefooter">
+            <div class="row">
+                 <div class="col-sm-6 offset-sm-3
+                                col-6 offset-3 ">
+                      <a href="Home_Van Ninh.html" class="logofooter"><img class="logofooter" src="./imgs/logo (yelow.png"></a>
+                           <p><strong>Address:</strong> No.1 Nguyen Hue, District 1, Ho Chi Minh City</p>
+                           <p><strong>Hotline:</strong> 1900 8080</p>
+                           <p><strong>Email:</strong> thefactory@gmail.com</p>
+                      <div class="col-sm-12
+                                    col-12">
+                      <div class="nav-item dropdown infod " >
+                       <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">INFORMATION<span class="caret"></span></a>
+                       <ul class="dropdown-menu footerinfo">
+                         <li><a href="Contact Us_Nhat Thanh.html">CONTACT</a></li>
+                         <li><a href="#">RECRUITMENT</a></li>
+                         <li><a href="FAQ_My Hanh.html">FAQ</a></li>
+                       </ul>
+                  </div>
+                      <div class="nav-item dropdown infod " >
+                       <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">SUPPORT<span class="caret"></span></a>
+                       <ul class="dropdown-menu footerinfo">
+                         <li><a href="About us_Nhat Thanh.html">ABOUT US</a></li>
+                         <li><a href="Promotion_Quang Thuan.html">PROMOTIONS</a></li>
+                         <li><a href="Blog_My Hanh.html">BLOGS</a></li>
+                       </ul>
+                       </div>   
+                    
+                      <h3>FOLLOW US</h3>
+                           <ul class="nav justify-content-center follow1">
+                             <li class="nav-item">
+                                   <a class="nav-link" href="#"><i class="fab fa-twitter-square"></i></a>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link" href="#"><i class="fab fa-facebook-square"></i></a>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link" href="#"><i class="fab fa-instagram-square"></i></a>
+                              </li>
+                           </ul>
+                           <h3 id="connect1">CONNECT US</h3>
+                       <form action="" method="post" id="justify-content-center sub1">
+                              <input id="subfill1" placeholder="Your email...">
+                              <button id="subbtn1"><i class="fas fa-paper-plane"></i></button>
+                       </form>
+                      </div>
+                 </div>
+                 </div>
+            </div>
+       <div class="container-fluid end">
+            <div class="container">
+                 <div class="row justify-content-center">
+                      <div class="col-12 copy">
+                           <p>Copyright <i class="fas fa-copyright"></i> FootwearFactory</p>
+                      </div>
+                 </div>	   
+            </div>
+       </div>
+</body>
+<script>
+      // ============ slide thumbnail =============
+var thumb1 = document.getElementById('thumbnail1')
+var thumb2 = document.getElementById('thumbnail2')
+var thumb3 = document.getElementById('thumbnail3')
+var featured = document.getElementById('featured')
+
+thumb1.addEventListener("click", () => {
+  featured.src = thumb1.src;
+});
+thumb2.addEventListener("click", () => {
+  featured.src = thumb2.src;
+});
+thumb3.addEventListener("click", () => {
+  featured.src = thumb3.src;
+})
+
+// ============ buton size check ============
+var btnsSize = document.querySelectorAll('.buttonSize')
+for(let i = 0; i<btnsSize.length;i++){
+     btnsSize[i].onclick = () => {
+          btnsSize[i].classList.toggle('sizeActive')
+     }
+}
+
+
+// =========== product slider =========== //
+
+$(".carousel").owlCarousel({
+      margin: 20,
+      loop: true,
+      autoplay: true,
+      autoplayTimeout: 2000,
+      autoplayHoverPause: true,
+      responsive: {
+        0:{
+              items:1,
+              nav: false
+            },
+            576:{
+          items:2,
+          nav: false
+      },
+      768:{
+            items:3,
+          nav: false
+        },
+        1000:{
+          items:4,
+          nav: false
+      }
+}
+});
+</script>
+</html>
